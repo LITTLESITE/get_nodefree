@@ -1,5 +1,5 @@
 # name属性用来指定这个工作流的名字
-name: Download The SUB
+name: Download The SUBSCRIBE FROM nodefree.org
 
 on:
   push:
@@ -15,10 +15,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@main  #采用main分支下的
-      - name: Do My script
+      - name: Download the subscribe
         run: |
           sh ./get.sh
-      - name: Commit
+      - name: Commit Changes
         run: |
          git config --global user.email sztxiao@outlook.com
          git config --global user.name LITTLESITE
