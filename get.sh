@@ -20,6 +20,13 @@ fi
 if [ ! -f "./allmysub.txt" ];then
  rm ./allmysub.txt
 fi
+if [ ! -f "./poolsub.yaml" ];then
+ rm ./allmysub.yaml
+fi
+if [ ! -f "./poolsub.txt" ];then
+ rm ./poolsub.txt
+fi
+
 echo get subscribe
 wget https://v2rayshare.com/wp-content/uploads/$currentyears/$currentmonths/$currentdate.txt
 wget https://v2rayshare.com/wp-content/uploads/$currentyears/$currentmonths/$currentdate.yaml
