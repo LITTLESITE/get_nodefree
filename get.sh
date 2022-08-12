@@ -4,14 +4,8 @@ currentmonths=$(date +%m)
 currentyears=$(date +%Y)
 cd `dirname $0`
 echo delete old subscribes
-if [ ! -f "./sub_nodefree.txt" ];then
- rm ./sub_nodefree.txt
-fi
 if [ ! -f "./sub_v2rayshare.txt" ];then
  rm ./sub_v2rayshare.txt
-fi
-if [ ! -f "./sub_nodefree.yaml" ];then
- rm ./sub_nodefree.txt
 fi
 if [ ! -f "./sub_v2rayshare.yaml" ];then
  rm ./sub_v2rayshare.txt
