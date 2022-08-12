@@ -16,5 +16,7 @@ wget https://v2rayshare.com/wp-content/uploads/$currentyears/$currentmonths/$cur
 echo get subscribe sucessfully
 mv $currentdate.txt sub.txt
 mv $currentdate.yaml sub.yaml
+wget https://short.littlesite.ml/7kPjan
+mv 7kPjan allmysub.txt
 echo hope you have a good day~
 echo bye~
