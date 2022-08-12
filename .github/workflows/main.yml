@@ -6,7 +6,7 @@ on:
     branches:
       - main
   schedule:   
-    - cron: '* 0/2 * * *'   #国际标准时间，北京时间+8，即下午1点钟
+    - cron: '* 0,2,4,6,8,10,12,14,16,18,20,22 * * *'   #国际标准时间，北京时间+8，即下午1点钟
 
 
 
@@ -23,7 +23,7 @@ jobs:
          git config --global user.email sztxiao@outlook.com
          git config --global user.name LITTLESITE
          git add .
-         git commit -m"action:`date`"
+         git commit -m"由github actions推送,日期:`date`"
          git pull --rebase
       - name: Push changes
         uses: ad-m/github-push-action@master
