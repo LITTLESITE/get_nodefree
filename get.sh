@@ -21,7 +21,7 @@ if [ ! -f "./allmysub.txt" ];then
  rm ./allmysub.txt
 fi
 if [ ! -f "./poolsub.yaml" ];then
- rm ./allmysub.yaml
+ rm ./poolsub.yaml
 fi
 if [ ! -f "./poolsub.txt" ];then
  rm ./poolsub.txt
