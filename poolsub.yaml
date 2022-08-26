@@ -309,9 +309,9 @@ proxies:
   - {name: US_156 TG@peekfun, server: 56789.gq, port: 443, type: trojan, password: dc1453e4-e5c4-4b30-bee3-6ed2adce9ee3, skip-cert-verify: false}
   - {name: US_157 TG@peekfun, server: 184.168.127.50, port: 443, type: trojan, password: 36ebef7d1b1d6205fd0c55f28800e674, skip-cert-verify: false}
   - {name: ZZ_158 TG@peekfun, server: 103.173.155.72, port: 28443, type: trojan, password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, skip-cert-verify: false}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_01, server: 14.29.124.168, port: 24001, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: Pool_🇳🇱NL_02, server: 85.208.108.93, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: Pool_🇳🇱NL_03, server: 85.208.108.93, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
+  - {name: Relay_-🇹🇼TW_01, server: 14.29.124.168, port: 24008, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_02, server: 14.29.124.168, port: 25294, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: NL_03, server: 85.208.108.21, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
   - {name: Relay_-🇺🇸US_01, server: cloud.metalink.cf, port: 9090, type: vmess, uuid: 4cbffc21-d283-4ea9-f978-522cf367175f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cloud.metalink.cf}}}
   - {name: 🇦🇺 Relay_🇦🇺AU-🇦🇺AU_02, server: 821hk03.tfzhc.top, port: 443, type: trojan, password: 501c5492-d6c7-4119-b470-67189394d9a7, skip-cert-verify: false}
   - {name: 🇨🇦 Relay_🇨🇦CA-🇨🇦CA_03, server: 527hk1.fans8.xyz, port: 443, type: vmess, uuid: 2cc10f9c-fb02-3e45-b619-c3b98cde912a, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, servername: 527hk1.fans8.xyz, network: ws, ws-opts: {path: /ray, headers: {Host: 527hk1.fans8.xyz}}}
@@ -365,7 +365,7 @@ proxies:
   - {name: 🇺🇸 Relay_🇺🇸US-🇺🇸US_51, server: us.tcpbbr.net, port: 443, type: trojan, password: 80bcf4f2-12f7-11ed-bb74-f23c9164ca5d, skip-cert-verify: false}
   - {name: 🇺🇸 Relay_🇺🇸US-🇺🇸US_52, server: do.cloudorg.uk, port: 443, type: trojan, password: 9682edd6-89e6-4e6a-b31d-271089771d87, skip-cert-verify: false}
   - {name: Relay_🏁ZZ-🏁ZZ_53, server: us-sjc-ctg-02-v2.node.inforun.work, port: 888, type: vmess, uuid: d0aec6f9-a2d0-4238-893d-73571c4e9cee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: cdn.savoy.click, network: ws, ws-opts: {path: /je5x3pBN1vez3NQudNkB, headers: {Host: us-sjc-ctg-02-v2.node.inforun.work}}}
-  - {name: Relay_-🇹🇼TW_01, server: 14.29.124.168, port: 24006, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: Relay_-🇹🇼TW_01 2, server: 14.29.124.168, port: 24006, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
   - {name: AU_02, server: 185.167.116.253, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX}
   - {name: AU_03, server: 185.167.116.24, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8}
   - {name: AU_04, server: 185.167.116.253, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE}
@@ -6118,11 +6118,11 @@ proxy-groups:
       - TW_132 TG@peekfun
       - TW_133 TG@peekfun
       - TW_134 TG@peekfun
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_01
+      - Relay_-🇹🇼TW_01
       - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_08
       - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_12
       - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_29
-      - Relay_-🇹🇼TW_01
+      - Relay_-🇹🇼TW_01 2
       - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_11
       - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_12 2
       - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_17
@@ -6392,7 +6392,7 @@ proxy-groups:
       - CN_115 TG@peekfun
       - CN_116 TG@peekfun
       - CN_117 TG@peekfun
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_01
+      - CN_02
       - 🇨🇦 Relay_🇨🇦CA-🇨🇦CA_03
       - 🇨🇳 Relay_🇨🇳CN-🇺🇸US_04
       - 🇨🇳 Relay_🇨🇳CN-🇦🇺AU_05
@@ -7066,9 +7066,9 @@ proxy-groups:
       - US_156 TG@peekfun
       - US_157 TG@peekfun
       - ZZ_158 TG@peekfun
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_01
-      - Pool_🇳🇱NL_02
-      - Pool_🇳🇱NL_03
+      - Relay_-🇹🇼TW_01
+      - CN_02
+      - NL_03
       - Relay_-🇺🇸US_01
       - 🇦🇺 Relay_🇦🇺AU-🇦🇺AU_02
       - 🇨🇦 Relay_🇨🇦CA-🇨🇦CA_03
@@ -7122,7 +7122,7 @@ proxy-groups:
       - 🇺🇸 Relay_🇺🇸US-🇺🇸US_51
       - 🇺🇸 Relay_🇺🇸US-🇺🇸US_52
       - Relay_🏁ZZ-🏁ZZ_53
-      - Relay_-🇹🇼TW_01
+      - Relay_-🇹🇼TW_01 2
       - AU_02
       - AU_03
       - AU_04
