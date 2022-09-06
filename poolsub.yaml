@@ -5,159 +5,163 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: AU_1, server: 185.167.116.253, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE}
-  - {name: AU_2, server: 185.167.116.253, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX}
+  - {name: AU_1, server: 185.167.116.253, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX}
+  - {name: AU_2, server: 185.167.116.253, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE}
   - {name: CA_3, server: 196.247.59.154, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
   - {name: DE_4, server: 193.108.118.30, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
   - {name: DE_5, server: 165.22.73.126, port: 23335, type: ss, cipher: aes-256-cfb, password: 7d99ae502227454ea998d71e4b62a388}
-  - {name: FR_6, server: 195.154.200.150, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: FR_7, server: 145.239.1.100, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: FR_8, server: 145.239.1.100, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: FR_9, server: 149.202.82.172, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: FR_6, server: 149.202.82.172, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: FR_7, server: 145.239.1.100, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: FR_8, server: 195.154.200.150, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: FR_9, server: 145.239.1.100, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
   - {name: FR_10, server: 145.239.1.100, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
   - {name: FR_11, server: 149.202.82.172, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
   - {name: HK_12, server: 18.167.20.169, port: 8080, type: vmess, uuid: e1f97064-adcd-40d3-91a0-3f0bea035fca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
   - {name: JP_13, server: 193.38.139.204, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: LT_14, server: 213.183.53.198, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4}
-  - {name: LT_15, server: 213.183.53.198, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z}
-  - {name: LT_16, server: 213.183.53.198, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c}
-  - {name: NL_17, server: 213.183.59.218, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF}
-  - {name: NL_18, server: 213.183.59.211, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX}
-  - {name: NL_19, server: 213.183.59.211, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4}
-  - {name: NL_20, server: 85.208.108.19, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: NL_21, server: 85.208.108.93, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
-  - {name: NL_22, server: 85.208.108.19, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: NL_23, server: 85.208.108.19, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: NL_24, server: 213.183.59.218, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH}
-  - {name: NL_25, server: 213.183.59.191, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX}
-  - {name: NL_26, server: 85.208.108.93, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: NL_27, server: 85.208.108.93, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: NL_28, server: 213.183.59.214, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4}
-  - {name: NL_29, server: 213.183.59.211, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga}
-  - {name: NL_30, server: 213.183.59.191, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH}
-  - {name: NL_31, server: 85.208.108.93, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: NL_32, server: 213.183.59.214, port: 9000, type: ssr, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: LT_14, server: 213.183.53.198, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c}
+  - {name: LT_15, server: 213.183.53.198, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4}
+  - {name: LT_16, server: 213.183.53.198, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z}
+  - {name: NL_17, server: 85.208.108.93, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: NL_18, server: 213.183.59.218, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF}
+  - {name: NL_19, server: 213.183.59.211, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX}
+  - {name: NL_20, server: 213.183.59.211, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4}
+  - {name: NL_21, server: 85.208.108.19, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: NL_22, server: 213.183.59.211, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH}
+  - {name: NL_23, server: 85.208.108.93, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
+  - {name: NL_24, server: 85.208.108.19, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: NL_25, server: 85.208.108.19, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: NL_26, server: 213.183.59.218, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH}
+  - {name: NL_27, server: 213.183.59.191, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX}
+  - {name: NL_28, server: 213.183.59.191, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH}
+  - {name: NL_29, server: 85.208.108.93, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: NL_30, server: 213.183.59.211, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga}
+  - {name: NL_31, server: 213.183.59.214, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4}
+  - {name: NL_32, server: 85.208.108.93, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
   - {name: NL_33, server: 213.183.59.211, port: 9064, type: ssr, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
-  - {name: RO_34, server: 185.126.116.125, port: 9033, type: ssr, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
-  - {name: RU_35, server: 45.136.70.19, port: 24298, type: vmess, uuid: 7324d2bf-e241-4ede-b490-753dc26b1b8c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: US_36, server: 38.114.114.19, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: US_37, server: 38.91.107.37, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: US_38, server: 38.75.136.34, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: US_39, server: 38.143.66.99, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: US_40, server: 38.143.66.99, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: US_41, server: 38.68.134.85, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: US_42, server: 38.75.136.21, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: US_43, server: 137.184.93.209, port: 10365, type: ss, cipher: chacha20-ietf-poly1305, password: 9682edd6-89e6-4e6a-b31d-271089771d87}
-  - {name: US_44, server: 38.75.136.34, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: US_45, server: 172.99.190.39, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: US_46, server: 38.75.136.21, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: US_47, server: 38.114.114.67, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: US_48, server: 38.121.43.71, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: US_49, server: 38.75.136.21, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: US_50, server: 38.121.43.204, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
-  - {name: US_51, server: 167.88.61.175, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: US_52, server: 38.114.114.19, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: US_53, server: 38.75.136.34, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: US_54, server: 38.121.43.71, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: US_55, server: 38.75.136.34, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
-  - {name: US_56, server: 38.64.138.145, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: US_57, server: 38.68.134.85, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: US_58, server: 38.68.135.18, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: US_59, server: 167.88.63.79, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: US_60, server: 172.99.190.39, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: US_61, server: us-am32-5.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: YFVrXZgRo, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
-  - {name: US_62, server: 152.69.197.60, port: 1069, type: vmess, uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: US_63, server: 51.81.223.22, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: US_64, server: 51.81.223.10, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: 51.81.223.10}
-  - {name: US_65, server: 51.81.223.26, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: 51.81.223.26}
-  - {name: US_66, server: 51.81.223.20, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: 51.81.223.20}
-  - {name: US_67, server: kr05.wangxd.life, port: 3052, type: trojan, password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e, skip-cert-verify: false}
-  - {name: ZZ_68, server: 134.195.196.149, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: ZZ_69, server: 169.197.141.5, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: ZZ_70, server: 134.195.196.85, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: AU_1 2, server: 185.167.116.253, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE}
-  - {name: AU_2 2, server: 185.167.116.253, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX}
+  - {name: NL_34, server: 213.183.59.214, port: 9000, type: ssr, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: RO_35, server: 185.126.116.125, port: 9033, type: ssr, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: RU_36, server: 45.136.70.19, port: 24298, type: vmess, uuid: 7324d2bf-e241-4ede-b490-753dc26b1b8c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: US_37, server: 38.114.114.19, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: US_38, server: 38.91.107.37, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: US_39, server: 38.75.136.34, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: US_40, server: 38.143.66.99, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: US_41, server: 38.143.66.99, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: US_42, server: 38.68.134.85, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: US_43, server: 38.75.136.21, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: US_44, server: 137.184.93.209, port: 10365, type: ss, cipher: chacha20-ietf-poly1305, password: 9682edd6-89e6-4e6a-b31d-271089771d87}
+  - {name: US_45, server: 38.75.136.34, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: US_46, server: 172.99.190.39, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: US_47, server: 38.75.136.21, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: US_48, server: 38.114.114.67, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: US_49, server: 38.121.43.71, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: US_50, server: 38.75.136.21, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: US_51, server: 38.121.43.204, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: US_52, server: 167.88.61.175, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: US_53, server: 38.114.114.19, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: US_54, server: 38.75.136.34, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: US_55, server: 38.121.43.71, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: US_56, server: 38.75.136.34, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+  - {name: US_57, server: 38.64.138.145, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: US_58, server: 38.68.134.85, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: US_59, server: 38.68.135.18, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: US_60, server: 167.88.63.79, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: US_61, server: 172.99.190.39, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: US_62, server: us-am32-5.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: YFVrXZgRo, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
+  - {name: US_63, server: 51.81.223.20, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: 51.81.223.20}
+  - {name: US_64, server: 51.81.223.26, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: 51.81.223.26}
+  - {name: US_65, server: 51.81.223.10, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: 51.81.223.10}
+  - {name: US_66, server: 45.10.153.188, port: 37558, type: vmess, uuid: 9d0f86ad-eec3-424f-f69a-fcb37e783d06, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: 45.10.153.188}
+  - {name: US_67, server: 152.69.197.60, port: 1069, type: vmess, uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: US_68, server: 51.81.223.22, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: US_69, server: kr05.wangxd.life, port: 3052, type: trojan, password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e, skip-cert-verify: false}
+  - {name: ZZ_70, server: 134.195.196.149, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: ZZ_71, server: 169.197.141.5, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: ZZ_72, server: 134.195.196.85, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: AU_1 2, server: 185.167.116.253, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX}
+  - {name: AU_2 2, server: 185.167.116.253, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE}
   - {name: CA_3 2, server: 196.247.59.154, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
   - {name: DE_4 2, server: 193.108.118.30, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
   - {name: DE_5 2, server: 165.22.73.126, port: 23335, type: ss, cipher: aes-256-cfb, password: 7d99ae502227454ea998d71e4b62a388}
-  - {name: FR_6 2, server: 195.154.200.150, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: FR_7 2, server: 145.239.1.100, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: FR_8 2, server: 145.239.1.100, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: FR_9 2, server: 149.202.82.172, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: FR_6 2, server: 149.202.82.172, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: FR_7 2, server: 145.239.1.100, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: FR_8 2, server: 195.154.200.150, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: FR_9 2, server: 145.239.1.100, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
   - {name: FR_10 2, server: 145.239.1.100, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
   - {name: FR_11 2, server: 149.202.82.172, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
   - {name: HK_12 2, server: 18.167.20.169, port: 8080, type: vmess, uuid: e1f97064-adcd-40d3-91a0-3f0bea035fca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
   - {name: JP_13 2, server: 193.38.139.204, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: LT_14 2, server: 213.183.53.198, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4}
-  - {name: LT_15 2, server: 213.183.53.198, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z}
-  - {name: LT_16 2, server: 213.183.53.198, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c}
-  - {name: NL_17 2, server: 213.183.59.218, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF}
-  - {name: NL_18 2, server: 213.183.59.211, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX}
-  - {name: NL_19 2, server: 213.183.59.211, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4}
-  - {name: NL_20 2, server: 85.208.108.19, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: NL_21 2, server: 85.208.108.93, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
-  - {name: NL_22 2, server: 85.208.108.19, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: NL_23 2, server: 85.208.108.19, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: NL_24 2, server: 213.183.59.218, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH}
-  - {name: NL_25 2, server: 213.183.59.191, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX}
-  - {name: NL_26 2, server: 85.208.108.93, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: NL_27 2, server: 85.208.108.93, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: NL_28 2, server: 213.183.59.214, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4}
-  - {name: NL_29 2, server: 213.183.59.211, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga}
-  - {name: NL_30 2, server: 213.183.59.191, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH}
-  - {name: NL_31 2, server: 85.208.108.93, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: NL_32 2, server: 213.183.59.214, port: 9000, type: ssr, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: LT_14 2, server: 213.183.53.198, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c}
+  - {name: LT_15 2, server: 213.183.53.198, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4}
+  - {name: LT_16 2, server: 213.183.53.198, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z}
+  - {name: NL_17 2, server: 85.208.108.93, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: NL_18 2, server: 213.183.59.218, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF}
+  - {name: NL_19 2, server: 213.183.59.211, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX}
+  - {name: NL_20 2, server: 213.183.59.211, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4}
+  - {name: NL_21 2, server: 85.208.108.19, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: NL_22 2, server: 213.183.59.211, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH}
+  - {name: NL_23 2, server: 85.208.108.93, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
+  - {name: NL_24 2, server: 85.208.108.19, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: NL_25 2, server: 85.208.108.19, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: NL_26 2, server: 213.183.59.218, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH}
+  - {name: NL_27 2, server: 213.183.59.191, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX}
+  - {name: NL_28 2, server: 213.183.59.191, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH}
+  - {name: NL_29 2, server: 85.208.108.93, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: NL_30 2, server: 213.183.59.211, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga}
+  - {name: NL_31 2, server: 213.183.59.214, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4}
+  - {name: NL_32 2, server: 85.208.108.93, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
   - {name: NL_33 2, server: 213.183.59.211, port: 9064, type: ssr, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
-  - {name: RO_34 2, server: 185.126.116.125, port: 9033, type: ssr, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
-  - {name: RU_35 2, server: 45.136.70.19, port: 24298, type: vmess, uuid: 7324d2bf-e241-4ede-b490-753dc26b1b8c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: US_36 2, server: 38.114.114.19, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: US_37 2, server: 38.91.107.37, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: US_38 2, server: 38.75.136.34, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: US_39 2, server: 38.143.66.99, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: US_40 2, server: 38.143.66.99, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: US_41 2, server: 38.68.134.85, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: US_42 2, server: 38.75.136.21, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: US_43 2, server: 137.184.93.209, port: 10365, type: ss, cipher: chacha20-ietf-poly1305, password: 9682edd6-89e6-4e6a-b31d-271089771d87}
-  - {name: US_44 2, server: 38.75.136.34, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: US_45 2, server: 172.99.190.39, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: US_46 2, server: 38.75.136.21, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: US_47 2, server: 38.114.114.67, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: US_48 2, server: 38.121.43.71, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: US_49 2, server: 38.75.136.21, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: US_50 2, server: 38.121.43.204, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
-  - {name: US_51 2, server: 167.88.61.175, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: US_52 2, server: 38.114.114.19, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: US_53 2, server: 38.75.136.34, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: US_54 2, server: 38.121.43.71, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: US_55 2, server: 38.75.136.34, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
-  - {name: US_56 2, server: 38.64.138.145, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: US_57 2, server: 38.68.134.85, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: US_58 2, server: 38.68.135.18, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: US_59 2, server: 167.88.63.79, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: US_60 2, server: 172.99.190.39, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: US_61 2, server: us-am32-5.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: YFVrXZgRo, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
-  - {name: US_62 2, server: 152.69.197.60, port: 1069, type: vmess, uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: US_63 2, server: 51.81.223.22, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: US_64 2, server: 51.81.223.10, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: 51.81.223.10}
-  - {name: US_65 2, server: 51.81.223.26, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: 51.81.223.26}
-  - {name: US_66 2, server: 51.81.223.20, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: 51.81.223.20}
-  - {name: US_67 2, server: kr05.wangxd.life, port: 3052, type: trojan, password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e, skip-cert-verify: false}
-  - {name: ZZ_68 2, server: 134.195.196.149, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: ZZ_69 2, server: 169.197.141.5, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: ZZ_70 2, server: 134.195.196.85, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: AU_01 TG@peekfun, server: jgwdb4.gaox.ml, port: 443, type: trojan, password: d06a3f01-1ff0-4792-9b8e-a5a604bc74a2, skip-cert-verify: false}
-  - {name: CA_02 TG@peekfun, server: 165.154.226.108, port: 443, type: trojan, password: gb8cLR, skip-cert-verify: false}
-  - {name: CN_03 TG@peekfun, server: 14.29.124.168, port: 24007, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_04 TG@peekfun, server: 14.29.124.168, port: 24005, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_05 TG@peekfun, server: 14.29.124.168, port: 25270, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_06 TG@peekfun, server: 14.29.124.168, port: 25245, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: NL_34 2, server: 213.183.59.214, port: 9000, type: ssr, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: RO_35 2, server: 185.126.116.125, port: 9033, type: ssr, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: RU_36 2, server: 45.136.70.19, port: 24298, type: vmess, uuid: 7324d2bf-e241-4ede-b490-753dc26b1b8c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: US_37 2, server: 38.114.114.19, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: US_38 2, server: 38.91.107.37, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: US_39 2, server: 38.75.136.34, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: US_40 2, server: 38.143.66.99, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: US_41 2, server: 38.143.66.99, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: US_42 2, server: 38.68.134.85, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: US_43 2, server: 38.75.136.21, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: US_44 2, server: 137.184.93.209, port: 10365, type: ss, cipher: chacha20-ietf-poly1305, password: 9682edd6-89e6-4e6a-b31d-271089771d87}
+  - {name: US_45 2, server: 38.75.136.34, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: US_46 2, server: 172.99.190.39, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: US_47 2, server: 38.75.136.21, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: US_48 2, server: 38.114.114.67, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: US_49 2, server: 38.121.43.71, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: US_50 2, server: 38.75.136.21, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: US_51 2, server: 38.121.43.204, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: US_52 2, server: 167.88.61.175, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: US_53 2, server: 38.114.114.19, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: US_54 2, server: 38.75.136.34, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: US_55 2, server: 38.121.43.71, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: US_56 2, server: 38.75.136.34, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+  - {name: US_57 2, server: 38.64.138.145, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: US_58 2, server: 38.68.134.85, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: US_59 2, server: 38.68.135.18, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: US_60 2, server: 167.88.63.79, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: US_61 2, server: 172.99.190.39, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: US_62 2, server: us-am32-5.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: YFVrXZgRo, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
+  - {name: US_63 2, server: 51.81.223.20, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: 51.81.223.20}
+  - {name: US_64 2, server: 51.81.223.26, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: 51.81.223.26}
+  - {name: US_65 2, server: 51.81.223.10, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: 51.81.223.10}
+  - {name: US_66 2, server: 45.10.153.188, port: 37558, type: vmess, uuid: 9d0f86ad-eec3-424f-f69a-fcb37e783d06, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: 45.10.153.188}
+  - {name: US_67 2, server: 152.69.197.60, port: 1069, type: vmess, uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: US_68 2, server: 51.81.223.22, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: US_69 2, server: kr05.wangxd.life, port: 3052, type: trojan, password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e, skip-cert-verify: false}
+  - {name: ZZ_70 2, server: 134.195.196.149, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: ZZ_71 2, server: 169.197.141.5, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: ZZ_72 2, server: 134.195.196.85, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: CA_01 TG@peekfun, server: 165.154.226.108, port: 443, type: trojan, password: gb8cLR, skip-cert-verify: false}
+  - {name: CN_02 TG@peekfun, server: 14.29.124.168, port: 24007, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_03 TG@peekfun, server: 14.29.124.168, port: 24005, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_04 TG@peekfun, server: 14.29.124.168, port: 25270, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_05 TG@peekfun, server: 14.29.124.168, port: 25245, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_06 TG@peekfun, server: 14.29.124.174, port: 11013, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
   - {name: CN_07 TG@peekfun, server: 14.29.124.168, port: 25210, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
   - {name: CN_08 TG@peekfun, server: 14.29.124.168, port: 25218, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
   - {name: CN_09 TG@peekfun, server: 14.29.124.168, port: 25289, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
   - {name: CN_10 TG@peekfun, server: 14.29.124.168, port: 25287, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
   - {name: CN_11 TG@peekfun, server: 14.29.124.168, port: 25295, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
   - {name: CN_12 TG@peekfun, server: 14.29.124.174, port: 11005, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_13 TG@peekfun, server: 14.29.124.174, port: 11016, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_13 TG@peekfun, server: 14.29.124.174, port: 11033, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
   - {name: CN_14 TG@peekfun, server: 14.29.124.168, port: 25220, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
   - {name: CN_15 TG@peekfun, server: 14.29.124.168, port: 25271, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
   - {name: CN_16 TG@peekfun, server: 14.29.124.168, port: 25279, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
@@ -165,33 +169,33 @@ proxies:
   - {name: CN_18 TG@peekfun, server: 14.29.124.168, port: 25235, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
   - {name: CN_19 TG@peekfun, server: 14.29.124.168, port: 25238, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
   - {name: CN_20 TG@peekfun, server: 14.29.124.168, port: 25294, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_21 TG@peekfun, server: 14.29.124.168, port: 25296, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_22 TG@peekfun, server: 14.29.124.168, port: 25231, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_23 TG@peekfun, server: 14.29.124.168, port: 25252, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_24 TG@peekfun, server: 14.29.124.168, port: 25283, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_25 TG@peekfun, server: 14.29.124.168, port: 25219, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_26 TG@peekfun, server: 14.29.124.168, port: 25230, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_27 TG@peekfun, server: 14.29.124.168, port: 25241, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_28 TG@peekfun, server: 14.29.124.168, port: 25233, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_29 TG@peekfun, server: 14.29.124.168, port: 25268, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_30 TG@peekfun, server: 14.29.124.168, port: 25267, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_31 TG@peekfun, server: 14.29.124.168, port: 25261, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_32 TG@peekfun, server: 14.29.124.168, port: 25280, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_33 TG@peekfun, server: 14.29.124.168, port: 25254, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_34 TG@peekfun, server: 14.29.124.168, port: 25247, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_35 TG@peekfun, server: 14.29.124.168, port: 25259, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_36 TG@peekfun, server: 14.29.124.168, port: 25272, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_37 TG@peekfun, server: 14.29.124.168, port: 25207, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_38 TG@peekfun, server: 14.29.124.168, port: 25222, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_39 TG@peekfun, server: 14.29.124.168, port: 25266, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_40 TG@peekfun, server: 14.29.124.168, port: 25226, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_41 TG@peekfun, server: 14.29.124.168, port: 25297, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_42 TG@peekfun, server: 14.29.124.168, port: 25251, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_43 TG@peekfun, server: 14.29.124.168, port: 24006, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_44 TG@peekfun, server: 14.29.124.168, port: 24008, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_45 TG@peekfun, server: 14.29.124.168, port: 24000, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_46 TG@peekfun, server: 14.29.124.168, port: 25284, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_47 TG@peekfun, server: 14.29.124.168, port: 25256, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_21 TG@peekfun, server: 14.29.124.168, port: 25231, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_22 TG@peekfun, server: 14.29.124.168, port: 25252, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_23 TG@peekfun, server: 14.29.124.168, port: 25283, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_24 TG@peekfun, server: 14.29.124.168, port: 25219, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_25 TG@peekfun, server: 14.29.124.168, port: 25230, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_26 TG@peekfun, server: 14.29.124.168, port: 25241, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_27 TG@peekfun, server: 14.29.124.168, port: 25233, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_28 TG@peekfun, server: 14.29.124.168, port: 25268, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_29 TG@peekfun, server: 14.29.124.168, port: 25267, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_30 TG@peekfun, server: 14.29.124.168, port: 25261, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_31 TG@peekfun, server: 14.29.124.168, port: 25280, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_32 TG@peekfun, server: 14.29.124.168, port: 25254, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_33 TG@peekfun, server: 14.29.124.168, port: 25247, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_34 TG@peekfun, server: 14.29.124.168, port: 25259, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_35 TG@peekfun, server: 14.29.124.168, port: 25272, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_36 TG@peekfun, server: 14.29.124.168, port: 25207, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_37 TG@peekfun, server: 14.29.124.168, port: 25222, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_38 TG@peekfun, server: 14.29.124.168, port: 25266, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_39 TG@peekfun, server: 14.29.124.168, port: 25226, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_40 TG@peekfun, server: 14.29.124.168, port: 25297, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_41 TG@peekfun, server: 14.29.124.168, port: 25251, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_42 TG@peekfun, server: 14.29.124.168, port: 24006, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_43 TG@peekfun, server: 14.29.124.168, port: 24008, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_44 TG@peekfun, server: 14.29.124.168, port: 24009, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_45 TG@peekfun, server: 14.29.124.168, port: 25284, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_46 TG@peekfun, server: 14.29.124.168, port: 25256, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_47 TG@peekfun, server: 14.29.124.168, port: 24001, type: ssr, cipher: aes-128-cfb, password: QazEdcTgb159@$*, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
   - {name: CN_48 TG@peekfun, server: shlt.sub-nthu.com, port: 35003, type: trojan, password: eda8a8e5-1076-4d7b-b1d0-5003a0350073, skip-cert-verify: false}
   - {name: CN_49 TG@peekfun, server: cn2hn.sub-nthu.com, port: 35002, type: trojan, password: eda8a8e5-1076-4d7b-b1d0-5003a0350073, skip-cert-verify: false}
   - {name: CN_50 TG@peekfun, server: cscu.wecanfly.top, port: 40003, type: trojan, password: 58975106-dc46-4942-b79e-336da67f1bbd, skip-cert-verify: false}
@@ -202,47 +206,47 @@ proxies:
   - {name: CN_55 TG@peekfun, server: cn2hn.sub-nthu.com, port: 35007, type: trojan, password: eda8a8e5-1076-4d7b-b1d0-5003a0350073, skip-cert-verify: false}
   - {name: CN_56 TG@peekfun, server: jp-tyo-04-tr.cdn.savoy.click, port: 889, type: trojan, password: UiLPqefVfielqkDjEwBV, skip-cert-verify: false}
   - {name: CN_57 TG@peekfun, server: shlt.sub-nthu.com, port: 35001, type: trojan, password: 87d5ee80-9dfa-4cb5-b644-062803bd0c19, skip-cert-verify: false}
-  - {name: CN_58 TG@peekfun, server: jp-tyo-04-tr.cdn.savoy.click, port: 889, type: trojan, password: SfobRIcergHchqBFzzua, skip-cert-verify: false}
-  - {name: CN_59 TG@peekfun, server: ygzyd.sub-nthu.com, port: 35003, type: trojan, password: 87d5ee80-9dfa-4cb5-b644-062803bd0c19, skip-cert-verify: false}
-  - {name: CN_60 TG@peekfun, server: cscu.wecanfly.top, port: 40003, type: trojan, password: 5eaea1b9-b977-3391-b7cb-370addb40ce2, skip-cert-verify: false}
-  - {name: CN_61 TG@peekfun, server: shlt.sub-nthu.com, port: 35007, type: trojan, password: eda8a8e5-1076-4d7b-b1d0-5003a0350073, skip-cert-verify: false}
-  - {name: CN_62 TG@peekfun, server: ygzyd.sub-nthu.com, port: 35000, type: trojan, password: eda8a8e5-1076-4d7b-b1d0-5003a0350073, skip-cert-verify: false}
-  - {name: CN_63 TG@peekfun, server: cn2hn.sub-nthu.com, port: 35000, type: trojan, password: eda8a8e5-1076-4d7b-b1d0-5003a0350073, skip-cert-verify: false}
-  - {name: CN_64 TG@peekfun, server: shlt.sub-nthu.com, port: 35000, type: trojan, password: eda8a8e5-1076-4d7b-b1d0-5003a0350073, skip-cert-verify: false}
-  - {name: CN_65 TG@peekfun, server: cn2hn.sub-nthu.com, port: 35003, type: trojan, password: eda8a8e5-1076-4d7b-b1d0-5003a0350073, skip-cert-verify: false}
-  - {name: DE_66 TG@peekfun, server: 165.22.73.126, port: 23335, type: ss, cipher: aes-256-cfb, password: 7d99ae502227454ea998d71e4b62a388}
-  - {name: DE_67 TG@peekfun, server: 49.12.203.80, port: 40960, type: ss, cipher: aes-256-gcm, password: 6kA7b3f9Aw2508erQ3W7D4}
-  - {name: HK_68 TG@peekfun, server: 103.103.245.125, port: 50418, type: trojan, password: a70b39d1-62ea-4d9e-b681-9c5408352234, skip-cert-verify: false}
-  - {name: HK_69 TG@peekfun, server: 103.103.245.125, port: 50206, type: trojan, password: 789d73af-b985-4778-9872-211047c28015, skip-cert-verify: false}
-  - {name: HK_70 TG@peekfun, server: hk31.ssgnode.ga, port: 443, type: trojan, password: 41742_920c8caa, skip-cert-verify: false}
-  - {name: IT_71 TG@peekfun, server: tw-tpe-h-tr.cdn.savoy.click, port: 10089, type: trojan, password: kFyvvCcvMXQKFcJZWuxcdTZOFummlVbf, skip-cert-verify: false}
-  - {name: JP_72 TG@peekfun, server: 45.66.134.219, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, skip-cert-verify: false}
-  - {name: JP_73 TG@peekfun, server: 45.66.134.219, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: false}
-  - {name: JP_74 TG@peekfun, server: 106.180.225.69, port: 1443, type: trojan, password: 7x42LetRa0, skip-cert-verify: false}
-  - {name: JP_75 TG@peekfun, server: 45.66.134.219, port: 443, type: trojan, password: 36ebef7d1b1d6205fd0c55f28800e674, skip-cert-verify: false}
-  - {name: JP_76 TG@peekfun, server: jgw4.gaox.ml, port: 443, type: trojan, password: b7e0e71f-070c-437a-9826-6e23caeb0307, skip-cert-verify: false}
-  - {name: KR_77 TG@peekfun, server: jgw3.gaox.ml, port: 443, type: trojan, password: a1718180-d616-4b71-9bb6-3e96ba20f921, skip-cert-verify: false}
-  - {name: LT_78 TG@peekfun, server: 213.183.53.208, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb}
-  - {name: NL_79 TG@peekfun, server: 213.183.59.206, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE}
-  - {name: NL_80 TG@peekfun, server: 213.183.59.206, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY}
-  - {name: NL_81 TG@peekfun, server: jp.useanlo.cf, port: 6523, type: trojan, password: b64b0f9c-23df-3112-a790-d8aa068aa2fe, skip-cert-verify: false}
-  - {name: NL_82 TG@peekfun, server: 41.216.177.41, port: 443, type: trojan, password: 274c1b23-2bfe-40ac-943c-ebc1aa044b22, skip-cert-verify: false}
-  - {name: RO_83 TG@peekfun, server: 185.126.116.235, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: false}
-  - {name: RO_84 TG@peekfun, server: 185.126.116.235, port: 443, type: trojan, password: 36ebef7d1b1d6205fd0c55f28800e674, skip-cert-verify: false}
-  - {name: RO_85 TG@peekfun, server: 185.126.116.235, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, skip-cert-verify: false}
-  - {name: RU_86 TG@peekfun, server: us1.nodegz.top, port: 443, type: trojan, password: 440055a3-7c84-3cb3-9b7a-a974a66e9b98, skip-cert-verify: false}
-  - {name: SG_87 TG@peekfun, server: 73hk02.ok365.cyou, port: 443, type: trojan, password: f78a9262-fa0a-4aa3-8050-99be924c0d0c, skip-cert-verify: false}
-  - {name: SG_88 TG@peekfun, server: w12.udpgw.com, port: 443, type: trojan, password: 08964210-e7b8-11ec-95aa-1239d0255272, skip-cert-verify: false}
-  - {name: SG_89 TG@peekfun, server: trojan2.udpgw.com, port: 443, type: trojan, password: 973ef350-f6a5-11ec-9274-1239d0255272, skip-cert-verify: false}
-  - {name: SG_90 TG@peekfun, server: 81.90.189.85, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: false}
-  - {name: SG_91 TG@peekfun, server: trojan3.udpgw.com, port: 443, type: trojan, password: 8db1b560-019d-11ed-8bdf-1239d0255272, skip-cert-verify: false}
-  - {name: TW_92 TG@peekfun, server: 2.58.242.43, port: 443, type: trojan, password: YWVzLTI1Ni1nY206eHBRd3lWNFc1RmRBNk5NQU5KSng3M1VT, skip-cert-verify: false}
-  - {name: TW_93 TG@peekfun, server: 2.58.242.43, port: 443, type: trojan, password: 7a9a3bb7-43b4YWVzLTI1Ni1nY206eHBRd3lWNFc1RmRBNk5NQU5KSng3M1VT, skip-cert-verify: false}
-  - {name: US_94 TG@peekfun, server: 38.75.136.102, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: US_95 TG@peekfun, server: 38.114.114.69, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: US_96 TG@peekfun, server: 192.96.204.250, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ws}}
-  - {name: US_97 TG@peekfun, server: 45.35.84.162, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, servername: usa-dallas.lvuft.com, network: ws, ws-opts: {path: /ws}}
-  - {name: US_98 TG@peekfun, server: 72.167.33.106, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, skip-cert-verify: false}
+  - {name: CN_58 TG@peekfun, server: hygz.doggogogo.top, port: 50102, type: trojan, password: 5eaea1b9-b977-3391-b7cb-370addb40ce2, skip-cert-verify: false}
+  - {name: CN_59 TG@peekfun, server: jp-tyo-04-tr.cdn.savoy.click, port: 889, type: trojan, password: SfobRIcergHchqBFzzua, skip-cert-verify: false}
+  - {name: CN_60 TG@peekfun, server: ygzyd.sub-nthu.com, port: 35003, type: trojan, password: 87d5ee80-9dfa-4cb5-b644-062803bd0c19, skip-cert-verify: false}
+  - {name: CN_61 TG@peekfun, server: cscu.wecanfly.top, port: 40003, type: trojan, password: 5eaea1b9-b977-3391-b7cb-370addb40ce2, skip-cert-verify: false}
+  - {name: CN_62 TG@peekfun, server: hygz.doggogogo.top, port: 50102, type: trojan, password: 58975106-dc46-4942-b79e-336da67f1bbd, skip-cert-verify: false}
+  - {name: CN_63 TG@peekfun, server: shlt.sub-nthu.com, port: 35007, type: trojan, password: eda8a8e5-1076-4d7b-b1d0-5003a0350073, skip-cert-verify: false}
+  - {name: CN_64 TG@peekfun, server: ygzyd.sub-nthu.com, port: 35000, type: trojan, password: eda8a8e5-1076-4d7b-b1d0-5003a0350073, skip-cert-verify: false}
+  - {name: CN_65 TG@peekfun, server: cn2hn.sub-nthu.com, port: 35000, type: trojan, password: eda8a8e5-1076-4d7b-b1d0-5003a0350073, skip-cert-verify: false}
+  - {name: CN_66 TG@peekfun, server: shlt.sub-nthu.com, port: 35000, type: trojan, password: eda8a8e5-1076-4d7b-b1d0-5003a0350073, skip-cert-verify: false}
+  - {name: CN_67 TG@peekfun, server: cn2hn.sub-nthu.com, port: 35003, type: trojan, password: eda8a8e5-1076-4d7b-b1d0-5003a0350073, skip-cert-verify: false}
+  - {name: HK_68 TG@peekfun, server: 103.103.245.125, port: 50350, type: trojan, password: 006bca8c-4e1f-44e0-9399-1cd4ff480a40, skip-cert-verify: false}
+  - {name: HK_69 TG@peekfun, server: hk31.ssgnode.ga, port: 443, type: trojan, password: 41742_920c8caa, skip-cert-verify: false}
+  - {name: ID_70 TG@peekfun, server: id2-trojan.bonds.id, port: 443, type: trojan, password: 8d4ab0f0-79be-11eb-be0b-1239d0255272, skip-cert-verify: false}
+  - {name: JP_71 TG@peekfun, server: 45.66.134.219, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, skip-cert-verify: false}
+  - {name: JP_72 TG@peekfun, server: 45.66.134.219, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: false}
+  - {name: JP_73 TG@peekfun, server: 106.180.225.69, port: 1443, type: trojan, password: 7x42LetRa0, skip-cert-verify: false}
+  - {name: JP_74 TG@peekfun, server: 45.66.134.219, port: 443, type: trojan, password: 36ebef7d1b1d6205fd0c55f28800e674, skip-cert-verify: false}
+  - {name: JP_75 TG@peekfun, server: jgw4.gaox.ml, port: 443, type: trojan, password: b7e0e71f-070c-437a-9826-6e23caeb0307, skip-cert-verify: false}
+  - {name: KR_76 TG@peekfun, server: jgw3.gaox.ml, port: 443, type: trojan, password: a1718180-d616-4b71-9bb6-3e96ba20f921, skip-cert-verify: false}
+  - {name: NL_77 TG@peekfun, server: 213.183.59.206, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM}
+  - {name: NL_78 TG@peekfun, server: 213.183.59.206, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE}
+  - {name: NL_79 TG@peekfun, server: 185.246.155.35, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX}
+  - {name: NL_80 TG@peekfun, server: 185.246.155.23, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU}
+  - {name: NL_81 TG@peekfun, server: 213.183.59.206, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN}
+  - {name: NL_82 TG@peekfun, server: 213.183.59.206, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ}
+  - {name: NL_83 TG@peekfun, server: jp.useanlo.cf, port: 6523, type: trojan, password: b64b0f9c-23df-3112-a790-d8aa068aa2fe, skip-cert-verify: false}
+  - {name: NL_84 TG@peekfun, server: 41.216.177.41, port: 443, type: trojan, password: 274c1b23-2bfe-40ac-943c-ebc1aa044b22, skip-cert-verify: false}
+  - {name: RO_85 TG@peekfun, server: 185.126.116.235, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: false}
+  - {name: RO_86 TG@peekfun, server: 185.126.116.235, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, skip-cert-verify: false}
+  - {name: RO_87 TG@peekfun, server: 185.126.116.235, port: 443, type: trojan, password: 36ebef7d1b1d6205fd0c55f28800e674, skip-cert-verify: false}
+  - {name: RU_88 TG@peekfun, server: us1.nodegz.top, port: 443, type: trojan, password: 440055a3-7c84-3cb3-9b7a-a974a66e9b98, skip-cert-verify: false}
+  - {name: SG_89 TG@peekfun, server: w12.udpgw.com, port: 443, type: trojan, password: 08964210-e7b8-11ec-95aa-1239d0255272, skip-cert-verify: false}
+  - {name: SG_90 TG@peekfun, server: trojan2.udpgw.com, port: 443, type: trojan, password: 973ef350-f6a5-11ec-9274-1239d0255272, skip-cert-verify: false}
+  - {name: SG_91 TG@peekfun, server: 81.90.189.85, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: false}
+  - {name: SG_92 TG@peekfun, server: trojan3.udpgw.com, port: 443, type: trojan, password: 8db1b560-019d-11ed-8bdf-1239d0255272, skip-cert-verify: false}
+  - {name: TW_93 TG@peekfun, server: 2.58.242.43, port: 443, type: trojan, password: YWVzLTI1Ni1nY206eHBRd3lWNFc1RmRBNk5NQU5KSng3M1VT, skip-cert-verify: false}
+  - {name: TW_94 TG@peekfun, server: pastry.taiwanesefood.link, port: 443, type: trojan, password: ZVqSTHcLasKIKGnzjnr8aHRPATiaTj5U, skip-cert-verify: false}
+  - {name: TW_95 TG@peekfun, server: 2.58.242.43, port: 443, type: trojan, password: 7a9a3bb7-43b4YWVzLTI1Ni1nY206eHBRd3lWNFc1RmRBNk5NQU5KSng3M1VT, skip-cert-verify: false}
+  - {name: UA_96 TG@peekfun, server: ce.rutracker-cn.com, port: 443, type: trojan, password: 5y8y3CwxRVYhyfSY, skip-cert-verify: false}
+  - {name: US_97 TG@peekfun, server: 192.96.204.250, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ws}}
+  - {name: US_98 TG@peekfun, server: 104.19.3.32, port: 443, type: vmess, uuid: 9e6ceeff-2546-3690-ac00-6fcdf31dec94, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, servername: v2fly.samrt.website, network: ws, ws-opts: {path: /chcar}}
   - {name: US_99 TG@peekfun, server: 72.167.45.6, port: 443, type: trojan, password: 36ebef7d1b1d6205fd0c55f28800e674, skip-cert-verify: false}
   - {name: US_100 TG@peekfun, server: 72.167.45.6, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, skip-cert-verify: false}
   - {name: US_101 TG@peekfun, server: 72.167.33.106, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: false}
@@ -251,18 +255,20 @@ proxies:
   - {name: US_104 TG@peekfun, server: share.softbank.mjj-home.com, port: 443, type: trojan, password: share.mjj-home.com, skip-cert-verify: false}
   - {name: US_105 TG@peekfun, server: jp.useanlo.cf, port: 6523, type: trojan, password: 77065fa6-b38e-302c-beea-4b047967af01, skip-cert-verify: false}
   - {name: US_106 TG@peekfun, server: 184.168.127.50, port: 443, type: trojan, password: 36ebef7d1b1d6205fd0c55f28800e674, skip-cert-verify: false}
-  - {name: US_107 TG@peekfun, server: 184.168.127.50, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: false}
-  - {name: US_108 TG@peekfun, server: node-hk.pyhdxy.top, port: 10000, type: trojan, password: f9628fbd-ef2a-4d8a-baa7-9b8a56a91091, skip-cert-verify: false}
-  - {name: US_109 TG@peekfun, server: 173.82.192.61, port: 443, type: trojan, password: 7NzqVeVxSEsrdvgsdvsdsafcsdgvdfbgSDGFVDGVDSG, skip-cert-verify: false}
-  - {name: US_110 TG@peekfun, server: www.anloao.cf, port: 9053, type: trojan, password: b64b0f9c-23df-3112-a790-d8aa068aa2fe, skip-cert-verify: false}
-  - {name: US_111 TG@peekfun, server: s162.s2022.xyz, port: 23802, type: trojan, password: d724e4d0-841b-3b92-ac0d-70fcbbb7e934, skip-cert-verify: false}
-  - {name: US_112 TG@peekfun, server: s162.s2022.xyz, port: 23802, type: trojan, password: 770c9e92-f51b-3e52-b932-eba13fb56801, skip-cert-verify: false}
-  - {name: US_113 TG@peekfun, server: www.tokyo2023.ga, port: 443, type: trojan, password: 4f7dc540-d244-4e64-af21-4b5bb300add3, skip-cert-verify: false}
-  - {name: US_114 TG@peekfun, server: 72.167.45.6, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: false}
-  - {name: US_115 TG@peekfun, server: api.mjj-home.com, port: 443, type: trojan, password: share.mjj-home.com, skip-cert-verify: false}
-  - {name: ZZ_116 TG@peekfun, server: 134.195.196.85, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: ZZ_117 TG@peekfun, server: 103.172.116.7, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq}
-  - {name: ZZ_118 TG@peekfun, server: 103.173.155.72, port: 28443, type: trojan, password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, skip-cert-verify: false}
+  - {name: US_107 TG@peekfun, server: api.mjj-home.com, port: 443, type: trojan, password: share.mjj-home.com, skip-cert-verify: false}
+  - {name: US_108 TG@peekfun, server: rbobosz.tk, port: 23868, type: trojan, password: gMVN7PbEX2, skip-cert-verify: false}
+  - {name: US_109 TG@peekfun, server: 184.168.127.50, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: false}
+  - {name: US_110 TG@peekfun, server: cd.rutracker-cn.com, port: 443, type: trojan, password: ukMzuFSmIXDvgW0h, skip-cert-verify: false}
+  - {name: US_111 TG@peekfun, server: tw.softbank.mjj-home.com, port: 443, type: trojan, password: share.mjj-home.com, skip-cert-verify: false}
+  - {name: US_112 TG@peekfun, server: node-hk.pyhdxy.top, port: 10000, type: trojan, password: f9628fbd-ef2a-4d8a-baa7-9b8a56a91091, skip-cert-verify: false}
+  - {name: US_113 TG@peekfun, server: us-trojan.bonds.id, port: 443, type: trojan, password: 38239dd0-902b-11eb-afc1-1239d0255272, skip-cert-verify: false}
+  - {name: US_114 TG@peekfun, server: 173.82.192.61, port: 443, type: trojan, password: 7NzqVeVxSEsrdvgsdvsdsafcsdgvdfbgSDGFVDGVDSG, skip-cert-verify: false}
+  - {name: US_115 TG@peekfun, server: www.anloao.cf, port: 9053, type: trojan, password: b64b0f9c-23df-3112-a790-d8aa068aa2fe, skip-cert-verify: false}
+  - {name: US_116 TG@peekfun, server: s162.s2022.xyz, port: 23802, type: trojan, password: d724e4d0-841b-3b92-ac0d-70fcbbb7e934, skip-cert-verify: false}
+  - {name: US_117 TG@peekfun, server: s162.s2022.xyz, port: 23802, type: trojan, password: 770c9e92-f51b-3e52-b932-eba13fb56801, skip-cert-verify: false}
+  - {name: US_118 TG@peekfun, server: www.tokyo2023.ga, port: 443, type: trojan, password: 4f7dc540-d244-4e64-af21-4b5bb300add3, skip-cert-verify: false}
+  - {name: ZZ_119 TG@peekfun, server: 134.195.196.85, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: ZZ_120 TG@peekfun, server: 103.173.155.72, port: 28443, type: trojan, password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, skip-cert-verify: false}
   - {name: Relay_-🇹🇼TW_01, server: 14.29.124.168, port: 24004, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
   - {name: Relay_-🇹🇼TW_02, server: 14.29.124.168, port: 24002, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
   - {name: Relay_-🇺🇸US_03, server: do.cloudorg.uk, port: 10365, type: ss, cipher: chacha20-ietf-poly1305, password: 9682edd6-89e6-4e6a-b31d-271089771d87}
@@ -4754,19 +4760,19 @@ proxies:
   - {name: 🇺🇸 Relay_🇺🇸US-🇺🇸US_69 |17.81Mb, server: kr05.wangxd.life, port: 3052, type: trojan, password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e, skip-cert-verify: false}
   - {name: ZZ_71 |60.81Mb, server: 134.195.196.149, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
   - {name: ZZ_72 |59.81Mb, server: 134.195.196.85, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: AU_01 TG@peekfun 2, server: jgwdb4.gaox.ml, port: 443, type: trojan, password: d06a3f01-1ff0-4792-9b8e-a5a604bc74a2, skip-cert-verify: false}
-  - {name: CA_02 TG@peekfun 2, server: 165.154.226.108, port: 443, type: trojan, password: gb8cLR, skip-cert-verify: false}
-  - {name: CN_03 TG@peekfun 2, server: 14.29.124.168, port: 24007, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_04 TG@peekfun 2, server: 14.29.124.168, port: 24005, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_05 TG@peekfun 2, server: 14.29.124.168, port: 25270, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_06 TG@peekfun 2, server: 14.29.124.168, port: 25245, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CA_01 TG@peekfun 2, server: 165.154.226.108, port: 443, type: trojan, password: gb8cLR, skip-cert-verify: false}
+  - {name: CN_02 TG@peekfun 2, server: 14.29.124.168, port: 24007, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_03 TG@peekfun 2, server: 14.29.124.168, port: 24005, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_04 TG@peekfun 2, server: 14.29.124.168, port: 25270, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_05 TG@peekfun 2, server: 14.29.124.168, port: 25245, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_06 TG@peekfun 2, server: 14.29.124.174, port: 11013, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
   - {name: CN_07 TG@peekfun 2, server: 14.29.124.168, port: 25210, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
   - {name: CN_08 TG@peekfun 2, server: 14.29.124.168, port: 25218, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
   - {name: CN_09 TG@peekfun 2, server: 14.29.124.168, port: 25289, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
   - {name: CN_10 TG@peekfun 2, server: 14.29.124.168, port: 25287, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
   - {name: CN_11 TG@peekfun 2, server: 14.29.124.168, port: 25295, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
   - {name: CN_12 TG@peekfun 2, server: 14.29.124.174, port: 11005, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_13 TG@peekfun 2, server: 14.29.124.174, port: 11016, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_13 TG@peekfun 2, server: 14.29.124.174, port: 11033, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
   - {name: CN_14 TG@peekfun 2, server: 14.29.124.168, port: 25220, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
   - {name: CN_15 TG@peekfun 2, server: 14.29.124.168, port: 25271, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
   - {name: CN_16 TG@peekfun 2, server: 14.29.124.168, port: 25279, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
@@ -4774,33 +4780,33 @@ proxies:
   - {name: CN_18 TG@peekfun 2, server: 14.29.124.168, port: 25235, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
   - {name: CN_19 TG@peekfun 2, server: 14.29.124.168, port: 25238, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
   - {name: CN_20 TG@peekfun 2, server: 14.29.124.168, port: 25294, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_21 TG@peekfun 2, server: 14.29.124.168, port: 25296, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_22 TG@peekfun 2, server: 14.29.124.168, port: 25231, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_23 TG@peekfun 2, server: 14.29.124.168, port: 25252, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_24 TG@peekfun 2, server: 14.29.124.168, port: 25283, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_25 TG@peekfun 2, server: 14.29.124.168, port: 25219, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_26 TG@peekfun 2, server: 14.29.124.168, port: 25230, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_27 TG@peekfun 2, server: 14.29.124.168, port: 25241, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_28 TG@peekfun 2, server: 14.29.124.168, port: 25233, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_29 TG@peekfun 2, server: 14.29.124.168, port: 25268, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_30 TG@peekfun 2, server: 14.29.124.168, port: 25267, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_31 TG@peekfun 2, server: 14.29.124.168, port: 25261, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_32 TG@peekfun 2, server: 14.29.124.168, port: 25280, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_33 TG@peekfun 2, server: 14.29.124.168, port: 25254, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_34 TG@peekfun 2, server: 14.29.124.168, port: 25247, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_35 TG@peekfun 2, server: 14.29.124.168, port: 25259, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_36 TG@peekfun 2, server: 14.29.124.168, port: 25272, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_37 TG@peekfun 2, server: 14.29.124.168, port: 25207, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_38 TG@peekfun 2, server: 14.29.124.168, port: 25222, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_39 TG@peekfun 2, server: 14.29.124.168, port: 25266, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_40 TG@peekfun 2, server: 14.29.124.168, port: 25226, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_41 TG@peekfun 2, server: 14.29.124.168, port: 25297, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_42 TG@peekfun 2, server: 14.29.124.168, port: 25251, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_43 TG@peekfun 2, server: 14.29.124.168, port: 24006, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_44 TG@peekfun 2, server: 14.29.124.168, port: 24008, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_45 TG@peekfun 2, server: 14.29.124.168, port: 24000, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_46 TG@peekfun 2, server: 14.29.124.168, port: 25284, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_47 TG@peekfun 2, server: 14.29.124.168, port: 25256, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_21 TG@peekfun 2, server: 14.29.124.168, port: 25231, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_22 TG@peekfun 2, server: 14.29.124.168, port: 25252, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_23 TG@peekfun 2, server: 14.29.124.168, port: 25283, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_24 TG@peekfun 2, server: 14.29.124.168, port: 25219, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_25 TG@peekfun 2, server: 14.29.124.168, port: 25230, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_26 TG@peekfun 2, server: 14.29.124.168, port: 25241, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_27 TG@peekfun 2, server: 14.29.124.168, port: 25233, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_28 TG@peekfun 2, server: 14.29.124.168, port: 25268, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_29 TG@peekfun 2, server: 14.29.124.168, port: 25267, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_30 TG@peekfun 2, server: 14.29.124.168, port: 25261, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_31 TG@peekfun 2, server: 14.29.124.168, port: 25280, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_32 TG@peekfun 2, server: 14.29.124.168, port: 25254, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_33 TG@peekfun 2, server: 14.29.124.168, port: 25247, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_34 TG@peekfun 2, server: 14.29.124.168, port: 25259, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_35 TG@peekfun 2, server: 14.29.124.168, port: 25272, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_36 TG@peekfun 2, server: 14.29.124.168, port: 25207, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_37 TG@peekfun 2, server: 14.29.124.168, port: 25222, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_38 TG@peekfun 2, server: 14.29.124.168, port: 25266, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_39 TG@peekfun 2, server: 14.29.124.168, port: 25226, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_40 TG@peekfun 2, server: 14.29.124.168, port: 25297, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_41 TG@peekfun 2, server: 14.29.124.168, port: 25251, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_42 TG@peekfun 2, server: 14.29.124.168, port: 24006, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_43 TG@peekfun 2, server: 14.29.124.168, port: 24008, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_44 TG@peekfun 2, server: 14.29.124.168, port: 24009, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_45 TG@peekfun 2, server: 14.29.124.168, port: 25284, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_46 TG@peekfun 2, server: 14.29.124.168, port: 25256, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_47 TG@peekfun 2, server: 14.29.124.168, port: 24001, type: ssr, cipher: aes-128-cfb, password: QazEdcTgb159@$*, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
   - {name: CN_48 TG@peekfun 2, server: shlt.sub-nthu.com, port: 35003, type: trojan, password: eda8a8e5-1076-4d7b-b1d0-5003a0350073, skip-cert-verify: false}
   - {name: CN_49 TG@peekfun 2, server: cn2hn.sub-nthu.com, port: 35002, type: trojan, password: eda8a8e5-1076-4d7b-b1d0-5003a0350073, skip-cert-verify: false}
   - {name: CN_50 TG@peekfun 2, server: cscu.wecanfly.top, port: 40003, type: trojan, password: 58975106-dc46-4942-b79e-336da67f1bbd, skip-cert-verify: false}
@@ -4811,47 +4817,47 @@ proxies:
   - {name: CN_55 TG@peekfun 2, server: cn2hn.sub-nthu.com, port: 35007, type: trojan, password: eda8a8e5-1076-4d7b-b1d0-5003a0350073, skip-cert-verify: false}
   - {name: CN_56 TG@peekfun 2, server: jp-tyo-04-tr.cdn.savoy.click, port: 889, type: trojan, password: UiLPqefVfielqkDjEwBV, skip-cert-verify: false}
   - {name: CN_57 TG@peekfun 2, server: shlt.sub-nthu.com, port: 35001, type: trojan, password: 87d5ee80-9dfa-4cb5-b644-062803bd0c19, skip-cert-verify: false}
-  - {name: CN_58 TG@peekfun 2, server: jp-tyo-04-tr.cdn.savoy.click, port: 889, type: trojan, password: SfobRIcergHchqBFzzua, skip-cert-verify: false}
-  - {name: CN_59 TG@peekfun 2, server: ygzyd.sub-nthu.com, port: 35003, type: trojan, password: 87d5ee80-9dfa-4cb5-b644-062803bd0c19, skip-cert-verify: false}
-  - {name: CN_60 TG@peekfun 2, server: cscu.wecanfly.top, port: 40003, type: trojan, password: 5eaea1b9-b977-3391-b7cb-370addb40ce2, skip-cert-verify: false}
-  - {name: CN_61 TG@peekfun 2, server: shlt.sub-nthu.com, port: 35007, type: trojan, password: eda8a8e5-1076-4d7b-b1d0-5003a0350073, skip-cert-verify: false}
-  - {name: CN_62 TG@peekfun 2, server: ygzyd.sub-nthu.com, port: 35000, type: trojan, password: eda8a8e5-1076-4d7b-b1d0-5003a0350073, skip-cert-verify: false}
-  - {name: CN_63 TG@peekfun 2, server: cn2hn.sub-nthu.com, port: 35000, type: trojan, password: eda8a8e5-1076-4d7b-b1d0-5003a0350073, skip-cert-verify: false}
-  - {name: CN_64 TG@peekfun 2, server: shlt.sub-nthu.com, port: 35000, type: trojan, password: eda8a8e5-1076-4d7b-b1d0-5003a0350073, skip-cert-verify: false}
-  - {name: CN_65 TG@peekfun 2, server: cn2hn.sub-nthu.com, port: 35003, type: trojan, password: eda8a8e5-1076-4d7b-b1d0-5003a0350073, skip-cert-verify: false}
-  - {name: DE_66 TG@peekfun 2, server: 165.22.73.126, port: 23335, type: ss, cipher: aes-256-cfb, password: 7d99ae502227454ea998d71e4b62a388}
-  - {name: DE_67 TG@peekfun 2, server: 49.12.203.80, port: 40960, type: ss, cipher: aes-256-gcm, password: 6kA7b3f9Aw2508erQ3W7D4}
-  - {name: HK_68 TG@peekfun 2, server: 103.103.245.125, port: 50418, type: trojan, password: a70b39d1-62ea-4d9e-b681-9c5408352234, skip-cert-verify: false}
-  - {name: HK_69 TG@peekfun 2, server: 103.103.245.125, port: 50206, type: trojan, password: 789d73af-b985-4778-9872-211047c28015, skip-cert-verify: false}
-  - {name: HK_70 TG@peekfun 2, server: hk31.ssgnode.ga, port: 443, type: trojan, password: 41742_920c8caa, skip-cert-verify: false}
-  - {name: IT_71 TG@peekfun 2, server: tw-tpe-h-tr.cdn.savoy.click, port: 10089, type: trojan, password: kFyvvCcvMXQKFcJZWuxcdTZOFummlVbf, skip-cert-verify: false}
-  - {name: JP_72 TG@peekfun 2, server: 45.66.134.219, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, skip-cert-verify: false}
-  - {name: JP_73 TG@peekfun 2, server: 45.66.134.219, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: false}
-  - {name: JP_74 TG@peekfun 2, server: 106.180.225.69, port: 1443, type: trojan, password: 7x42LetRa0, skip-cert-verify: false}
-  - {name: JP_75 TG@peekfun 2, server: 45.66.134.219, port: 443, type: trojan, password: 36ebef7d1b1d6205fd0c55f28800e674, skip-cert-verify: false}
-  - {name: JP_76 TG@peekfun 2, server: jgw4.gaox.ml, port: 443, type: trojan, password: b7e0e71f-070c-437a-9826-6e23caeb0307, skip-cert-verify: false}
-  - {name: KR_77 TG@peekfun 2, server: jgw3.gaox.ml, port: 443, type: trojan, password: a1718180-d616-4b71-9bb6-3e96ba20f921, skip-cert-verify: false}
-  - {name: LT_78 TG@peekfun 2, server: 213.183.53.208, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb}
-  - {name: NL_79 TG@peekfun 2, server: 213.183.59.206, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE}
-  - {name: NL_80 TG@peekfun 2, server: 213.183.59.206, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY}
-  - {name: NL_81 TG@peekfun 2, server: jp.useanlo.cf, port: 6523, type: trojan, password: b64b0f9c-23df-3112-a790-d8aa068aa2fe, skip-cert-verify: false}
-  - {name: NL_82 TG@peekfun 2, server: 41.216.177.41, port: 443, type: trojan, password: 274c1b23-2bfe-40ac-943c-ebc1aa044b22, skip-cert-verify: false}
-  - {name: RO_83 TG@peekfun 2, server: 185.126.116.235, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: false}
-  - {name: RO_84 TG@peekfun 2, server: 185.126.116.235, port: 443, type: trojan, password: 36ebef7d1b1d6205fd0c55f28800e674, skip-cert-verify: false}
-  - {name: RO_85 TG@peekfun 2, server: 185.126.116.235, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, skip-cert-verify: false}
-  - {name: RU_86 TG@peekfun 2, server: us1.nodegz.top, port: 443, type: trojan, password: 440055a3-7c84-3cb3-9b7a-a974a66e9b98, skip-cert-verify: false}
-  - {name: SG_87 TG@peekfun 2, server: 73hk02.ok365.cyou, port: 443, type: trojan, password: f78a9262-fa0a-4aa3-8050-99be924c0d0c, skip-cert-verify: false}
-  - {name: SG_88 TG@peekfun 2, server: w12.udpgw.com, port: 443, type: trojan, password: 08964210-e7b8-11ec-95aa-1239d0255272, skip-cert-verify: false}
-  - {name: SG_89 TG@peekfun 2, server: trojan2.udpgw.com, port: 443, type: trojan, password: 973ef350-f6a5-11ec-9274-1239d0255272, skip-cert-verify: false}
-  - {name: SG_90 TG@peekfun 2, server: 81.90.189.85, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: false}
-  - {name: SG_91 TG@peekfun 2, server: trojan3.udpgw.com, port: 443, type: trojan, password: 8db1b560-019d-11ed-8bdf-1239d0255272, skip-cert-verify: false}
-  - {name: TW_92 TG@peekfun 2, server: 2.58.242.43, port: 443, type: trojan, password: YWVzLTI1Ni1nY206eHBRd3lWNFc1RmRBNk5NQU5KSng3M1VT, skip-cert-verify: false}
-  - {name: TW_93 TG@peekfun 2, server: 2.58.242.43, port: 443, type: trojan, password: 7a9a3bb7-43b4YWVzLTI1Ni1nY206eHBRd3lWNFc1RmRBNk5NQU5KSng3M1VT, skip-cert-verify: false}
-  - {name: US_94 TG@peekfun 2, server: 38.75.136.102, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: US_95 TG@peekfun 2, server: 38.114.114.69, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: US_96 TG@peekfun 2, server: 192.96.204.250, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ws}}
-  - {name: US_97 TG@peekfun 2, server: 45.35.84.162, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, servername: usa-dallas.lvuft.com, network: ws, ws-opts: {path: /ws}}
-  - {name: US_98 TG@peekfun 2, server: 72.167.33.106, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, skip-cert-verify: false}
+  - {name: CN_58 TG@peekfun 2, server: hygz.doggogogo.top, port: 50102, type: trojan, password: 5eaea1b9-b977-3391-b7cb-370addb40ce2, skip-cert-verify: false}
+  - {name: CN_59 TG@peekfun 2, server: jp-tyo-04-tr.cdn.savoy.click, port: 889, type: trojan, password: SfobRIcergHchqBFzzua, skip-cert-verify: false}
+  - {name: CN_60 TG@peekfun 2, server: ygzyd.sub-nthu.com, port: 35003, type: trojan, password: 87d5ee80-9dfa-4cb5-b644-062803bd0c19, skip-cert-verify: false}
+  - {name: CN_61 TG@peekfun 2, server: cscu.wecanfly.top, port: 40003, type: trojan, password: 5eaea1b9-b977-3391-b7cb-370addb40ce2, skip-cert-verify: false}
+  - {name: CN_62 TG@peekfun 2, server: hygz.doggogogo.top, port: 50102, type: trojan, password: 58975106-dc46-4942-b79e-336da67f1bbd, skip-cert-verify: false}
+  - {name: CN_63 TG@peekfun 2, server: shlt.sub-nthu.com, port: 35007, type: trojan, password: eda8a8e5-1076-4d7b-b1d0-5003a0350073, skip-cert-verify: false}
+  - {name: CN_64 TG@peekfun 2, server: ygzyd.sub-nthu.com, port: 35000, type: trojan, password: eda8a8e5-1076-4d7b-b1d0-5003a0350073, skip-cert-verify: false}
+  - {name: CN_65 TG@peekfun 2, server: cn2hn.sub-nthu.com, port: 35000, type: trojan, password: eda8a8e5-1076-4d7b-b1d0-5003a0350073, skip-cert-verify: false}
+  - {name: CN_66 TG@peekfun 2, server: shlt.sub-nthu.com, port: 35000, type: trojan, password: eda8a8e5-1076-4d7b-b1d0-5003a0350073, skip-cert-verify: false}
+  - {name: CN_67 TG@peekfun 2, server: cn2hn.sub-nthu.com, port: 35003, type: trojan, password: eda8a8e5-1076-4d7b-b1d0-5003a0350073, skip-cert-verify: false}
+  - {name: HK_68 TG@peekfun 2, server: 103.103.245.125, port: 50350, type: trojan, password: 006bca8c-4e1f-44e0-9399-1cd4ff480a40, skip-cert-verify: false}
+  - {name: HK_69 TG@peekfun 2, server: hk31.ssgnode.ga, port: 443, type: trojan, password: 41742_920c8caa, skip-cert-verify: false}
+  - {name: ID_70 TG@peekfun 2, server: id2-trojan.bonds.id, port: 443, type: trojan, password: 8d4ab0f0-79be-11eb-be0b-1239d0255272, skip-cert-verify: false}
+  - {name: JP_71 TG@peekfun 2, server: 45.66.134.219, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, skip-cert-verify: false}
+  - {name: JP_72 TG@peekfun 2, server: 45.66.134.219, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: false}
+  - {name: JP_73 TG@peekfun 2, server: 106.180.225.69, port: 1443, type: trojan, password: 7x42LetRa0, skip-cert-verify: false}
+  - {name: JP_74 TG@peekfun 2, server: 45.66.134.219, port: 443, type: trojan, password: 36ebef7d1b1d6205fd0c55f28800e674, skip-cert-verify: false}
+  - {name: JP_75 TG@peekfun 2, server: jgw4.gaox.ml, port: 443, type: trojan, password: b7e0e71f-070c-437a-9826-6e23caeb0307, skip-cert-verify: false}
+  - {name: KR_76 TG@peekfun 2, server: jgw3.gaox.ml, port: 443, type: trojan, password: a1718180-d616-4b71-9bb6-3e96ba20f921, skip-cert-verify: false}
+  - {name: NL_77 TG@peekfun 2, server: 213.183.59.206, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM}
+  - {name: NL_78 TG@peekfun 2, server: 213.183.59.206, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE}
+  - {name: NL_79 TG@peekfun 2, server: 185.246.155.35, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX}
+  - {name: NL_80 TG@peekfun 2, server: 185.246.155.23, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU}
+  - {name: NL_81 TG@peekfun 2, server: 213.183.59.206, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN}
+  - {name: NL_82 TG@peekfun 2, server: 213.183.59.206, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ}
+  - {name: NL_83 TG@peekfun 2, server: jp.useanlo.cf, port: 6523, type: trojan, password: b64b0f9c-23df-3112-a790-d8aa068aa2fe, skip-cert-verify: false}
+  - {name: NL_84 TG@peekfun 2, server: 41.216.177.41, port: 443, type: trojan, password: 274c1b23-2bfe-40ac-943c-ebc1aa044b22, skip-cert-verify: false}
+  - {name: RO_85 TG@peekfun 2, server: 185.126.116.235, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: false}
+  - {name: RO_86 TG@peekfun 2, server: 185.126.116.235, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, skip-cert-verify: false}
+  - {name: RO_87 TG@peekfun 2, server: 185.126.116.235, port: 443, type: trojan, password: 36ebef7d1b1d6205fd0c55f28800e674, skip-cert-verify: false}
+  - {name: RU_88 TG@peekfun 2, server: us1.nodegz.top, port: 443, type: trojan, password: 440055a3-7c84-3cb3-9b7a-a974a66e9b98, skip-cert-verify: false}
+  - {name: SG_89 TG@peekfun 2, server: w12.udpgw.com, port: 443, type: trojan, password: 08964210-e7b8-11ec-95aa-1239d0255272, skip-cert-verify: false}
+  - {name: SG_90 TG@peekfun 2, server: trojan2.udpgw.com, port: 443, type: trojan, password: 973ef350-f6a5-11ec-9274-1239d0255272, skip-cert-verify: false}
+  - {name: SG_91 TG@peekfun 2, server: 81.90.189.85, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: false}
+  - {name: SG_92 TG@peekfun 2, server: trojan3.udpgw.com, port: 443, type: trojan, password: 8db1b560-019d-11ed-8bdf-1239d0255272, skip-cert-verify: false}
+  - {name: TW_93 TG@peekfun 2, server: 2.58.242.43, port: 443, type: trojan, password: YWVzLTI1Ni1nY206eHBRd3lWNFc1RmRBNk5NQU5KSng3M1VT, skip-cert-verify: false}
+  - {name: TW_94 TG@peekfun 2, server: pastry.taiwanesefood.link, port: 443, type: trojan, password: ZVqSTHcLasKIKGnzjnr8aHRPATiaTj5U, skip-cert-verify: false}
+  - {name: TW_95 TG@peekfun 2, server: 2.58.242.43, port: 443, type: trojan, password: 7a9a3bb7-43b4YWVzLTI1Ni1nY206eHBRd3lWNFc1RmRBNk5NQU5KSng3M1VT, skip-cert-verify: false}
+  - {name: UA_96 TG@peekfun 2, server: ce.rutracker-cn.com, port: 443, type: trojan, password: 5y8y3CwxRVYhyfSY, skip-cert-verify: false}
+  - {name: US_97 TG@peekfun 2, server: 192.96.204.250, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ws}}
+  - {name: US_98 TG@peekfun 2, server: 104.19.3.32, port: 443, type: vmess, uuid: 9e6ceeff-2546-3690-ac00-6fcdf31dec94, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, servername: v2fly.samrt.website, network: ws, ws-opts: {path: /chcar}}
   - {name: US_99 TG@peekfun 2, server: 72.167.45.6, port: 443, type: trojan, password: 36ebef7d1b1d6205fd0c55f28800e674, skip-cert-verify: false}
   - {name: US_100 TG@peekfun 2, server: 72.167.45.6, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, skip-cert-verify: false}
   - {name: US_101 TG@peekfun 2, server: 72.167.33.106, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: false}
@@ -4860,18 +4866,20 @@ proxies:
   - {name: US_104 TG@peekfun 2, server: share.softbank.mjj-home.com, port: 443, type: trojan, password: share.mjj-home.com, skip-cert-verify: false}
   - {name: US_105 TG@peekfun 2, server: jp.useanlo.cf, port: 6523, type: trojan, password: 77065fa6-b38e-302c-beea-4b047967af01, skip-cert-verify: false}
   - {name: US_106 TG@peekfun 2, server: 184.168.127.50, port: 443, type: trojan, password: 36ebef7d1b1d6205fd0c55f28800e674, skip-cert-verify: false}
-  - {name: US_107 TG@peekfun 2, server: 184.168.127.50, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: false}
-  - {name: US_108 TG@peekfun 2, server: node-hk.pyhdxy.top, port: 10000, type: trojan, password: f9628fbd-ef2a-4d8a-baa7-9b8a56a91091, skip-cert-verify: false}
-  - {name: US_109 TG@peekfun 2, server: 173.82.192.61, port: 443, type: trojan, password: 7NzqVeVxSEsrdvgsdvsdsafcsdgvdfbgSDGFVDGVDSG, skip-cert-verify: false}
-  - {name: US_110 TG@peekfun 2, server: www.anloao.cf, port: 9053, type: trojan, password: b64b0f9c-23df-3112-a790-d8aa068aa2fe, skip-cert-verify: false}
-  - {name: US_111 TG@peekfun 2, server: s162.s2022.xyz, port: 23802, type: trojan, password: d724e4d0-841b-3b92-ac0d-70fcbbb7e934, skip-cert-verify: false}
-  - {name: US_112 TG@peekfun 2, server: s162.s2022.xyz, port: 23802, type: trojan, password: 770c9e92-f51b-3e52-b932-eba13fb56801, skip-cert-verify: false}
-  - {name: US_113 TG@peekfun 2, server: www.tokyo2023.ga, port: 443, type: trojan, password: 4f7dc540-d244-4e64-af21-4b5bb300add3, skip-cert-verify: false}
-  - {name: US_114 TG@peekfun 2, server: 72.167.45.6, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: false}
-  - {name: US_115 TG@peekfun 2, server: api.mjj-home.com, port: 443, type: trojan, password: share.mjj-home.com, skip-cert-verify: false}
-  - {name: ZZ_116 TG@peekfun 2, server: 134.195.196.85, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: ZZ_117 TG@peekfun 2, server: 103.172.116.7, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq}
-  - {name: ZZ_118 TG@peekfun 2, server: 103.173.155.72, port: 28443, type: trojan, password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, skip-cert-verify: false}
+  - {name: US_107 TG@peekfun 2, server: api.mjj-home.com, port: 443, type: trojan, password: share.mjj-home.com, skip-cert-verify: false}
+  - {name: US_108 TG@peekfun 2, server: rbobosz.tk, port: 23868, type: trojan, password: gMVN7PbEX2, skip-cert-verify: false}
+  - {name: US_109 TG@peekfun 2, server: 184.168.127.50, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: false}
+  - {name: US_110 TG@peekfun 2, server: cd.rutracker-cn.com, port: 443, type: trojan, password: ukMzuFSmIXDvgW0h, skip-cert-verify: false}
+  - {name: US_111 TG@peekfun 2, server: tw.softbank.mjj-home.com, port: 443, type: trojan, password: share.mjj-home.com, skip-cert-verify: false}
+  - {name: US_112 TG@peekfun 2, server: node-hk.pyhdxy.top, port: 10000, type: trojan, password: f9628fbd-ef2a-4d8a-baa7-9b8a56a91091, skip-cert-verify: false}
+  - {name: US_113 TG@peekfun 2, server: us-trojan.bonds.id, port: 443, type: trojan, password: 38239dd0-902b-11eb-afc1-1239d0255272, skip-cert-verify: false}
+  - {name: US_114 TG@peekfun 2, server: 173.82.192.61, port: 443, type: trojan, password: 7NzqVeVxSEsrdvgsdvsdsafcsdgvdfbgSDGFVDGVDSG, skip-cert-verify: false}
+  - {name: US_115 TG@peekfun 2, server: www.anloao.cf, port: 9053, type: trojan, password: b64b0f9c-23df-3112-a790-d8aa068aa2fe, skip-cert-verify: false}
+  - {name: US_116 TG@peekfun 2, server: s162.s2022.xyz, port: 23802, type: trojan, password: d724e4d0-841b-3b92-ac0d-70fcbbb7e934, skip-cert-verify: false}
+  - {name: US_117 TG@peekfun 2, server: s162.s2022.xyz, port: 23802, type: trojan, password: 770c9e92-f51b-3e52-b932-eba13fb56801, skip-cert-verify: false}
+  - {name: US_118 TG@peekfun 2, server: www.tokyo2023.ga, port: 443, type: trojan, password: 4f7dc540-d244-4e64-af21-4b5bb300add3, skip-cert-verify: false}
+  - {name: ZZ_119 TG@peekfun 2, server: 134.195.196.85, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: ZZ_120 TG@peekfun 2, server: 103.173.155.72, port: 28443, type: trojan, password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, skip-cert-verify: false}
 proxy-groups:
   - name: 🇭🇰 香港节点
     type: select
@@ -4880,7 +4888,6 @@ proxy-groups:
       - HK_12 2
       - HK_68 TG@peekfun
       - HK_69 TG@peekfun
-      - HK_70 TG@peekfun
       - 🇨🇳 Relay_🇨🇳CN-🇭🇰HK_10
       - 🇨🇳 Relay_🇨🇳CN-🇭🇰HK_11
       - HK_264
@@ -4917,17 +4924,16 @@ proxy-groups:
       - 🇨🇳 Relay_🇹🇼TW-🇭🇰HK_751
       - HK_68 TG@peekfun 2
       - HK_69 TG@peekfun 2
-      - HK_70 TG@peekfun 2
   - name: 🇯🇵 日本节点
     type: select
     proxies:
       - JP_13
       - JP_13 2
+      - JP_71 TG@peekfun
       - JP_72 TG@peekfun
       - JP_73 TG@peekfun
       - JP_74 TG@peekfun
       - JP_75 TG@peekfun
-      - JP_76 TG@peekfun
       - Pool_🇯🇵JP_278
       - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_279
       - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_280
@@ -5032,15 +5038,14 @@ proxy-groups:
       - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_329
       - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_330
       - Pool_🇯🇵JP_12 |19.98Mb
+      - JP_71 TG@peekfun 2
       - JP_72 TG@peekfun 2
       - JP_73 TG@peekfun 2
       - JP_74 TG@peekfun 2
       - JP_75 TG@peekfun 2
-      - JP_76 TG@peekfun 2
   - name: 🇺🇲 美国节点
     type: select
     proxies:
-      - US_36
       - US_37
       - US_38
       - US_39
@@ -5072,7 +5077,8 @@ proxy-groups:
       - US_65
       - US_66
       - US_67
-      - US_36 2
+      - US_68
+      - US_69
       - US_37 2
       - US_38 2
       - US_39 2
@@ -5104,9 +5110,8 @@ proxy-groups:
       - US_65 2
       - US_66 2
       - US_67 2
-      - US_94 TG@peekfun
-      - US_95 TG@peekfun
-      - US_96 TG@peekfun
+      - US_68 2
+      - US_69 2
       - US_97 TG@peekfun
       - US_98 TG@peekfun
       - US_99 TG@peekfun
@@ -5126,6 +5131,9 @@ proxy-groups:
       - US_113 TG@peekfun
       - US_114 TG@peekfun
       - US_115 TG@peekfun
+      - US_116 TG@peekfun
+      - US_117 TG@peekfun
+      - US_118 TG@peekfun
       - Relay_-🇺🇸US_03
       - US_09
       - US_10
@@ -6649,9 +6657,6 @@ proxy-groups:
       - US_67 |42.67Mb
       - US_68 | 2.46Mb
       - 🇺🇸 Relay_🇺🇸US-🇺🇸US_69 |17.81Mb
-      - US_94 TG@peekfun 2
-      - US_95 TG@peekfun 2
-      - US_96 TG@peekfun 2
       - US_97 TG@peekfun 2
       - US_98 TG@peekfun 2
       - US_99 TG@peekfun 2
@@ -6671,11 +6676,15 @@ proxy-groups:
       - US_113 TG@peekfun 2
       - US_114 TG@peekfun 2
       - US_115 TG@peekfun 2
+      - US_116 TG@peekfun 2
+      - US_117 TG@peekfun 2
+      - US_118 TG@peekfun 2
   - name: 🇨🇳 台湾节点
     type: select
     proxies:
-      - TW_92 TG@peekfun
       - TW_93 TG@peekfun
+      - TW_94 TG@peekfun
+      - TW_95 TG@peekfun
       - Relay_-🇹🇼TW_01
       - Relay_-🇹🇼TW_02
       - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_363
@@ -6700,16 +6709,16 @@ proxy-groups:
       - 🇨🇳 Relay_🇹🇼TW-🇭🇰HK_751
       - TW_752
       - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_753
-      - TW_92 TG@peekfun 2
       - TW_93 TG@peekfun 2
+      - TW_94 TG@peekfun 2
+      - TW_95 TG@peekfun 2
   - name: 🇸🇬 狮城节点
     type: select
     proxies:
-      - SG_87 TG@peekfun
-      - SG_88 TG@peekfun
       - SG_89 TG@peekfun
       - SG_90 TG@peekfun
       - SG_91 TG@peekfun
+      - SG_92 TG@peekfun
       - SG_360
       - SG_361
       - SG_362
@@ -6766,15 +6775,14 @@ proxy-groups:
       - SG_745
       - 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_746
       - SG_747
-      - SG_87 TG@peekfun 2
-      - SG_88 TG@peekfun 2
       - SG_89 TG@peekfun 2
       - SG_90 TG@peekfun 2
       - SG_91 TG@peekfun 2
+      - SG_92 TG@peekfun 2
   - name: 🇰🇷 韩国节点
     type: select
     proxies:
-      - KR_77 TG@peekfun
+      - KR_76 TG@peekfun
       - KR_281
       - KR_282
       - KR_283
@@ -6784,7 +6792,7 @@ proxy-groups:
       - KR_571
       - KR_572
       - KR_573
-      - KR_77 TG@peekfun 2
+      - KR_76 TG@peekfun 2
   - name: 🌍 其他地区
     type: select
     proxies:
@@ -6794,7 +6802,8 @@ proxy-groups:
     proxies:
       - CA_3
       - CA_3 2
-      - CA_02 TG@peekfun
+      - CA_01 TG@peekfun
+      - CN_02 TG@peekfun
       - CN_03 TG@peekfun
       - CN_04 TG@peekfun
       - CN_05 TG@peekfun
@@ -6858,6 +6867,8 @@ proxy-groups:
       - CN_63 TG@peekfun
       - CN_64 TG@peekfun
       - CN_65 TG@peekfun
+      - CN_66 TG@peekfun
+      - CN_67 TG@peekfun
       - CA_04
       - CA_05
       - CA_06
@@ -7517,7 +7528,8 @@ proxy-groups:
       - Relay_🇨🇿 CZ-🇺🇦UA_100
       - Relay_🇨🇿 CZ-🇺🇦UA_101
       - CA_03 |22.53Mb
-      - CA_02 TG@peekfun 2
+      - CA_01 TG@peekfun 2
+      - CN_02 TG@peekfun 2
       - CN_03 TG@peekfun 2
       - CN_04 TG@peekfun 2
       - CN_05 TG@peekfun 2
@@ -7581,6 +7593,8 @@ proxy-groups:
       - CN_63 TG@peekfun 2
       - CN_64 TG@peekfun 2
       - CN_65 TG@peekfun 2
+      - CN_66 TG@peekfun 2
+      - CN_67 TG@peekfun 2
   - name: ♻️ 手动切换
     type: select
     proxies:
@@ -7617,9 +7631,9 @@ proxy-groups:
       - NL_31
       - NL_32
       - NL_33
-      - RO_34
-      - RU_35
-      - US_36
+      - NL_34
+      - RO_35
+      - RU_36
       - US_37
       - US_38
       - US_39
@@ -7651,9 +7665,11 @@ proxy-groups:
       - US_65
       - US_66
       - US_67
-      - ZZ_68
-      - ZZ_69
+      - US_68
+      - US_69
       - ZZ_70
+      - ZZ_71
+      - ZZ_72
       - AU_1 2
       - AU_2 2
       - CA_3 2
@@ -7687,9 +7703,9 @@ proxy-groups:
       - NL_31 2
       - NL_32 2
       - NL_33 2
-      - RO_34 2
-      - RU_35 2
-      - US_36 2
+      - NL_34 2
+      - RO_35 2
+      - RU_36 2
       - US_37 2
       - US_38 2
       - US_39 2
@@ -7721,11 +7737,13 @@ proxy-groups:
       - US_65 2
       - US_66 2
       - US_67 2
-      - ZZ_68 2
-      - ZZ_69 2
+      - US_68 2
+      - US_69 2
       - ZZ_70 2
-      - AU_01 TG@peekfun
-      - CA_02 TG@peekfun
+      - ZZ_71 2
+      - ZZ_72 2
+      - CA_01 TG@peekfun
+      - CN_02 TG@peekfun
       - CN_03 TG@peekfun
       - CN_04 TG@peekfun
       - CN_05 TG@peekfun
@@ -7789,37 +7807,37 @@ proxy-groups:
       - CN_63 TG@peekfun
       - CN_64 TG@peekfun
       - CN_65 TG@peekfun
-      - DE_66 TG@peekfun
-      - DE_67 TG@peekfun
+      - CN_66 TG@peekfun
+      - CN_67 TG@peekfun
       - HK_68 TG@peekfun
       - HK_69 TG@peekfun
-      - HK_70 TG@peekfun
-      - IT_71 TG@peekfun
+      - ID_70 TG@peekfun
+      - JP_71 TG@peekfun
       - JP_72 TG@peekfun
       - JP_73 TG@peekfun
       - JP_74 TG@peekfun
       - JP_75 TG@peekfun
-      - JP_76 TG@peekfun
-      - KR_77 TG@peekfun
-      - LT_78 TG@peekfun
+      - KR_76 TG@peekfun
+      - NL_77 TG@peekfun
+      - NL_78 TG@peekfun
       - NL_79 TG@peekfun
       - NL_80 TG@peekfun
       - NL_81 TG@peekfun
       - NL_82 TG@peekfun
-      - RO_83 TG@peekfun
-      - RO_84 TG@peekfun
+      - NL_83 TG@peekfun
+      - NL_84 TG@peekfun
       - RO_85 TG@peekfun
-      - RU_86 TG@peekfun
-      - SG_87 TG@peekfun
-      - SG_88 TG@peekfun
+      - RO_86 TG@peekfun
+      - RO_87 TG@peekfun
+      - RU_88 TG@peekfun
       - SG_89 TG@peekfun
       - SG_90 TG@peekfun
       - SG_91 TG@peekfun
-      - TW_92 TG@peekfun
+      - SG_92 TG@peekfun
       - TW_93 TG@peekfun
-      - US_94 TG@peekfun
-      - US_95 TG@peekfun
-      - US_96 TG@peekfun
+      - TW_94 TG@peekfun
+      - TW_95 TG@peekfun
+      - UA_96 TG@peekfun
       - US_97 TG@peekfun
       - US_98 TG@peekfun
       - US_99 TG@peekfun
@@ -7839,9 +7857,11 @@ proxy-groups:
       - US_113 TG@peekfun
       - US_114 TG@peekfun
       - US_115 TG@peekfun
-      - ZZ_116 TG@peekfun
-      - ZZ_117 TG@peekfun
-      - ZZ_118 TG@peekfun
+      - US_116 TG@peekfun
+      - US_117 TG@peekfun
+      - US_118 TG@peekfun
+      - ZZ_119 TG@peekfun
+      - ZZ_120 TG@peekfun
       - Relay_-🇹🇼TW_01
       - Relay_-🇹🇼TW_02
       - Relay_-🇺🇸US_03
@@ -12333,8 +12353,8 @@ proxy-groups:
       - 🇺🇸 Relay_🇺🇸US-🇺🇸US_69 |17.81Mb
       - ZZ_71 |60.81Mb
       - ZZ_72 |59.81Mb
-      - AU_01 TG@peekfun 2
-      - CA_02 TG@peekfun 2
+      - CA_01 TG@peekfun 2
+      - CN_02 TG@peekfun 2
       - CN_03 TG@peekfun 2
       - CN_04 TG@peekfun 2
       - CN_05 TG@peekfun 2
@@ -12398,37 +12418,37 @@ proxy-groups:
       - CN_63 TG@peekfun 2
       - CN_64 TG@peekfun 2
       - CN_65 TG@peekfun 2
-      - DE_66 TG@peekfun 2
-      - DE_67 TG@peekfun 2
+      - CN_66 TG@peekfun 2
+      - CN_67 TG@peekfun 2
       - HK_68 TG@peekfun 2
       - HK_69 TG@peekfun 2
-      - HK_70 TG@peekfun 2
-      - IT_71 TG@peekfun 2
+      - ID_70 TG@peekfun 2
+      - JP_71 TG@peekfun 2
       - JP_72 TG@peekfun 2
       - JP_73 TG@peekfun 2
       - JP_74 TG@peekfun 2
       - JP_75 TG@peekfun 2
-      - JP_76 TG@peekfun 2
-      - KR_77 TG@peekfun 2
-      - LT_78 TG@peekfun 2
+      - KR_76 TG@peekfun 2
+      - NL_77 TG@peekfun 2
+      - NL_78 TG@peekfun 2
       - NL_79 TG@peekfun 2
       - NL_80 TG@peekfun 2
       - NL_81 TG@peekfun 2
       - NL_82 TG@peekfun 2
-      - RO_83 TG@peekfun 2
-      - RO_84 TG@peekfun 2
+      - NL_83 TG@peekfun 2
+      - NL_84 TG@peekfun 2
       - RO_85 TG@peekfun 2
-      - RU_86 TG@peekfun 2
-      - SG_87 TG@peekfun 2
-      - SG_88 TG@peekfun 2
+      - RO_86 TG@peekfun 2
+      - RO_87 TG@peekfun 2
+      - RU_88 TG@peekfun 2
       - SG_89 TG@peekfun 2
       - SG_90 TG@peekfun 2
       - SG_91 TG@peekfun 2
-      - TW_92 TG@peekfun 2
+      - SG_92 TG@peekfun 2
       - TW_93 TG@peekfun 2
-      - US_94 TG@peekfun 2
-      - US_95 TG@peekfun 2
-      - US_96 TG@peekfun 2
+      - TW_94 TG@peekfun 2
+      - TW_95 TG@peekfun 2
+      - UA_96 TG@peekfun 2
       - US_97 TG@peekfun 2
       - US_98 TG@peekfun 2
       - US_99 TG@peekfun 2
@@ -12448,9 +12468,11 @@ proxy-groups:
       - US_113 TG@peekfun 2
       - US_114 TG@peekfun 2
       - US_115 TG@peekfun 2
-      - ZZ_116 TG@peekfun 2
-      - ZZ_117 TG@peekfun 2
-      - ZZ_118 TG@peekfun 2
+      - US_116 TG@peekfun 2
+      - US_117 TG@peekfun 2
+      - US_118 TG@peekfun 2
+      - ZZ_119 TG@peekfun 2
+      - ZZ_120 TG@peekfun 2
   - name: 📲 聊天软件
     type: select
     proxies:
