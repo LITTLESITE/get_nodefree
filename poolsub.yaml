@@ -7,72 +7,66 @@ external-controller: :9090
 proxies:
   - {name: CA_1, server: 196.247.59.154, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
   - {name: CN_2, server: 14.29.124.174, port: 11020, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: FR_3, server: 145.239.1.100, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: FR_4, server: 145.239.1.100, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: FR_5, server: 195.154.200.150, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: FR_3, server: 195.154.200.150, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: FR_4, server: 145.239.1.100, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: FR_5, server: 145.239.1.100, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
   - {name: FR_6, server: 149.202.82.172, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: FR_7, server: 145.239.1.100, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: FR_8, server: 149.202.82.172, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: GB_9, server: 212.102.53.78, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
-  - {name: GB_10, server: 78.129.253.9, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: GB_11, server: 212.102.53.197, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
-  - {name: NL_12, server: mf02.xmss.vip, port: 18888, type: ss, cipher: chacha20-ietf-poly1305, password: 5595f1cf-d7c0-4121-a3bf-19e423c1f9a1}
+  - {name: FR_7, server: 149.202.82.172, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: FR_8, server: 145.239.1.100, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: GB_9, server: 212.102.53.197, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
+  - {name: GB_10, server: 212.102.53.78, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
+  - {name: GB_11, server: 78.129.253.9, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: US_12, server: 172.99.190.39, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
   - {name: US_13, server: 172.99.190.39, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: US_14, server: 38.68.134.85, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: US_15, server: 38.114.114.67, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: US_16, server: 38.114.114.19, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: US_17, server: 38.68.134.85, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: US_18, server: 167.88.61.175, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: US_19, server: 38.75.136.21, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: US_20, server: 38.64.138.145, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: US_21, server: 38.121.43.71, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: US_22, server: 38.75.136.21, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: US_23, server: 38.143.66.99, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: US_24, server: 167.88.63.79, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: US_25, server: 38.143.66.99, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: US_26, server: 38.121.43.71, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: US_27, server: 172.99.190.39, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: US_28, server: 38.75.136.21, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: US_29, server: 38.114.114.19, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: US_30, server: 38.68.135.18, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: US_31, server: 152.69.197.60, port: 1069, type: vmess, uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: US_32, server: kr05.wangxd.life, port: 3052, type: trojan, password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e, skip-cert-verify: false}
-  - {name: ZZ_33, server: 169.197.141.14, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: ZZ_34, server: 134.195.196.149, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: US_14, server: 38.75.136.21, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: US_15, server: 167.88.61.175, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: US_16, server: 38.68.135.18, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: US_17, server: 38.75.136.21, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: US_18, server: 38.114.114.19, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: US_19, server: 38.75.136.21, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: US_20, server: 38.121.43.71, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: US_21, server: 38.64.138.145, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: US_22, server: 38.143.66.99, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: US_23, server: 167.88.63.79, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: US_24, server: 38.121.43.71, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: US_25, server: 38.68.134.85, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: US_26, server: 38.114.114.19, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: US_27, server: 38.114.114.67, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: US_28, server: 38.143.66.99, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: US_29, server: 152.69.197.60, port: 1069, type: vmess, uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: ZZ_30, server: 134.195.196.149, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: ZZ_31, server: 169.197.141.14, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
   - {name: CA_1 2, server: 196.247.59.154, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
   - {name: CN_2 2, server: 14.29.124.174, port: 11020, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: FR_3 2, server: 145.239.1.100, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: FR_4 2, server: 145.239.1.100, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: FR_5 2, server: 195.154.200.150, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: FR_3 2, server: 195.154.200.150, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: FR_4 2, server: 145.239.1.100, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: FR_5 2, server: 145.239.1.100, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
   - {name: FR_6 2, server: 149.202.82.172, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: FR_7 2, server: 145.239.1.100, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: FR_8 2, server: 149.202.82.172, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: GB_9 2, server: 212.102.53.78, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
-  - {name: GB_10 2, server: 78.129.253.9, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: GB_11 2, server: 212.102.53.197, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
-  - {name: NL_12 2, server: mf02.xmss.vip, port: 18888, type: ss, cipher: chacha20-ietf-poly1305, password: 5595f1cf-d7c0-4121-a3bf-19e423c1f9a1}
+  - {name: FR_7 2, server: 149.202.82.172, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: FR_8 2, server: 145.239.1.100, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: GB_9 2, server: 212.102.53.197, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
+  - {name: GB_10 2, server: 212.102.53.78, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
+  - {name: GB_11 2, server: 78.129.253.9, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: US_12 2, server: 172.99.190.39, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
   - {name: US_13 2, server: 172.99.190.39, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: US_14 2, server: 38.68.134.85, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: US_15 2, server: 38.114.114.67, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: US_16 2, server: 38.114.114.19, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: US_17 2, server: 38.68.134.85, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: US_18 2, server: 167.88.61.175, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: US_19 2, server: 38.75.136.21, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: US_20 2, server: 38.64.138.145, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: US_21 2, server: 38.121.43.71, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: US_22 2, server: 38.75.136.21, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: US_23 2, server: 38.143.66.99, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: US_24 2, server: 167.88.63.79, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: US_25 2, server: 38.143.66.99, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: US_26 2, server: 38.121.43.71, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: US_27 2, server: 172.99.190.39, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: US_28 2, server: 38.75.136.21, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: US_29 2, server: 38.114.114.19, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: US_30 2, server: 38.68.135.18, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: US_31 2, server: 152.69.197.60, port: 1069, type: vmess, uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: US_32 2, server: kr05.wangxd.life, port: 3052, type: trojan, password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e, skip-cert-verify: false}
-  - {name: ZZ_33 2, server: 169.197.141.14, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: ZZ_34 2, server: 134.195.196.149, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: US_14 2, server: 38.75.136.21, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: US_15 2, server: 167.88.61.175, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: US_16 2, server: 38.68.135.18, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: US_17 2, server: 38.75.136.21, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: US_18 2, server: 38.114.114.19, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: US_19 2, server: 38.75.136.21, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: US_20 2, server: 38.121.43.71, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: US_21 2, server: 38.64.138.145, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: US_22 2, server: 38.143.66.99, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: US_23 2, server: 167.88.63.79, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: US_24 2, server: 38.121.43.71, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: US_25 2, server: 38.68.134.85, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: US_26 2, server: 38.114.114.19, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: US_27 2, server: 38.114.114.67, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: US_28 2, server: 38.143.66.99, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: US_29 2, server: 152.69.197.60, port: 1069, type: vmess, uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: ZZ_30 2, server: 134.195.196.149, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: ZZ_31 2, server: 169.197.141.14, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
   - {name: "NULL", server: "NULL", port: 11708, type: ssr, cipher: aes-256-cfb, password: sEscPBiAD9K$&@79, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: ""}
   - {name: 🇨🇦 Relay_🇨🇦CA-🇨🇦CA_01, server: sgp.naixii.xyz, port: 443, type: vmess, uuid: 0aabdcbd-805f-4f4c-ba24-b176e736b37d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: ip48.ip-139-99-117.net, network: ws, ws-opts: {path: /b26c74ee96d/, headers: {Host: sgp.naixii.xyz}}}
   - {name: CA_02, server: 51.79.223.202, port: 80, type: vmess, uuid: d34b55f6-3e85-11ed-b327-7f562a0dd2e6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /vmess}}
@@ -93,72 +87,76 @@ proxies:
   - {name: ZZ_17, server: 103.173.178.110, port: 41443, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
   - {name: Relay_🏁ZZ-🇫🇷FR_18, server: 141.101.114.80, port: 443, type: vmess, uuid: 2b61c372-ba2a-4cec-b222-42a4da3aefb7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: v2ray1.zhujicn2.org, network: ws, ws-opts: {path: /dongtaiwang.com}}
   - {name: AU_01 |11.35Mb, server: jgwxn3.gaox.ml, port: 443, type: trojan, password: cb43b7c2-b744-41c5-bcc2-fd7467b332cf, skip-cert-verify: false}
-  - {name: CA_02 |55.63Mb, server: 196.247.59.154, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: CA_04 | 2.64Mb, server: 139.99.90.122, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: CA_05 | 7.55Mb, server: 165.154.246.195, port: 49002, type: trojan, password: 9b039851-270c-4837-b500-f1ab5e2350f7, skip-cert-verify: false}
-  - {name: CA_06 |279.59Mb, server: nice-ca02.tiktokcdn.buzz, port: 8443, type: trojan, password: a9b56b59-ee82-4331-91f8-955d1fdc4e10, skip-cert-verify: false}
-  - {name: CA_07 |23.85Mb, server: cat1.sshocean.net, port: 443, type: trojan, password: 8b6daf15-8342-482d-b894-1239fd98ce7f, skip-cert-verify: false}
-  - {name: CN_08, server: 14.29.124.174, port: 11008, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_09 |11.78Mb, server: 14.29.124.174, port: 11015, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CN_11, server: 14.29.124.174, port: 11035, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: CZ_12 | 1.51Mb, server: v2cross.com.02.v2ce.com, port: 443, type: trojan, password: 3gLlCYBipVwr6Y5F, skip-cert-verify: false}
-  - {name: FR_13 |41.76Mb, server: 145.239.1.100, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: FR_14 |42.08Mb, server: 145.239.1.100, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: FR_15, server: 149.202.82.172, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: FR_16, server: 195.154.200.150, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: FR_17 |42.27Mb, server: 145.239.1.100, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: FR_18, server: 149.202.82.172, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: GB_19 |76.47Mb, server: 78.129.253.9, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: GB_20 |75.98Mb, server: 212.102.53.78, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
-  - {name: GB_21 |54.42Mb, server: 212.102.53.197, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
-  - {name: GB_22 | 9.84Mb, server: jgwld1.gaox.ml, port: 443, type: trojan, password: 02e653c9-7c93-46a9-999d-11834bd0c577, skip-cert-verify: false}
-  - {name: GB_24 |46.82Mb, server: 132.145.51.172, port: 443, type: trojan, password: 02e653c9-7c93-46a9-999d-11834bd0c577, skip-cert-verify: false}
-  - {name: HK_25 | 6.56Mb, server: 103.103.245.125, port: 50206, type: trojan, password: 789d73af-b985-4778-9872-211047c28015, skip-cert-verify: false}
-  - {name: HK_26 |15.10Mb, server: api.tcpbbr.net, port: 18443, type: trojan, password: 80bcf4f2-12f7-11ed-bb74-f23c9164ca5d, skip-cert-verify: false}
-  - {name: HK_27 | 5.40Mb, server: ssl.tcpbbr.net, port: 12163, type: trojan, password: 80bcf4f2-12f7-11ed-bb74-f23c9164ca5d, skip-cert-verify: false}
-  - {name: HK_28 |19.90Mb, server: hk.vc3.hyperlinkvpn.xyz, port: 52000, type: trojan, password: 0aa9e572-ca8b-4d2c-bef6-501fc3eacbb8, skip-cert-verify: false}
-  - {name: HK_29 |11.75Mb, server: 43.229.153.148, port: 50418, type: trojan, password: 5d1b3b0a-de2a-4731-938d-4c7e15f034c1, skip-cert-verify: false}
-  - {name: JP_30 | 6.19Mb, server: jgwdb3.gaox.ml, port: 443, type: trojan, password: 8d2d5953-d649-4034-94f2-72f2df2623da, skip-cert-verify: false}
-  - {name: JP_31, server: jgwdb4.gaox.ml, port: 443, type: trojan, password: d06a3f01-1ff0-4792-9b8e-a5a604bc74a2, skip-cert-verify: false}
-  - {name: KR_32 | 3.26Mb, server: nicekr-01.tiktokcdn.buzz, port: 23564, type: trojan, password: 192a315a-a324-4d92-a017-2b30e6b75324, skip-cert-verify: false}
-  - {name: NO_33 |23.31Mb, server: 138.124.183.216, port: 443, type: trojan, password: xxoo, skip-cert-verify: false}
-  - {name: NO_34 |32.59Mb, server: 138.124.183.222, port: 443, type: trojan, password: xxoo, skip-cert-verify: false}
-  - {name: NO_35 |30.94Mb, server: 138.124.183.226, port: 443, type: trojan, password: xxoo, skip-cert-verify: false}
-  - {name: SG_36 | 2.53Mb, server: 139.99.68.21, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
-  - {name: UA_37 | 3.71Mb, server: mf01.xmss.vip, port: 18888, type: ss, cipher: chacha20-ietf-poly1305, password: 5595f1cf-d7c0-4121-a3bf-19e423c1f9a1}
-  - {name: UA_38 | 2.11Mb, server: v2cross.com.05.v2ce.com, port: 443, type: trojan, password: kGrwqmB1nEKUsDwE, skip-cert-verify: false}
-  - {name: US_39 |32.14Mb, server: 38.114.114.67, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: US_40 | 5.51Mb, server: 38.75.136.21, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: US_41 |14.27Mb, server: 38.121.43.71, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: US_42 |35.62Mb, server: 38.143.66.99, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: US_43 | 4.72Mb, server: 20.210.122.21, port: 443, type: ss, cipher: aes-256-gcm, password: 233blog.com}
-  - {name: US_45 |15.84Mb, server: 172.99.190.39, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: US_46 | 5.45Mb, server: 38.64.138.145, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: US_48 |16.97Mb, server: 167.88.63.79, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: US_49 |13.82Mb, server: 38.143.66.99, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: US_50 | 3.80Mb, server: 38.114.114.19, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: US_51 | 3.01Mb, server: 167.88.63.82, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: US_52 |21.34Mb, server: 38.75.136.21, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: US_53 | 9.01Mb, server: 38.75.136.21, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: US_54 |40.39Mb, server: 38.68.135.239, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: US_55 |14.32Mb, server: 172.99.190.39, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: US_56 | 6.00Mb, server: 167.88.61.175, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: US_57 | 6.13Mb, server: 38.121.43.71, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: US_59 | 4.18Mb, server: 167.88.63.82, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: US_60 |30.48Mb, server: 152.69.197.60, port: 1069, type: vmess, uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: US_61 |23.63Mb, server: ggni.miaoge.gay, port: 443, type: vmess, uuid: 4893ed3e-8a5f-48dc-aa1e-bbc2e67a065b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: ggni.miaoge.gay, network: ws, ws-opts: {path: /, headers: {Host: ggni.miaoge.gay}}}
-  - {name: US_62 |145.36Mb, server: 23.94.103.146, port: 443, type: trojan, password: 8c836caa-3d53-4829-bcfb-cbe0aa453a57, skip-cert-verify: false}
-  - {name: US_63, server: rbobo.tk, port: 31142, type: trojan, password: fPrIXmKPn0, skip-cert-verify: false}
-  - {name: US_64 | 3.99Mb, server: nice-ca01.tiktokcdn.buzz, port: 443, type: trojan, password: ff37081f-9043-476a-a6ea-854297b06839, skip-cert-verify: false}
-  - {name: US_65 |31.03Mb, server: 150.230.96.103, port: 443, type: trojan, password: da777aae-defb-41d0-a183-2c27da2b4677, skip-cert-verify: false}
-  - {name: US_66 |24.06Mb, server: www.sxsy88.tk, port: 44150, type: trojan, password: zFyLKH62WN, skip-cert-verify: false}
-  - {name: US_67 |33.68Mb, server: a.laolei.ml, port: 50757, type: trojan, password: dDbBcidENX, skip-cert-verify: false}
-  - {name: US_68 |60.03Mb, server: lsj02.wangxd.life, port: 3052, type: trojan, password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e, skip-cert-verify: false}
-  - {name: US_69 |32.36Mb, server: nice-us01.tiktokcdn.buzz, port: 443, type: trojan, password: "null", skip-cert-verify: false}
-  - {name: US_72 |52.80Mb, server: fhcamd1.gaox.ml, port: 443, type: trojan, password: e23f408a-012e-4030-8b31-02022031cb50, skip-cert-verify: false}
-  - {name: ZZ_77 | 4.47Mb, server: 134.195.196.149, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: ZZ_78 |10.83Mb, server: 169.197.141.14, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: ZZ_79 | 4.23Mb, server: 134.195.196.85, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: AU_02 |11.87Mb, server: wangqifei.ga, port: 41477, type: trojan, password: 3oquVrpxPg, skip-cert-verify: false}
+  - {name: CA_04 |55.63Mb, server: 196.247.59.154, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: CA_05 | 2.64Mb, server: 139.99.90.122, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: CA_06 | 1.97Mb, server: 139.99.91.95, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: CA_07 | 7.55Mb, server: 165.154.246.195, port: 49002, type: trojan, password: 9b039851-270c-4837-b500-f1ab5e2350f7, skip-cert-verify: false}
+  - {name: CA_08 |10.17Mb, server: 165.154.246.195, port: 49008, type: trojan, password: 9b039851-270c-4837-b500-f1ab5e2350f7, skip-cert-verify: false}
+  - {name: CA_09 |23.85Mb, server: cat1.sshocean.net, port: 443, type: trojan, password: 8b6daf15-8342-482d-b894-1239fd98ce7f, skip-cert-verify: false}
+  - {name: CA_10 |279.59Mb, server: nice-ca02.tiktokcdn.buzz, port: 8443, type: trojan, password: a9b56b59-ee82-4331-91f8-955d1fdc4e10, skip-cert-verify: false}
+  - {name: CN_11, server: 14.29.124.174, port: 11036, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_12, server: 14.29.124.174, port: 11019, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_14, server: 14.29.124.174, port: 11008, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_16, server: 14.29.124.174, port: 11034, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CN_17, server: 14.29.124.174, port: 11020, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: CZ_18 | 1.51Mb, server: v2cross.com.02.v2ce.com, port: 443, type: trojan, password: 3gLlCYBipVwr6Y5F, skip-cert-verify: false}
+  - {name: FR_19, server: 149.202.82.172, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: FR_20, server: 149.202.82.172, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: FR_21 |41.76Mb, server: 145.239.1.100, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: FR_22 |42.08Mb, server: 145.239.1.100, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: FR_23 |42.27Mb, server: 145.239.1.100, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: FR_24, server: 195.154.200.150, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: GB_25 |76.47Mb, server: 78.129.253.9, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: GB_26 |75.98Mb, server: 212.102.53.78, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
+  - {name: GB_27 |54.42Mb, server: 212.102.53.197, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
+  - {name: GB_28, server: 144.24.72.126, port: 443, type: trojan, password: 7118b5f4-0ea4-4c11-be7f-11471cb91e4a, skip-cert-verify: false}
+  - {name: HK_29 |19.90Mb, server: hk.vc3.hyperlinkvpn.xyz, port: 52000, type: trojan, password: 0aa9e572-ca8b-4d2c-bef6-501fc3eacbb8, skip-cert-verify: false}
+  - {name: HK_30 |11.75Mb, server: 43.229.153.148, port: 50418, type: trojan, password: 5d1b3b0a-de2a-4731-938d-4c7e15f034c1, skip-cert-verify: false}
+  - {name: HK_31, server: 103.103.245.125, port: 50418, type: trojan, password: a70b39d1-62ea-4d9e-b681-9c5408352234, skip-cert-verify: false}
+  - {name: HK_32 |15.10Mb, server: api.tcpbbr.net, port: 18443, type: trojan, password: 80bcf4f2-12f7-11ed-bb74-f23c9164ca5d, skip-cert-verify: false}
+  - {name: HK_33 | 5.40Mb, server: ssl.tcpbbr.net, port: 12163, type: trojan, password: 80bcf4f2-12f7-11ed-bb74-f23c9164ca5d, skip-cert-verify: false}
+  - {name: JP_34 | 6.19Mb, server: jgwdb3.gaox.ml, port: 443, type: trojan, password: 8d2d5953-d649-4034-94f2-72f2df2623da, skip-cert-verify: false}
+  - {name: JP_35, server: kr1.api-aws.com, port: 443, type: trojan, password: da647e58-8f85-450f-b123-568c492c297c, skip-cert-verify: false}
+  - {name: KR_37 | 3.26Mb, server: nicekr-01.tiktokcdn.buzz, port: 23564, type: trojan, password: 192a315a-a324-4d92-a017-2b30e6b75324, skip-cert-verify: false}
+  - {name: NO_38 |23.31Mb, server: 138.124.183.216, port: 443, type: trojan, password: xxoo, skip-cert-verify: false}
+  - {name: NO_39 |32.59Mb, server: 138.124.183.222, port: 443, type: trojan, password: xxoo, skip-cert-verify: false}
+  - {name: US_42 | 6.39Mb, server: 38.114.114.19, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: US_43 | 5.51Mb, server: 38.75.136.21, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: US_44 | 3.80Mb, server: 38.114.114.19, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: US_45 |35.62Mb, server: 38.143.66.99, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: US_46 | 9.01Mb, server: 38.75.136.21, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: US_48 |14.32Mb, server: 172.99.190.39, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: US_49 | 5.45Mb, server: 38.64.138.145, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: US_51 |16.97Mb, server: 167.88.63.79, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: US_52 |32.14Mb, server: 38.114.114.67, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: US_53 |13.82Mb, server: 38.143.66.99, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: US_54 |15.84Mb, server: 172.99.190.39, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: US_55 | 3.01Mb, server: 167.88.63.82, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: US_56 |40.39Mb, server: 38.68.135.239, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: US_57 | 4.18Mb, server: 167.88.63.82, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: US_58 |21.34Mb, server: 38.75.136.21, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: US_59 | 6.00Mb, server: 167.88.61.175, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: US_60 | 6.13Mb, server: 38.121.43.71, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: US_62 | 4.72Mb, server: 20.210.122.21, port: 443, type: ss, cipher: aes-256-gcm, password: 233blog.com}
+  - {name: US_63 |14.27Mb, server: 38.121.43.71, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: US_64 |23.63Mb, server: ggni.miaoge.gay, port: 443, type: vmess, uuid: 4893ed3e-8a5f-48dc-aa1e-bbc2e67a065b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: ggni.miaoge.gay, network: ws, ws-opts: {path: /, headers: {Host: ggni.miaoge.gay}}}
+  - {name: US_65 |30.48Mb, server: 152.69.197.60, port: 1069, type: vmess, uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: US_66, server: rben.miaoge.gay, port: 443, type: vmess, uuid: 4893ed3e-8a5f-48dc-aa1e-bbc2e67a065b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: rben.miaoge.gay, network: ws, ws-opts: {path: /, headers: {Host: rben.miaoge.gay}}}
+  - {name: US_67, server: 20.194.255.144, port: 443, type: vmess, uuid: 4893ed3e-8a5f-48dc-aa1e-bbc2e67a065b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
+  - {name: US_68 |31.03Mb, server: 150.230.96.103, port: 443, type: trojan, password: da777aae-defb-41d0-a183-2c27da2b4677, skip-cert-verify: false}
+  - {name: US_69 |145.36Mb, server: 23.94.103.146, port: 443, type: trojan, password: 8c836caa-3d53-4829-bcfb-cbe0aa453a57, skip-cert-verify: false}
+  - {name: US_70 |25.92Mb, server: jgwdb2.gaox.ml, port: 443, type: trojan, password: c19d1432-8b3e-4818-8837-3d160cf65908, skip-cert-verify: false}
+  - {name: US_72 | 3.99Mb, server: nice-ca01.tiktokcdn.buzz, port: 443, type: trojan, password: ff37081f-9043-476a-a6ea-854297b06839, skip-cert-verify: false}
+  - {name: US_73 |17.06Mb, server: 150.230.217.213, port: 443, type: trojan, password: c09eb137-bf68-4658-84e0-102d94b74168, skip-cert-verify: false}
+  - {name: US_75 |32.36Mb, server: nice-us01.tiktokcdn.buzz, port: 443, type: trojan, password: "null", skip-cert-verify: false}
+  - {name: US_76 |52.80Mb, server: fhcamd1.gaox.ml, port: 443, type: trojan, password: e23f408a-012e-4030-8b31-02022031cb50, skip-cert-verify: false}
+  - {name: US_77 |56.47Mb, server: 129.146.242.130, port: 443, type: trojan, password: 05742120-ce23-4cc8-88f5-6d221ce45bf4, skip-cert-verify: false}
+  - {name: US_78 |24.06Mb, server: www.sxsy88.tk, port: 44150, type: trojan, password: zFyLKH62WN, skip-cert-verify: false}
+  - {name: US_79 |11.07Mb, server: jgwhdlb2.gaox.ml, port: 443, type: trojan, password: 54080134-2cba-4535-8599-95650bd9aa54, skip-cert-verify: false}
+  - {name: US_80, server: jgwcc3.gaox.ml, port: 443, type: trojan, password: b291d129-ee55-4801-a9b8-b5316e5c37b7, skip-cert-verify: false}
+  - {name: ZZ_85 | 4.47Mb, server: 134.195.196.149, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: ZZ_86 | 4.23Mb, server: 134.195.196.85, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
   - {name: "| 9.09Mb", server: 217.138.193.10, port: 807, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
   - {name: "| 8.82Mb", server: 217.138.193.10, port: 804, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
   - {name: "| 8.61Mb", server: 217.138.193.10, port: 810, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
@@ -2829,38 +2827,39 @@ proxies:
   - {name: ZZ_1157, server: 169.197.142.187, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
   - {name: ZZ_1158, server: 103.159.132.102, port: 31372, type: vmess, uuid: c11236af-56a6-49b3-c1b9-7b54ac3acb42, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: CA_01 |47.61Mb, server: 196.247.59.154, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: FR_03 |43.29Mb, server: 145.239.1.100, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: FR_04 |43.22Mb, server: 145.239.1.100, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: FR_05 |43.15Mb, server: 145.239.1.100, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: FR_06, server: 149.202.82.172, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: FR_07 2, server: 149.202.82.172, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: FR_08, server: 195.154.200.150, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: GB_09 |75.53Mb, server: 78.129.253.9, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: GB_10 |75.26Mb, server: 212.102.53.197, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
-  - {name: GB_11 |77.47Mb, server: 212.102.53.78, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
-  - {name: US_13 |27.76Mb, server: 38.143.66.99, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: US_15 |18.09Mb, server: 172.99.190.39, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: US_16 | 2.13Mb, server: 38.64.138.145, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: US_18 | 4.00Mb, server: 167.88.63.79, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: US_19 | 9.12Mb, server: 38.143.66.99, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: US_20 |35.96Mb, server: 38.75.136.21, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: US_21 | 3.77Mb, server: 38.121.43.71, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: US_23 |11.32Mb, server: 38.75.136.21, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: US_25 | 8.42Mb, server: 38.75.136.21, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: US_26 | 6.85Mb, server: 167.88.61.175, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: US_28 |16.88Mb, server: 38.114.114.67, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: US_29 |17.36Mb, server: 172.99.190.39, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: US_30 |31.54Mb, server: 152.69.197.60, port: 1069, type: vmess, uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: ZZ_32 |50.29Mb, server: 169.197.141.14, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+  - {name: FR_02, server: 149.202.82.172, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: FR_03 |43.15Mb, server: 145.239.1.100, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: FR_04, server: 195.154.200.150, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: FR_05, server: 149.202.82.172, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: FR_06 |43.29Mb, server: 145.239.1.100, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: FR_07 |43.22Mb, server: 145.239.1.100, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: GB_08 |75.53Mb, server: 78.129.253.9, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: GB_09 |75.26Mb, server: 212.102.53.197, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
+  - {name: GB_10 |77.47Mb, server: 212.102.53.78, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
+  - {name: 🇳🇱 Relay_🇳🇱NL-🇳🇱NL_11 |15.12Mb, server: mf02.xmss.vip, port: 18888, type: ss, cipher: chacha20-ietf-poly1305, password: 5595f1cf-d7c0-4121-a3bf-19e423c1f9a1}
+  - {name: US_12 | 4.00Mb, server: 167.88.63.79, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: US_15 | 2.13Mb, server: 38.64.138.145, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: US_16 | 9.12Mb, server: 38.143.66.99, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: US_17 |35.96Mb, server: 38.75.136.21, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: US_19 | 3.77Mb, server: 38.121.43.71, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: US_20 |11.32Mb, server: 38.75.136.21, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: US_22 | 8.42Mb, server: 38.75.136.21, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: US_23 |17.36Mb, server: 172.99.190.39, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: US_24 |16.88Mb, server: 38.114.114.67, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: US_25 | 6.85Mb, server: 167.88.61.175, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: US_27 |18.09Mb, server: 172.99.190.39, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: US_28 |31.54Mb, server: 152.69.197.60, port: 1069, type: vmess, uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇺🇸 Relay_🇺🇸US-🇺🇸US_29 |23.51Mb, server: kr05.wangxd.life, port: 3052, type: trojan, password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e, skip-cert-verify: false}
+  - {name: ZZ_31 |50.29Mb, server: 169.197.141.14, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
 proxy-groups:
   - name: 🇭🇰 香港节点
     type: select
     proxies:
-      - HK_25 | 6.56Mb
-      - HK_26 |15.10Mb
-      - HK_27 | 5.40Mb
-      - HK_28 |19.90Mb
-      - HK_29 |11.75Mb
+      - HK_29 |19.90Mb
+      - HK_30 |11.75Mb
+      - HK_31
+      - HK_32 |15.10Mb
+      - HK_33 | 5.40Mb
       - 🇨🇳 Relay_🇨🇳 CN-🇭🇰HK_59
       - 🇨🇳 Relay_🇨🇳 CN-🇭🇰HK_60
       - 🇨🇳 Relay_🇨🇳 CN-🇭🇰HK_61
@@ -2887,8 +2886,8 @@ proxy-groups:
     type: select
     proxies:
       - JP_09
-      - JP_30 | 6.19Mb
-      - JP_31
+      - JP_34 | 6.19Mb
+      - JP_35
       - 🇨🇦 Relay_🇨🇦 CA-🇯🇵JP_27
       - Pool_🇯🇵 JP_233
       - Pool_🇯🇵 JP_234
@@ -2939,6 +2938,7 @@ proxy-groups:
   - name: 🇺🇲 美国节点
     type: select
     proxies:
+      - US_12
       - US_13
       - US_14
       - US_15
@@ -2956,9 +2956,7 @@ proxy-groups:
       - US_27
       - US_28
       - US_29
-      - US_30
-      - US_31
-      - US_32
+      - US_12 2
       - US_13 2
       - US_14 2
       - US_15 2
@@ -2976,9 +2974,6 @@ proxy-groups:
       - US_27 2
       - US_28 2
       - US_29 2
-      - US_30 2
-      - US_31 2
-      - US_32 2
       - 🇨🇳 Relay_🇨🇳CN-🇺🇸US_05
       - US_10
       - US_11
@@ -2987,35 +2982,40 @@ proxy-groups:
       - 🇺🇸 Relay_🇺🇸US-🇩🇪DE_14
       - 🇺🇸 Relay_🇺🇸US-🇩🇪DE_15
       - 🇺🇸 Relay_🇺🇸US-🇺🇸US_16
-      - US_39 |32.14Mb
-      - US_40 | 5.51Mb
-      - US_41 |14.27Mb
-      - US_42 |35.62Mb
-      - US_43 | 4.72Mb
-      - US_45 |15.84Mb
-      - US_46 | 5.45Mb
-      - US_48 |16.97Mb
-      - US_49 |13.82Mb
-      - US_50 | 3.80Mb
-      - US_51 | 3.01Mb
-      - US_52 |21.34Mb
-      - US_53 | 9.01Mb
-      - US_54 |40.39Mb
-      - US_55 |14.32Mb
-      - US_56 | 6.00Mb
-      - US_57 | 6.13Mb
-      - US_59 | 4.18Mb
-      - US_60 |30.48Mb
-      - US_61 |23.63Mb
-      - US_62 |145.36Mb
-      - US_63
-      - US_64 | 3.99Mb
-      - US_65 |31.03Mb
-      - US_66 |24.06Mb
-      - US_67 |33.68Mb
-      - US_68 |60.03Mb
-      - US_69 |32.36Mb
-      - US_72 |52.80Mb
+      - US_42 | 6.39Mb
+      - US_43 | 5.51Mb
+      - US_44 | 3.80Mb
+      - US_45 |35.62Mb
+      - US_46 | 9.01Mb
+      - US_48 |14.32Mb
+      - US_49 | 5.45Mb
+      - US_51 |16.97Mb
+      - US_52 |32.14Mb
+      - US_53 |13.82Mb
+      - US_54 |15.84Mb
+      - US_55 | 3.01Mb
+      - US_56 |40.39Mb
+      - US_57 | 4.18Mb
+      - US_58 |21.34Mb
+      - US_59 | 6.00Mb
+      - US_60 | 6.13Mb
+      - US_62 | 4.72Mb
+      - US_63 |14.27Mb
+      - US_64 |23.63Mb
+      - US_65 |30.48Mb
+      - US_66
+      - US_67
+      - US_68 |31.03Mb
+      - US_69 |145.36Mb
+      - US_70 |25.92Mb
+      - US_72 | 3.99Mb
+      - US_73 |17.06Mb
+      - US_75 |32.36Mb
+      - US_76 |52.80Mb
+      - US_77 |56.47Mb
+      - US_78 |24.06Mb
+      - US_79 |11.07Mb
+      - US_80
       - 🇨🇦 Relay_🇨🇦CA-🇺🇸US_45
       - 🇳🇱 Relay_🇳🇱 NL-🇺🇸US_362
       - 🇸🇬 Relay_🇸🇬 SG-🇺🇸US_451
@@ -3609,19 +3609,19 @@ proxy-groups:
       - 🇺🇸 Relay_🇺🇸US-🇺🇸US_1064
       - 🇺🇸 Relay_🇺🇸US-🇺🇸US_1065
       - 🇺🇸 Relay_🇺🇸US-🇺🇸US_1066
-      - US_13 |27.76Mb
-      - US_15 |18.09Mb
-      - US_16 | 2.13Mb
-      - US_18 | 4.00Mb
-      - US_19 | 9.12Mb
-      - US_20 |35.96Mb
-      - US_21 | 3.77Mb
-      - US_23 |11.32Mb
-      - US_25 | 8.42Mb
-      - US_26 | 6.85Mb
-      - US_28 |16.88Mb
-      - US_29 |17.36Mb
-      - US_30 |31.54Mb
+      - US_12 | 4.00Mb
+      - US_15 | 2.13Mb
+      - US_16 | 9.12Mb
+      - US_17 |35.96Mb
+      - US_19 | 3.77Mb
+      - US_20 |11.32Mb
+      - US_22 | 8.42Mb
+      - US_23 |17.36Mb
+      - US_24 |16.88Mb
+      - US_25 | 6.85Mb
+      - US_27 |18.09Mb
+      - US_28 |31.54Mb
+      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_29 |23.51Mb
   - name: 🇨🇳 台湾节点
     type: select
     proxies:
@@ -3632,7 +3632,6 @@ proxy-groups:
     type: select
     proxies:
       - 🇺🇸 Relay_🇺🇸US-🇸🇬SG_13
-      - SG_36 | 2.53Mb
       - 🇸🇬 Relay_🇸🇬 SG-🇺🇸US_451
       - SG_452
       - Pool_🇸🇬SG_453
@@ -3655,7 +3654,7 @@ proxy-groups:
   - name: 🇰🇷 韩国节点
     type: select
     proxies:
-      - KR_32 | 3.26Mb
+      - KR_37 | 3.26Mb
       - 🇰🇷 Relay_🇰🇷 KR-🇰🇷KR_279
   - name: 🌍 其他地区
     type: select
@@ -3674,15 +3673,19 @@ proxy-groups:
       - CA_04
       - 🇨🇳 Relay_🇨🇳CN-🇺🇸US_05
       - Relay_🇮🇷IR-🇨🇦CA_08
-      - CA_02 |55.63Mb
-      - CA_04 | 2.64Mb
-      - CA_05 | 7.55Mb
-      - CA_06 |279.59Mb
-      - CA_07 |23.85Mb
-      - CN_08
-      - CN_09 |11.78Mb
+      - CA_04 |55.63Mb
+      - CA_05 | 2.64Mb
+      - CA_06 | 1.97Mb
+      - CA_07 | 7.55Mb
+      - CA_08 |10.17Mb
+      - CA_09 |23.85Mb
+      - CA_10 |279.59Mb
       - CN_11
-      - CZ_12 | 1.51Mb
+      - CN_12
+      - CN_14
+      - CN_16
+      - CN_17
+      - CZ_18 | 1.51Mb
       - CA_22
       - CA_23
       - 🇨🇦 Relay_🇨🇦 CA-🏁ZZ_24
@@ -3750,7 +3753,7 @@ proxy-groups:
       - GB_9
       - GB_10
       - GB_11
-      - NL_12
+      - US_12
       - US_13
       - US_14
       - US_15
@@ -3768,11 +3771,8 @@ proxy-groups:
       - US_27
       - US_28
       - US_29
-      - US_30
-      - US_31
-      - US_32
-      - ZZ_33
-      - ZZ_34
+      - ZZ_30
+      - ZZ_31
       - CA_1 2
       - CN_2 2
       - FR_3 2
@@ -3784,7 +3784,7 @@ proxy-groups:
       - GB_9 2
       - GB_10 2
       - GB_11 2
-      - NL_12 2
+      - US_12 2
       - US_13 2
       - US_14 2
       - US_15 2
@@ -3802,11 +3802,8 @@ proxy-groups:
       - US_27 2
       - US_28 2
       - US_29 2
-      - US_30 2
-      - US_31 2
-      - US_32 2
-      - ZZ_33 2
-      - ZZ_34 2
+      - ZZ_30 2
+      - ZZ_31 2
       - "NULL"
       - 🇨🇦 Relay_🇨🇦CA-🇨🇦CA_01
       - CA_02
@@ -3827,72 +3824,76 @@ proxy-groups:
       - ZZ_17
       - Relay_🏁ZZ-🇫🇷FR_18
       - AU_01 |11.35Mb
-      - CA_02 |55.63Mb
-      - CA_04 | 2.64Mb
-      - CA_05 | 7.55Mb
-      - CA_06 |279.59Mb
-      - CA_07 |23.85Mb
-      - CN_08
-      - CN_09 |11.78Mb
+      - AU_02 |11.87Mb
+      - CA_04 |55.63Mb
+      - CA_05 | 2.64Mb
+      - CA_06 | 1.97Mb
+      - CA_07 | 7.55Mb
+      - CA_08 |10.17Mb
+      - CA_09 |23.85Mb
+      - CA_10 |279.59Mb
       - CN_11
-      - CZ_12 | 1.51Mb
-      - FR_13 |41.76Mb
-      - FR_14 |42.08Mb
-      - FR_15
-      - FR_16
-      - FR_17 |42.27Mb
-      - FR_18
-      - GB_19 |76.47Mb
-      - GB_20 |75.98Mb
-      - GB_21 |54.42Mb
-      - GB_22 | 9.84Mb
-      - GB_24 |46.82Mb
-      - HK_25 | 6.56Mb
-      - HK_26 |15.10Mb
-      - HK_27 | 5.40Mb
-      - HK_28 |19.90Mb
-      - HK_29 |11.75Mb
-      - JP_30 | 6.19Mb
-      - JP_31
-      - KR_32 | 3.26Mb
-      - NO_33 |23.31Mb
-      - NO_34 |32.59Mb
-      - NO_35 |30.94Mb
-      - SG_36 | 2.53Mb
-      - UA_37 | 3.71Mb
-      - UA_38 | 2.11Mb
-      - US_39 |32.14Mb
-      - US_40 | 5.51Mb
-      - US_41 |14.27Mb
-      - US_42 |35.62Mb
-      - US_43 | 4.72Mb
-      - US_45 |15.84Mb
-      - US_46 | 5.45Mb
-      - US_48 |16.97Mb
-      - US_49 |13.82Mb
-      - US_50 | 3.80Mb
-      - US_51 | 3.01Mb
-      - US_52 |21.34Mb
-      - US_53 | 9.01Mb
-      - US_54 |40.39Mb
-      - US_55 |14.32Mb
-      - US_56 | 6.00Mb
-      - US_57 | 6.13Mb
-      - US_59 | 4.18Mb
-      - US_60 |30.48Mb
-      - US_61 |23.63Mb
-      - US_62 |145.36Mb
-      - US_63
-      - US_64 | 3.99Mb
-      - US_65 |31.03Mb
-      - US_66 |24.06Mb
-      - US_67 |33.68Mb
-      - US_68 |60.03Mb
-      - US_69 |32.36Mb
-      - US_72 |52.80Mb
-      - ZZ_77 | 4.47Mb
-      - ZZ_78 |10.83Mb
-      - ZZ_79 | 4.23Mb
+      - CN_12
+      - CN_14
+      - CN_16
+      - CN_17
+      - CZ_18 | 1.51Mb
+      - FR_19
+      - FR_20
+      - FR_21 |41.76Mb
+      - FR_22 |42.08Mb
+      - FR_23 |42.27Mb
+      - FR_24
+      - GB_25 |76.47Mb
+      - GB_26 |75.98Mb
+      - GB_27 |54.42Mb
+      - GB_28
+      - HK_29 |19.90Mb
+      - HK_30 |11.75Mb
+      - HK_31
+      - HK_32 |15.10Mb
+      - HK_33 | 5.40Mb
+      - JP_34 | 6.19Mb
+      - JP_35
+      - KR_37 | 3.26Mb
+      - NO_38 |23.31Mb
+      - NO_39 |32.59Mb
+      - US_42 | 6.39Mb
+      - US_43 | 5.51Mb
+      - US_44 | 3.80Mb
+      - US_45 |35.62Mb
+      - US_46 | 9.01Mb
+      - US_48 |14.32Mb
+      - US_49 | 5.45Mb
+      - US_51 |16.97Mb
+      - US_52 |32.14Mb
+      - US_53 |13.82Mb
+      - US_54 |15.84Mb
+      - US_55 | 3.01Mb
+      - US_56 |40.39Mb
+      - US_57 | 4.18Mb
+      - US_58 |21.34Mb
+      - US_59 | 6.00Mb
+      - US_60 | 6.13Mb
+      - US_62 | 4.72Mb
+      - US_63 |14.27Mb
+      - US_64 |23.63Mb
+      - US_65 |30.48Mb
+      - US_66
+      - US_67
+      - US_68 |31.03Mb
+      - US_69 |145.36Mb
+      - US_70 |25.92Mb
+      - US_72 | 3.99Mb
+      - US_73 |17.06Mb
+      - US_75 |32.36Mb
+      - US_76 |52.80Mb
+      - US_77 |56.47Mb
+      - US_78 |24.06Mb
+      - US_79 |11.07Mb
+      - US_80
+      - ZZ_85 | 4.47Mb
+      - ZZ_86 | 4.23Mb
       - "| 9.09Mb"
       - "| 8.82Mb"
       - "| 8.61Mb"
@@ -6563,29 +6564,30 @@ proxy-groups:
       - ZZ_1157
       - ZZ_1158
       - CA_01 |47.61Mb
-      - FR_03 |43.29Mb
-      - FR_04 |43.22Mb
-      - FR_05 |43.15Mb
-      - FR_06
-      - FR_07 2
-      - FR_08
-      - GB_09 |75.53Mb
-      - GB_10 |75.26Mb
-      - GB_11 |77.47Mb
-      - US_13 |27.76Mb
-      - US_15 |18.09Mb
-      - US_16 | 2.13Mb
-      - US_18 | 4.00Mb
-      - US_19 | 9.12Mb
-      - US_20 |35.96Mb
-      - US_21 | 3.77Mb
-      - US_23 |11.32Mb
-      - US_25 | 8.42Mb
-      - US_26 | 6.85Mb
-      - US_28 |16.88Mb
-      - US_29 |17.36Mb
-      - US_30 |31.54Mb
-      - ZZ_32 |50.29Mb
+      - FR_02
+      - FR_03 |43.15Mb
+      - FR_04
+      - FR_05
+      - FR_06 |43.29Mb
+      - FR_07 |43.22Mb
+      - GB_08 |75.53Mb
+      - GB_09 |75.26Mb
+      - GB_10 |77.47Mb
+      - 🇳🇱 Relay_🇳🇱NL-🇳🇱NL_11 |15.12Mb
+      - US_12 | 4.00Mb
+      - US_15 | 2.13Mb
+      - US_16 | 9.12Mb
+      - US_17 |35.96Mb
+      - US_19 | 3.77Mb
+      - US_20 |11.32Mb
+      - US_22 | 8.42Mb
+      - US_23 |17.36Mb
+      - US_24 |16.88Mb
+      - US_25 | 6.85Mb
+      - US_27 |18.09Mb
+      - US_28 |31.54Mb
+      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_29 |23.51Mb
+      - ZZ_31 |50.29Mb
   - name: 📲 聊天软件
     type: select
     proxies:
