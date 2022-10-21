@@ -4,16 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: info
 external-controller: :9090
-dns:
-  enabled: true
-  nameserver:
-    - 119.29.29.29
-    - 223.5.5.5
-  fallback:
-    - 8.8.8.8
-    - 8.8.4.4
-    - tls://1.0.0.1:853
-    - tls://dns.google:853
 proxies:
   - {name: 🇺🇸 _US_美国, server: tr.loveycould.top, port: 50777, type: trojan, password: hongkongdoll, skip-cert-verify: false}
   - {name: 🇸🇬 _SG_新加坡, server: madush.duckdns.org, port: 40515, type: vmess, uuid: f0e69c63-99e9-455c-a8ae-cbab068c7481, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: ar.linkedin.com}}}
@@ -37,6 +27,28 @@ proxies:
   - {name: 🇯🇵 _US_美国->🇯🇵_JP_日本, server: 15.168.34.194, port: 2053, type: trojan, password: de39d941-eaf6-405d-958a-ebebe1315574, sni: wel-jp.optage.moe, skip-cert-verify: false}
   - {name: 🇳🇱 _NL_荷兰 3, server: 94.177.8.87, port: 23453, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
   - {name: 🇰🇷 _KR_韩国 2, server: 3.35.214.217, port: 443, type: vmess, uuid: 5282f68b-14ca-4325-a630-d911abf59c54, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇺🇸 _US_美国 3, server: tr.loveycould.top, port: 50777, type: trojan, password: hongkongdoll, skip-cert-verify: false}
+  - {name: 🇸🇬 _SG_新加坡 2, server: madush.duckdns.org, port: 40515, type: vmess, uuid: f0e69c63-99e9-455c-a8ae-cbab068c7481, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: ar.linkedin.com}}}
+  - {name: 🇭🇰 _HK_香港 3, server: 47.243.182.204, port: 22082, type: vmess, uuid: f46292d1-a5c6-44e3-9539-c45ea9f7ec6a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}}
+  - {name: 🇭🇰 _HK_香港 2 2, server: 47.242.193.213, port: 26605, type: vmess, uuid: 59f44d1e-c2e7-4de9-983a-4727bb861f43, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}}
+  - {name: 🇳🇱 _NL_荷兰 4, server: content-provider24.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: Sp3eDVp, skip-cert-verify: false}
+  - {name: 🇬🇧 _GB_英国 3, server: 132.145.51.172, port: 443, type: trojan, password: 02e653c9-7c93-46a9-999d-11834bd0c577, skip-cert-verify: false}
+  - {name: 🇳🇱 _NL_荷兰 2 2, server: 185.212.200.75, port: 443, type: trojan, password: Sp3eDVp, skip-cert-verify: false}
+  - {name: 🇺🇸 _US_美国 2 2, server: node-do-us-1.gitspeed.cyou, port: 443, type: trojan, password: pNDxTmWL, skip-cert-verify: false}
+  - {name: 🇫🇷 _FR_法国 6, server: de.tjvpn.org, port: 443, type: trojan, password: c60fbf90-4b55-11ed-b935-225401db9d57, skip-cert-verify: false}
+  - {name: 🇫🇷 _FR_法国 2 2, server: content-provider5.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: Sp3eDVp, skip-cert-verify: false}
+  - {name: 🇰🇷 _KR_韩国 3, server: kr1.api-aws.com, port: 443, type: trojan, password: 3fe45691-03ac-40a1-8f4e-1317905020db, skip-cert-verify: false}
+  - {name: 🇫🇷 _FR_法国 3 2, server: 51.77.71.131, port: 443, type: trojan, password: Sp3eDVp, skip-cert-verify: false}
+  - {name: 🇫🇷 _FR_法国 4 2, server: content-provider26.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: origin, skip-cert-verify: false}
+  - {name: 🇭🇰 _HK_香港->🇵🇱_PL_波兰 2, server: hk-core.pvpgames.net, port: 61077, type: vmess, uuid: fbee28a2-8641-3ff9-a35f-d9577e64c7ba, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk-core.pvpgames.net}}}
+  - {name: 🇬🇧 _GB_英国 2 2, server: 185.194.30.40, port: 23453, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
+  - {name: 🇮🇳 _IN_印度 2, server: jgwhdlb2.gaox.ml, port: 443, type: trojan, password: 54080134-2cba-4535-8599-95650bd9aa54, skip-cert-verify: false}
+  - {name: 🇫🇷 _FR_法国 5 2, server: content-provider12.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: origin, skip-cert-verify: false}
+  - {name: 🇲🇾 _MY_马来西亚 2, server: 202.59.10.116, port: 31372, type: vmess, uuid: cab79370-f135-445b-d480-aaa0d69bb108, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇷🇺 _RU_俄罗斯联邦 2, server: 88.210.37.18, port: 23453, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
+  - {name: 🇯🇵 _US_美国->🇯🇵_JP_日本 2, server: 15.168.34.194, port: 2053, type: trojan, password: de39d941-eaf6-405d-958a-ebebe1315574, sni: wel-jp.optage.moe, skip-cert-verify: false}
+  - {name: 🇳🇱 _NL_荷兰 3 2, server: 94.177.8.87, port: 23453, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
+  - {name: 🇰🇷 _KR_韩国 2 2, server: 3.35.214.217, port: 443, type: vmess, uuid: 5282f68b-14ca-4325-a630-d911abf59c54, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
 proxy-groups:
   - name: 🇭🇰 香港节点
     type: select
@@ -44,16 +56,23 @@ proxy-groups:
       - 🇭🇰 _HK_香港
       - 🇭🇰 _HK_香港 2
       - 🇭🇰 _HK_香港->🇵🇱_PL_波兰
+      - 🇭🇰 _HK_香港 3
+      - 🇭🇰 _HK_香港 2 2
+      - 🇭🇰 _HK_香港->🇵🇱_PL_波兰 2
   - name: 🇯🇵 日本节点
     type: select
     proxies:
       - 🇯🇵 _US_美国->🇯🇵_JP_日本
+      - 🇯🇵 _US_美国->🇯🇵_JP_日本 2
   - name: 🇺🇲 美国节点
     type: select
     proxies:
       - 🇺🇸 _US_美国
       - 🇺🇸 _US_美国 2
       - 🇯🇵 _US_美国->🇯🇵_JP_日本
+      - 🇺🇸 _US_美国 3
+      - 🇺🇸 _US_美国 2 2
+      - 🇯🇵 _US_美国->🇯🇵_JP_日本 2
   - name: 🇨🇳 台湾节点
     type: select
     proxies:
@@ -62,11 +81,14 @@ proxy-groups:
     type: select
     proxies:
       - 🇸🇬 _SG_新加坡
+      - 🇸🇬 _SG_新加坡 2
   - name: 🇰🇷 韩国节点
     type: select
     proxies:
       - 🇰🇷 _KR_韩国
       - 🇰🇷 _KR_韩国 2
+      - 🇰🇷 _KR_韩国 3
+      - 🇰🇷 _KR_韩国 2 2
   - name: 🌍 其他地区
     type: select
     proxies:
@@ -75,6 +97,11 @@ proxy-groups:
       - 🇮🇳 _IN_印度
       - 🇲🇾 _MY_马来西亚
       - 🇷🇺 _RU_俄罗斯联邦
+      - 🇬🇧 _GB_英国 3
+      - 🇬🇧 _GB_英国 2 2
+      - 🇮🇳 _IN_印度 2
+      - 🇲🇾 _MY_马来西亚 2
+      - 🇷🇺 _RU_俄罗斯联邦 2
   - name: ♻️ 专线节点
     type: select
     proxies:
@@ -104,6 +131,28 @@ proxy-groups:
       - 🇯🇵 _US_美国->🇯🇵_JP_日本
       - 🇳🇱 _NL_荷兰 3
       - 🇰🇷 _KR_韩国 2
+      - 🇺🇸 _US_美国 3
+      - 🇸🇬 _SG_新加坡 2
+      - 🇭🇰 _HK_香港 3
+      - 🇭🇰 _HK_香港 2 2
+      - 🇳🇱 _NL_荷兰 4
+      - 🇬🇧 _GB_英国 3
+      - 🇳🇱 _NL_荷兰 2 2
+      - 🇺🇸 _US_美国 2 2
+      - 🇫🇷 _FR_法国 6
+      - 🇫🇷 _FR_法国 2 2
+      - 🇰🇷 _KR_韩国 3
+      - 🇫🇷 _FR_法国 3 2
+      - 🇫🇷 _FR_法国 4 2
+      - 🇭🇰 _HK_香港->🇵🇱_PL_波兰 2
+      - 🇬🇧 _GB_英国 2 2
+      - 🇮🇳 _IN_印度 2
+      - 🇫🇷 _FR_法国 5 2
+      - 🇲🇾 _MY_马来西亚 2
+      - 🇷🇺 _RU_俄罗斯联邦 2
+      - 🇯🇵 _US_美国->🇯🇵_JP_日本 2
+      - 🇳🇱 _NL_荷兰 3 2
+      - 🇰🇷 _KR_韩国 2 2
   - name: 📲 聊天软件
     type: select
     proxies:
@@ -273,7 +322,7 @@ proxy-groups:
       - ♻️ 专线节点
       - ♻️ 手动切换
       - DIRECT
-  - name: "🇧🇹 BT&PT"
+  - name: 🇧🇹 BT&PT
     type: select
     proxies:
       - DIRECT
