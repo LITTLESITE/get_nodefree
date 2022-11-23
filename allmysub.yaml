@@ -75,6 +75,8 @@ proxies:
   - {name: JP8, server: 117.149.247.11, port: 20031, type: trojan, password: 055015A0-50FF-205F-15AE-ADFCFF397712, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
   - {name: Linode, server: sg.securevpn.cc, port: 1020, type: ss, cipher: aes-128-gcm, password: !<str> 202211000000000000000020, plugin: obfs, plugin-opts: {mode: http, host: securevpn.cc}, udp: true}
   - {name: Linode 2, server: jp.securevpn.cc, port: 1020, type: ss, cipher: aes-128-gcm, password: !<str> 202211000000000000000020, plugin: obfs, plugin-opts: {mode: http, host: securevpn.cc}, udp: true}
+  - {name: MO 1 → openitsub.com, server: 45.64.22.55, port: 443, type: trojan, password: ZCRe0IlTyApFDO73qeaSlyDEaXwSOYCZ9B3j6ca3Anxg84CDKF2SxpzuNY58R3, sni: leeihs.freetrade.link, skip-cert-verify: true, udp: true}
+  - {name: MO 1 → openitsub.com 2, server: 45.64.22.55, port: 443, type: trojan, password: ZCRe0IlTyApFDO73qeaSlyDEaXwSOYCZ9B3j6ca3Anxg84CDKF2SxpzuNY58R3, sni: leeihs.freetrade.link, skip-cert-verify: true, udp: true}
   - {name: MO【付费推荐：goo.gs/vip】, server: 45.64.22.6, port: 443, type: vmess, uuid: ffffffff-ffff-ffff-ffff-ffffffffffff, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: p3.chigua.tk}}, udp: true}
   - {name: NKPVPN - Unlimited - Việt Nam (HN 4), server: 103.176.111.247, port: 80, type: vmess, uuid: e982184f-c6e0-4ba4-91cc-71eb6c702588, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: nkpvpn.akamaized.net}}, udp: true}
   - {name: Pool_🇸🇬SG_1126, server: 103.253.26.134, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: eeh7iewe.com, network: ws, ws-opts: {path: /ws, headers: {Host: eeh7iewe.com}}, udp: true}
@@ -184,178 +186,187 @@ proxies:
   - {name: 🇨🇳 -台湾台北市-ca.xlkjjs.top, server: ca.xlkjjs.top, port: 16269, type: vmess, uuid: 0a6b7226-2f9c-393c-bc94-5a34859250c0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ca.xlkjjs.top}}, udp: true}
   - {name: 🇨🇳 -台湾彰化县-104.199.131.172, server: 104.199.131.172, port: 45675, type: vmess, uuid: b73911a6-bb35-4941-a190-5d97e6b6d6f9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇨🇳 -台湾新竹市-111.241.161.74, server: 111.241.161.74, port: 39998, type: vmess, uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 1 → openitsub.com, server: mysql.accessconnect.cc, port: 6009, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 1 → openitsub.com, server: mysql.accessconnect.cc, port: 6006, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
   - {name: 🇨🇳 CN 1 → openitsub.com 2, server: mysql.accessconnect.cc, port: 6006, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 10 → openitsub.com, server: mysql.accessconnect.cc, port: 6016, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 10 → openitsub.com, server: mysql.accessconnect.cc, port: 6010, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
   - {name: 🇨🇳 CN 10 → openitsub.com 2, server: mysql.accessconnect.cc, port: 6010, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 11 → openitsub.com, server: mysql.accessconnect.cc, port: 6019, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 11 → openitsub.com 2, server: mysql.accessconnect.cc, port: 6022, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 12 → openitsub.com, server: mysql.accessconnect.cc, port: 6021, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 11 → openitsub.com, server: oobies9f.nodedata.net, port: 555, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 11 → openitsub.com 2, server: oobies9f.nodedata.net, port: 555, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 12 → openitsub.com, server: mysql.accessconnect.cc, port: 6018, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
   - {name: 🇨🇳 CN 12 → openitsub.com 2, server: mysql.accessconnect.cc, port: 6018, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 13 → openitsub.com, server: mysql.accessconnect.cc, port: 6017, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 13 → openitsub.com 2, server: mysql.accessconnect.cc, port: 6015, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 14 → openitsub.com, server: mysql.accessconnect.cc, port: 6007, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 14 → openitsub.com 2, server: mysql.accessconnect.cc, port: 6021, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 15 → openitsub.com, server: mysql.accessconnect.cc, port: 6001, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 15 → openitsub.com 2, server: mysql.accessconnect.cc, port: 6011, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 16 → openitsub.com, server: mysql.accessconnect.cc, port: 6011, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 16 → openitsub.com 2, server: mysql.accessconnect.cc, port: 6012, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 17 → openitsub.com, server: mysql.accessconnect.cc, port: 6014, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 17 → openitsub.com 2, server: mysql.accessconnect.cc, port: 6008, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 18 → openitsub.com, server: mysql.accessconnect.cc, port: 6002, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 18 → openitsub.com 2, server: mysql.accessconnect.cc, port: 6019, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 19 → openitsub.com, server: mysql.accessconnect.cc, port: 6013, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 19 → openitsub.com 2, server: mysql.accessconnect.cc, port: 6014, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 2 → openitsub.com, server: oracle.accessconnect.cc, port: 520, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 2 → openitsub.com 2, server: mysql.accessconnect.cc, port: 6003, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 20 → openitsub.com, server: mysql.accessconnect.cc, port: 699, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 20 → openitsub.com 2, server: mysql.accessconnect.cc, port: 1004, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 21 → openitsub.com, server: mysql.accessconnect.cc, port: 1002, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 21 → openitsub.com 2, server: mysql.accessconnect.cc, port: 1001, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 22 → openitsub.com, server: mysql.accessconnect.cc, port: 1001, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 22 → openitsub.com 2, server: mysql.accessconnect.cc, port: 6301, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 23 → openitsub.com, server: mysql.accessconnect.cc, port: 6302, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 23 → openitsub.com 2, server: mysql.accessconnect.cc, port: 3201, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 24 → openitsub.com, server: mysql.accessconnect.cc, port: 1004, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 24 → openitsub.com 2, server: mysql.accessconnect.cc, port: 6302, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 25 → openitsub.com, server: mysql.accessconnect.cc, port: 6301, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 25 → openitsub.com 2, server: mysql.accessconnect.cc, port: 6305, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 26 → openitsub.com, server: mysql.accessconnect.cc, port: 1003, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 26 → openitsub.com 2, server: mysql.accessconnect.cc, port: 3202, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 27 → openitsub.com, server: mysql.accessconnect.cc, port: 6304, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 27 → openitsub.com 2, server: mysql.accessconnect.cc, port: 3726, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 28 → openitsub.com, server: mysql.accessconnect.cc, port: 6303, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 28 → openitsub.com 2, server: mysql.accessconnect.cc, port: 6304, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 29 → openitsub.com, server: mysql.accessconnect.cc, port: 3725, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 29 → openitsub.com 2, server: mysql.accessconnect.cc, port: 1002, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 3 → openitsub.com, server: mysql.accessconnect.cc, port: 6008, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 3 → openitsub.com 2, server: mysql.accessconnect.cc, port: 6007, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 30 → openitsub.com, server: mysql.accessconnect.cc, port: 3201, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 30 → openitsub.com 2, server: mysql.accessconnect.cc, port: 3210, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 31 → openitsub.com, server: mysql.accessconnect.cc, port: 3202, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 31 → openitsub.com 2, server: mysql.accessconnect.cc, port: 3204, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 32 → openitsub.com, server: mysql.accessconnect.cc, port: 3211, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 32 → openitsub.com 2, server: mysql.accessconnect.cc, port: 6101, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 33 → openitsub.com, server: mysql.accessconnect.cc, port: 3209, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 33 → openitsub.com 2, server: mysql.accessconnect.cc, port: 6303, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 34 → openitsub.com, server: mysql.accessconnect.cc, port: 3210, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 34 → openitsub.com 2, server: mysql.accessconnect.cc, port: 3212, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 35 → openitsub.com, server: mysql.accessconnect.cc, port: 3203, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 35 → openitsub.com 2, server: mysql.accessconnect.cc, port: 3725, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 36 → openitsub.com, server: mysql.accessconnect.cc, port: 6102, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 36 → openitsub.com 2, server: mysql.accessconnect.cc, port: 3211, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 37 → openitsub.com, server: mysql.accessconnect.cc, port: 3204, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 37 → openitsub.com 2, server: mysql.accessconnect.cc, port: 3203, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 38 → openitsub.com, server: mysql.accessconnect.cc, port: 3212, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 38 → openitsub.com 2, server: sql.accessconnect.cc, port: 1114, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 39 → openitsub.com, server: sql.accessconnect.cc, port: 1105, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 39 → openitsub.com 2, server: sql.accessconnect.cc, port: 1113, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 4 → openitsub.com, server: mysql.accessconnect.cc, port: 6003, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 4 → openitsub.com 2, server: mysql.accessconnect.cc, port: 6001, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 40 → openitsub.com, server: sql.accessconnect.cc, port: 1097, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 40 → openitsub.com 2, server: sql.accessconnect.cc, port: 2107, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 41 → openitsub.com, server: sql.accessconnect.cc, port: 2002, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 41 → openitsub.com 2, server: sql.accessconnect.cc, port: 2003, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 42 → openitsub.com, server: sql.accessconnect.cc, port: 1113, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 42 → openitsub.com 2, server: sql.accessconnect.cc, port: 2101, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 43 → openitsub.com, server: sql.accessconnect.cc, port: 2103, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 43 → openitsub.com 2, server: sql.accessconnect.cc, port: 2102, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 44 → openitsub.com, server: sql.accessconnect.cc, port: 2107, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 44 → openitsub.com 2, server: sql.accessconnect.cc, port: 2103, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 45 → openitsub.com, server: sql.accessconnect.cc, port: 2105, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 45 → openitsub.com 2, server: sql.accessconnect.cc, port: 1105, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 46 → openitsub.com, server: sql.accessconnect.cc, port: 1114, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 46 → openitsub.com 2, server: sql.accessconnect.cc, port: 2002, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 47 → openitsub.com, server: sql.accessconnect.cc, port: 2110, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 47 → openitsub.com 2, server: sql.accessconnect.cc, port: 1097, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 48 → openitsub.com, server: sql.accessconnect.cc, port: 2104, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 48 → openitsub.com 2, server: sql.accessconnect.cc, port: 2104, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 49 → openitsub.com, server: sql.accessconnect.cc, port: 2106, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 49 → openitsub.com 2, server: sql.accessconnect.cc, port: 2105, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 5 → openitsub.com, server: mysql.accessconnect.cc, port: 6004, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 5 → openitsub.com 2, server: oobies9f.nodedata.net, port: 555, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 50 → openitsub.com, server: sql.accessconnect.cc, port: 2108, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 50 → openitsub.com 2, server: sql.accessconnect.cc, port: 2106, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 51 → openitsub.com, server: sql.accessconnect.cc, port: 2109, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 51 → openitsub.com 2, server: sql.accessconnect.cc, port: 2109, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 52 → openitsub.com, server: sql.accessconnect.cc, port: 2102, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 52 → openitsub.com 2, server: sql.accessconnect.cc, port: 2110, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 53 → openitsub.com, server: sql.accessconnect.cc, port: 2112, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 53 → openitsub.com 2, server: sql.accessconnect.cc, port: 2108, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 54 → openitsub.com, server: sql.accessconnect.cc, port: 2201, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 54 → openitsub.com 2, server: sql.accessconnect.cc, port: 2111, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 55 → openitsub.com, server: sql.accessconnect.cc, port: 2111, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 55 → openitsub.com 2, server: sql.accessconnect.cc, port: 2112, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 56 → openitsub.com, server: sql.accessconnect.cc, port: 2202, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 56 → openitsub.com 2, server: sql.accessconnect.cc, port: 2507, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 57 → openitsub.com, server: sql.accessconnect.cc, port: 2602, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 57 → openitsub.com 2, server: sql.accessconnect.cc, port: 2602, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 58 → openitsub.com, server: sql.accessconnect.cc, port: 2303, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 58 → openitsub.com 2, server: sql.accessconnect.cc, port: 2506, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 59 → openitsub.com, server: sql.accessconnect.cc, port: 2301, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 59 → openitsub.com 2, server: sql.accessconnect.cc, port: 2604, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 6 → openitsub.com, server: oobies9f.nodedata.net, port: 555, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 6 → openitsub.com 2, server: mysql.accessconnect.cc, port: 6017, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 60 → openitsub.com, server: sql.accessconnect.cc, port: 2302, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 60 → openitsub.com 2, server: sql.accessconnect.cc, port: 2301, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 61 → openitsub.com, server: sql.accessconnect.cc, port: 2506, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 61 → openitsub.com 2, server: sql.accessconnect.cc, port: 2601, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 62 → openitsub.com, server: sql.accessconnect.cc, port: 2603, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 62 → openitsub.com 2, server: sql.accessconnect.cc, port: 2603, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 63 → openitsub.com, server: sql.accessconnect.cc, port: 2507, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 63 → openitsub.com 2, server: sql.accessconnect.cc, port: 2303, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 64 → openitsub.com, server: sql.accessconnect.cc, port: 2604, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 64 → openitsub.com 2, server: sql.accessconnect.cc, port: 2302, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 65 → openitsub.com, server: sql.accessconnect.cc, port: 2605, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 65 → openitsub.com 2, server: in03.my1188.org, port: 63078, type: vmess, uuid: 5f04de84-6b7e-3564-82c2-d2a998002629, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22hk-balancer.airport-v2.com%22%7D"}}, udp: true}
-  - {name: 🇨🇳 CN 66 → openitsub.com, server: sql.accessconnect.cc, port: 2702, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 66 → openitsub.com 2, server: sql.accessconnect.cc, port: 2605, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 67 → openitsub.com, server: in02.my1188.org, port: 63078, type: vmess, uuid: 5f04de84-6b7e-3564-82c2-d2a998002629, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22hk-balancer.airport-v2.com%22%7D"}}, udp: true}
-  - {name: 🇨🇳 CN 67 → openitsub.com 2, server: in04.my1188.org, port: 63078, type: vmess, uuid: 5f04de84-6b7e-3564-82c2-d2a998002629, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22hk-balancer.airport-v2.com%22%7D"}}, udp: true}
-  - {name: 🇨🇳 CN 68 → openitsub.com, server: in03.my1188.org, port: 63078, type: vmess, uuid: 5f04de84-6b7e-3564-82c2-d2a998002629, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22hk-balancer.airport-v2.com%22%7D"}}, udp: true}
-  - {name: 🇨🇳 CN 68 → openitsub.com 2, server: in01.my1188.org, port: 63078, type: vmess, uuid: 5f04de84-6b7e-3564-82c2-d2a998002629, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22hk-balancer.airport-v2.com%22%7D"}}, udp: true}
-  - {name: 🇨🇳 CN 69 → openitsub.com, server: pro01.my1188.org, port: 3143, type: vmess, uuid: 5f04de84-6b7e-3564-82c2-d2a998002629, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22hkt01.pqs-vds.in168.net%22%7D"}}, udp: true}
-  - {name: 🇨🇳 CN 69 → openitsub.com 2, server: pro01.my1188.org, port: 3143, type: vmess, uuid: 5f04de84-6b7e-3564-82c2-d2a998002629, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22hkt01.pqs-vds.in168.net%22%7D"}}, udp: true}
-  - {name: 🇨🇳 CN 7 → openitsub.com, server: mysql.accessconnect.cc, port: 6015, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 7 → openitsub.com 2, server: mysql.accessconnect.cc, port: 6005, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 70 → openitsub.com, server: pro01.my1188.org, port: 3023, type: vmess, uuid: 5f04de84-6b7e-3564-82c2-d2a998002629, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22hkbgp-mg.iepl.nbsd.us%22%7D"}}, udp: true}
-  - {name: 🇨🇳 CN 70 → openitsub.com 2, server: pro01.my1188.org, port: 3023, type: vmess, uuid: 5f04de84-6b7e-3564-82c2-d2a998002629, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22hkbgp-mg.iepl.nbsd.us%22%7D"}}, udp: true}
-  - {name: 🇨🇳 CN 71 → openitsub.com, server: in05.my1188.org, port: 63078, type: vmess, uuid: 5f04de84-6b7e-3564-82c2-d2a998002629, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22hk-balancer.airport-v2.com%22%7D"}}, udp: true}
-  - {name: 🇨🇳 CN 71 → openitsub.com 2, server: in05.my1188.org, port: 63088, type: vmess, uuid: 5f04de84-6b7e-3564-82c2-d2a998002629, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /mugua, headers: {Host: "%7B%22Host%22:%22tw-load-balancer.myn1des.com%22%7D"}}, udp: true}
-  - {name: 🇨🇳 CN 72 → openitsub.com, server: pro01.my1188.org, port: 3053, type: vmess, uuid: 5f04de84-6b7e-3564-82c2-d2a998002629, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 72 → openitsub.com 2, server: sql.accessconnect.cc, port: 2702, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 73 → openitsub.com, server: in06.my1188.org, port: 63088, type: vmess, uuid: 5f04de84-6b7e-3564-82c2-d2a998002629, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /mugua, headers: {Host: "%7B%22Host%22:%22tw-load-balancer.myn1des.com%22%7D"}}, udp: true}
-  - {name: 🇨🇳 CN 73 → openitsub.com 2, server: in05.my1188.org, port: 63078, type: vmess, uuid: 5f04de84-6b7e-3564-82c2-d2a998002629, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22hk-balancer.airport-v2.com%22%7D"}}, udp: true}
-  - {name: 🇨🇳 CN 74 → openitsub.com, server: mysql.accessconnect.cc, port: 6006, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 74 → openitsub.com 2, server: in02.my1188.org, port: 63078, type: vmess, uuid: 5f04de84-6b7e-3564-82c2-d2a998002629, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22hk-balancer.airport-v2.com%22%7D"}}, udp: true}
-  - {name: 🇨🇳 CN 75 → openitsub.com, server: pro01.my1188.org, port: 3173, type: vmess, uuid: 5f04de84-6b7e-3564-82c2-d2a998002629, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22hk-fdc1.nbsd.us%22%7D"}}, udp: true}
-  - {name: 🇨🇳 CN 75 → openitsub.com 2, server: mysql.accessconnect.cc, port: 6004, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 76 → openitsub.com, server: sql.accessconnect.cc, port: 1115, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 76 → openitsub.com 2, server: pro01.my1188.org, port: 3203, type: vmess, uuid: 5f04de84-6b7e-3564-82c2-d2a998002629, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22hkt4-cdn-myip.airport-v2.com%22%7D"}}, udp: true}
-  - {name: 🇨🇳 CN 77 → openitsub.com, server: pro01.my1188.org, port: 3073, type: vmess, uuid: 5f04de84-6b7e-3564-82c2-d2a998002629, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22tw03.yaofan.in168.net%22%7D"}}, udp: true}
-  - {name: 🇨🇳 CN 77 → openitsub.com 2, server: pro01.my1188.org, port: 3053, type: vmess, uuid: 5f04de84-6b7e-3564-82c2-d2a998002629, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 78 → openitsub.com, server: mysql.accessconnect.cc, port: 6020, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 78 → openitsub.com 2, server: pro01.my1188.org, port: 3073, type: vmess, uuid: 5f04de84-6b7e-3564-82c2-d2a998002629, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22tw03.yaofan.in168.net%22%7D"}}, udp: true}
-  - {name: 🇨🇳 CN 79 → openitsub.com, server: sql.accessconnect.cc, port: 2203, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 79 → openitsub.com 2, server: mysql.accessconnect.cc, port: 6502, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 8 → openitsub.com, server: mysql.accessconnect.cc, port: 6010, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 8 → openitsub.com 2, server: mysql.accessconnect.cc, port: 6020, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 80 → openitsub.com, server: mysql.accessconnect.cc, port: 6022, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 80 → openitsub.com 2, server: sql.accessconnect.cc, port: 1115, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 81 → openitsub.com, server: mysql.accessconnect.cc, port: 3726, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 13 → openitsub.com, server: mysql.accessconnect.cc, port: 6003, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 13 → openitsub.com 2, server: mysql.accessconnect.cc, port: 6003, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 14 → openitsub.com, server: mysql.accessconnect.cc, port: 6011, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 14 → openitsub.com 2, server: mysql.accessconnect.cc, port: 6011, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 15 → openitsub.com, server: mysql.accessconnect.cc, port: 6012, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 15 → openitsub.com 2, server: mysql.accessconnect.cc, port: 6012, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 16 → openitsub.com, server: mysql.accessconnect.cc, port: 1004, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 16 → openitsub.com 2, server: mysql.accessconnect.cc, port: 1004, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 17 → openitsub.com, server: mysql.accessconnect.cc, port: 6302, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 17 → openitsub.com 2, server: mysql.accessconnect.cc, port: 6302, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 18 → openitsub.com, server: mysql.accessconnect.cc, port: 6021, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 18 → openitsub.com 2, server: mysql.accessconnect.cc, port: 6021, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 19 → openitsub.com, server: mysql.accessconnect.cc, port: 6301, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 19 → openitsub.com 2, server: mysql.accessconnect.cc, port: 6301, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 2 → openitsub.com, server: mysql.accessconnect.cc, port: 6007, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 2 → openitsub.com 2, server: mysql.accessconnect.cc, port: 6007, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 20 → openitsub.com, server: mysql.accessconnect.cc, port: 1001, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 20 → openitsub.com 2, server: mysql.accessconnect.cc, port: 1001, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 21 → openitsub.com, server: mysql.accessconnect.cc, port: 6304, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 21 → openitsub.com 2, server: mysql.accessconnect.cc, port: 6304, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 22 → openitsub.com, server: mysql.accessconnect.cc, port: 3726, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 22 → openitsub.com 2, server: mysql.accessconnect.cc, port: 3726, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 23 → openitsub.com, server: mysql.accessconnect.cc, port: 1002, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 23 → openitsub.com 2, server: mysql.accessconnect.cc, port: 1002, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 24 → openitsub.com, server: mysql.accessconnect.cc, port: 3202, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 24 → openitsub.com 2, server: mysql.accessconnect.cc, port: 3202, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 25 → openitsub.com, server: mysql.accessconnect.cc, port: 3725, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 25 → openitsub.com 2, server: mysql.accessconnect.cc, port: 3725, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 26 → openitsub.com, server: mysql.accessconnect.cc, port: 3201, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 26 → openitsub.com 2, server: mysql.accessconnect.cc, port: 3201, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 27 → openitsub.com, server: mysql.accessconnect.cc, port: 6305, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 27 → openitsub.com 2, server: mysql.accessconnect.cc, port: 6305, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 28 → openitsub.com, server: mysql.accessconnect.cc, port: 3204, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 28 → openitsub.com 2, server: mysql.accessconnect.cc, port: 3204, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 29 → openitsub.com, server: mysql.accessconnect.cc, port: 6303, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 29 → openitsub.com 2, server: mysql.accessconnect.cc, port: 6303, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 3 → openitsub.com, server: mysql.accessconnect.cc, port: 6017, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 3 → openitsub.com 2, server: mysql.accessconnect.cc, port: 6017, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 30 → openitsub.com, server: mysql.accessconnect.cc, port: 6101, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 30 → openitsub.com 2, server: mysql.accessconnect.cc, port: 6101, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 31 → openitsub.com, server: mysql.accessconnect.cc, port: 6501, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 31 → openitsub.com 2, server: mysql.accessconnect.cc, port: 6501, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 32 → openitsub.com, server: sql.accessconnect.cc, port: 1111, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 32 → openitsub.com 2, server: sql.accessconnect.cc, port: 1111, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 33 → openitsub.com, server: sql.accessconnect.cc, port: 2002, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 33 → openitsub.com 2, server: sql.accessconnect.cc, port: 2002, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 34 → openitsub.com, server: sql.accessconnect.cc, port: 2104, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 34 → openitsub.com 2, server: sql.accessconnect.cc, port: 2104, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 35 → openitsub.com, server: sql.accessconnect.cc, port: 2106, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 35 → openitsub.com 2, server: sql.accessconnect.cc, port: 2106, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 36 → openitsub.com, server: mysql.accessconnect.cc, port: 700, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 36 → openitsub.com 2, server: mysql.accessconnect.cc, port: 700, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 37 → openitsub.com, server: sql.accessconnect.cc, port: 2103, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 37 → openitsub.com 2, server: sql.accessconnect.cc, port: 2103, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 38 → openitsub.com, server: mysql.accessconnect.cc, port: 699, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 38 → openitsub.com 2, server: mysql.accessconnect.cc, port: 699, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 39 → openitsub.com, server: sql.accessconnect.cc, port: 2107, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 39 → openitsub.com 2, server: sql.accessconnect.cc, port: 2107, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 4 → openitsub.com, server: mysql.accessconnect.cc, port: 6004, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 4 → openitsub.com 2, server: mysql.accessconnect.cc, port: 6004, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 40 → openitsub.com, server: sql.accessconnect.cc, port: 1105, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 40 → openitsub.com 2, server: sql.accessconnect.cc, port: 1105, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 41 → openitsub.com, server: mysql.accessconnect.cc, port: 3210, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 41 → openitsub.com 2, server: mysql.accessconnect.cc, port: 3210, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 42 → openitsub.com, server: sql.accessconnect.cc, port: 1114, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 42 → openitsub.com 2, server: sql.accessconnect.cc, port: 1114, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 43 → openitsub.com, server: mysql.accessconnect.cc, port: 3203, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 43 → openitsub.com 2, server: mysql.accessconnect.cc, port: 3203, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 44 → openitsub.com, server: mysql.accessconnect.cc, port: 3212, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 44 → openitsub.com 2, server: mysql.accessconnect.cc, port: 3212, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 45 → openitsub.com, server: mysql.accessconnect.cc, port: 3211, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 45 → openitsub.com 2, server: mysql.accessconnect.cc, port: 3211, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 46 → openitsub.com, server: sql.accessconnect.cc, port: 1097, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 46 → openitsub.com 2, server: sql.accessconnect.cc, port: 1097, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 47 → openitsub.com, server: sql.accessconnect.cc, port: 2112, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 47 → openitsub.com 2, server: sql.accessconnect.cc, port: 2112, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 48 → openitsub.com, server: sql.accessconnect.cc, port: 2109, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 48 → openitsub.com 2, server: sql.accessconnect.cc, port: 2109, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 49 → openitsub.com, server: sql.accessconnect.cc, port: 2102, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 49 → openitsub.com 2, server: sql.accessconnect.cc, port: 2102, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 5 → openitsub.com, server: mysql.accessconnect.cc, port: 6015, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 5 → openitsub.com 2, server: mysql.accessconnect.cc, port: 6015, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 50 → openitsub.com, server: sql.accessconnect.cc, port: 2111, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 50 → openitsub.com 2, server: sql.accessconnect.cc, port: 2111, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 51 → openitsub.com, server: sql.accessconnect.cc, port: 2110, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 51 → openitsub.com 2, server: sql.accessconnect.cc, port: 2110, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 52 → openitsub.com, server: sql.accessconnect.cc, port: 2203, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 52 → openitsub.com 2, server: sql.accessconnect.cc, port: 2203, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 53 → openitsub.com, server: sql.accessconnect.cc, port: 2506, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 53 → openitsub.com 2, server: sql.accessconnect.cc, port: 2506, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 54 → openitsub.com, server: sql.accessconnect.cc, port: 2601, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 54 → openitsub.com 2, server: sql.accessconnect.cc, port: 2601, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 55 → openitsub.com, server: sql.accessconnect.cc, port: 2602, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 55 → openitsub.com 2, server: sql.accessconnect.cc, port: 2602, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 56 → openitsub.com, server: sql.accessconnect.cc, port: 2301, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 56 → openitsub.com 2, server: sql.accessconnect.cc, port: 2301, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 57 → openitsub.com, server: sql.accessconnect.cc, port: 2604, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 57 → openitsub.com 2, server: sql.accessconnect.cc, port: 2604, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 58 → openitsub.com, server: sql.accessconnect.cc, port: 2507, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 58 → openitsub.com 2, server: sql.accessconnect.cc, port: 2507, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 59 → openitsub.com, server: sql.accessconnect.cc, port: 2302, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 59 → openitsub.com 2, server: sql.accessconnect.cc, port: 2302, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 6 → openitsub.com, server: mysql.accessconnect.cc, port: 6008, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 6 → openitsub.com 2, server: mysql.accessconnect.cc, port: 6008, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 60 → openitsub.com, server: sql.accessconnect.cc, port: 2605, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 60 → openitsub.com 2, server: sql.accessconnect.cc, port: 2605, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 61 → openitsub.com, server: pro01.my1188.org, port: 3143, type: vmess, uuid: 5f04de84-6b7e-3564-82c2-d2a998002629, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22hkt01.pqs-vds.in168.net%22%7D"}}, udp: true}
+  - {name: 🇨🇳 CN 61 → openitsub.com 2, server: pro01.my1188.org, port: 3143, type: vmess, uuid: 5f04de84-6b7e-3564-82c2-d2a998002629, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22hkt01.pqs-vds.in168.net%22%7D"}}, udp: true}
+  - {name: 🇨🇳 CN 62 → openitsub.com, server: pro01.my1188.org, port: 3023, type: vmess, uuid: 5f04de84-6b7e-3564-82c2-d2a998002629, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22hkbgp-mg.iepl.nbsd.us%22%7D"}}, udp: true}
+  - {name: 🇨🇳 CN 62 → openitsub.com 2, server: pro01.my1188.org, port: 3023, type: vmess, uuid: 5f04de84-6b7e-3564-82c2-d2a998002629, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22hkbgp-mg.iepl.nbsd.us%22%7D"}}, udp: true}
+  - {name: 🇨🇳 CN 63 → openitsub.com, server: in02.my1188.org, port: 63078, type: vmess, uuid: 5f04de84-6b7e-3564-82c2-d2a998002629, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22hk-balancer.airport-v2.com%22%7D"}}, udp: true}
+  - {name: 🇨🇳 CN 63 → openitsub.com 2, server: in02.my1188.org, port: 63078, type: vmess, uuid: 5f04de84-6b7e-3564-82c2-d2a998002629, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22hk-balancer.airport-v2.com%22%7D"}}, udp: true}
+  - {name: 🇨🇳 CN 64 → openitsub.com, server: in01.my1188.org, port: 63078, type: vmess, uuid: 5f04de84-6b7e-3564-82c2-d2a998002629, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22hk-balancer.airport-v2.com%22%7D"}}, udp: true}
+  - {name: 🇨🇳 CN 64 → openitsub.com 2, server: in01.my1188.org, port: 63078, type: vmess, uuid: 5f04de84-6b7e-3564-82c2-d2a998002629, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22hk-balancer.airport-v2.com%22%7D"}}, udp: true}
+  - {name: 🇨🇳 CN 65 → openitsub.com, server: pro01.my1188.org, port: 3203, type: vmess, uuid: 5f04de84-6b7e-3564-82c2-d2a998002629, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22hkt4-cdn-myip.airport-v2.com%22%7D"}}, udp: true}
+  - {name: 🇨🇳 CN 65 → openitsub.com 2, server: pro01.my1188.org, port: 3203, type: vmess, uuid: 5f04de84-6b7e-3564-82c2-d2a998002629, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22hkt4-cdn-myip.airport-v2.com%22%7D"}}, udp: true}
+  - {name: 🇨🇳 CN 66 → openitsub.com, server: mysql.accessconnect.cc, port: 6016, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 66 → openitsub.com 2, server: mysql.accessconnect.cc, port: 6016, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 67 → openitsub.com, server: in06.my1188.org, port: 63088, type: vmess, uuid: 5f04de84-6b7e-3564-82c2-d2a998002629, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /mugua, headers: {Host: "%7B%22Host%22:%22tw-load-balancer.myn1des.com%22%7D"}}, udp: true}
+  - {name: 🇨🇳 CN 67 → openitsub.com 2, server: in06.my1188.org, port: 63088, type: vmess, uuid: 5f04de84-6b7e-3564-82c2-d2a998002629, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /mugua, headers: {Host: "%7B%22Host%22:%22tw-load-balancer.myn1des.com%22%7D"}}, udp: true}
+  - {name: 🇨🇳 CN 68 → openitsub.com, server: pro01.my1188.org, port: 3053, type: vmess, uuid: 5f04de84-6b7e-3564-82c2-d2a998002629, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 68 → openitsub.com 2, server: pro01.my1188.org, port: 3053, type: vmess, uuid: 5f04de84-6b7e-3564-82c2-d2a998002629, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 69 → openitsub.com, server: in03.my1188.org, port: 63078, type: vmess, uuid: 5f04de84-6b7e-3564-82c2-d2a998002629, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22hk-balancer.airport-v2.com%22%7D"}}, udp: true}
+  - {name: 🇨🇳 CN 69 → openitsub.com 2, server: in03.my1188.org, port: 63078, type: vmess, uuid: 5f04de84-6b7e-3564-82c2-d2a998002629, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22hk-balancer.airport-v2.com%22%7D"}}, udp: true}
+  - {name: 🇨🇳 CN 7 → openitsub.com, server: mysql.accessconnect.cc, port: 6020, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 7 → openitsub.com 2, server: mysql.accessconnect.cc, port: 6020, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 70 → openitsub.com, server: mysql.accessconnect.cc, port: 6014, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 70 → openitsub.com 2, server: mysql.accessconnect.cc, port: 6014, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 71 → openitsub.com, server: pro01.my1188.org, port: 3173, type: vmess, uuid: 5f04de84-6b7e-3564-82c2-d2a998002629, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22hk-fdc1.nbsd.us%22%7D"}}, udp: true}
+  - {name: 🇨🇳 CN 71 → openitsub.com 2, server: pro01.my1188.org, port: 3173, type: vmess, uuid: 5f04de84-6b7e-3564-82c2-d2a998002629, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22hk-fdc1.nbsd.us%22%7D"}}, udp: true}
+  - {name: 🇨🇳 CN 72 → openitsub.com, server: in02.my1188.org, port: 63088, type: vmess, uuid: 5f04de84-6b7e-3564-82c2-d2a998002629, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /mugua, headers: {Host: "%7B%22Host%22:%22tw-load-balancer.myn1des.com%22%7D"}}, udp: true}
+  - {name: 🇨🇳 CN 72 → openitsub.com 2, server: in02.my1188.org, port: 63088, type: vmess, uuid: 5f04de84-6b7e-3564-82c2-d2a998002629, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /mugua, headers: {Host: "%7B%22Host%22:%22tw-load-balancer.myn1des.com%22%7D"}}, udp: true}
+  - {name: 🇨🇳 CN 73 → openitsub.com, server: mysql.accessconnect.cc, port: 6002, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 73 → openitsub.com 2, server: mysql.accessconnect.cc, port: 6002, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 74 → openitsub.com, server: mysql.accessconnect.cc, port: 6001, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 74 → openitsub.com 2, server: mysql.accessconnect.cc, port: 6001, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 75 → openitsub.com, server: in04.my1188.org, port: 63088, type: vmess, uuid: 5f04de84-6b7e-3564-82c2-d2a998002629, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /mugua, headers: {Host: "%7B%22Host%22:%22tw-load-balancer.myn1des.com%22%7D"}}, udp: true}
+  - {name: 🇨🇳 CN 75 → openitsub.com 2, server: in04.my1188.org, port: 63088, type: vmess, uuid: 5f04de84-6b7e-3564-82c2-d2a998002629, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /mugua, headers: {Host: "%7B%22Host%22:%22tw-load-balancer.myn1des.com%22%7D"}}, udp: true}
+  - {name: 🇨🇳 CN 76 → openitsub.com, server: in01.my1188.org, port: 63088, type: vmess, uuid: 5f04de84-6b7e-3564-82c2-d2a998002629, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /mugua, headers: {Host: "%7B%22Host%22:%22tw-load-balancer.myn1des.com%22%7D"}}, udp: true}
+  - {name: 🇨🇳 CN 76 → openitsub.com 2, server: in01.my1188.org, port: 63088, type: vmess, uuid: 5f04de84-6b7e-3564-82c2-d2a998002629, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /mugua, headers: {Host: "%7B%22Host%22:%22tw-load-balancer.myn1des.com%22%7D"}}, udp: true}
+  - {name: 🇨🇳 CN 77 → openitsub.com, server: oracle.accessconnect.cc, port: 520, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 77 → openitsub.com 2, server: oracle.accessconnect.cc, port: 520, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 78 → openitsub.com, server: mysql.accessconnect.cc, port: 1003, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 78 → openitsub.com 2, server: mysql.accessconnect.cc, port: 1003, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 79 → openitsub.com, server: mysql.accessconnect.cc, port: 3209, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 79 → openitsub.com 2, server: mysql.accessconnect.cc, port: 3209, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 8 → openitsub.com, server: mysql.accessconnect.cc, port: 6009, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 8 → openitsub.com 2, server: mysql.accessconnect.cc, port: 6009, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 80 → openitsub.com, server: sql.accessconnect.cc, port: 2105, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 80 → openitsub.com 2, server: sql.accessconnect.cc, port: 2105, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 81 → openitsub.com, server: sql.accessconnect.cc, port: 2108, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 81 → openitsub.com 2, server: sql.accessconnect.cc, port: 2108, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
   - {name: 🇨🇳 CN 82 → openitsub.com, server: sql.accessconnect.cc, port: 2101, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 83 → openitsub.com, server: mysql.accessconnect.cc, port: 6305, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 84 → openitsub.com, server: mysql.accessconnect.cc, port: 6501, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 85 → openitsub.com, server: mysql.accessconnect.cc, port: 6005, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 86 → openitsub.com, server: sql.accessconnect.cc, port: 2601, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 87 → openitsub.com, server: sql.accessconnect.cc, port: 1116, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 9 → openitsub.com, server: mysql.accessconnect.cc, port: 6012, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN 9 → openitsub.com 2, server: mysql.accessconnect.cc, port: 6009, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
-  - {name: 🇨🇳 CN【付费推荐：goo.gs/vip】, server: zfd-moble.gatknqh.cn, port: 16108, type: vmess, uuid: f1d39fe1-bfa3-34ff-86a2-29250af03183, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN【付费推荐：goo.gs/vip】 2, server: zfd-moblev2.gatknqh.cn, port: 16113, type: vmess, uuid: f1d39fe1-bfa3-34ff-86a2-29250af03183, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN【付费推荐：goo.gs/vip】 3, server: h217022.waihuizhibiaowang.com, port: 15743, type: ss, cipher: chacha20-ietf-poly1305, password: 3dbdf038-ef96-4b51-834e-ac7e5ce94fe2, udp: true}
+  - {name: 🇨🇳 CN 82 → openitsub.com 2, server: sql.accessconnect.cc, port: 2101, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 83 → openitsub.com, server: mysql.accessconnect.cc, port: 6022, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 83 → openitsub.com 2, server: mysql.accessconnect.cc, port: 6022, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 84 → openitsub.com, server: sql.accessconnect.cc, port: 2303, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 84 → openitsub.com 2, server: sql.accessconnect.cc, port: 2303, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 85 → openitsub.com, server: sql.accessconnect.cc, port: 2603, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 85 → openitsub.com 2, server: sql.accessconnect.cc, port: 2603, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 86 → openitsub.com, server: sql.accessconnect.cc, port: 1116, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 86 → openitsub.com 2, server: sql.accessconnect.cc, port: 1116, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 87 → openitsub.com, server: mysql.accessconnect.cc, port: 6005, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 87 → openitsub.com 2, server: mysql.accessconnect.cc, port: 6005, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 88 → openitsub.com, server: sql.accessconnect.cc, port: 1113, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 88 → openitsub.com 2, server: sql.accessconnect.cc, port: 1113, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 89 → openitsub.com, server: sql.accessconnect.cc, port: 2003, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 89 → openitsub.com 2, server: sql.accessconnect.cc, port: 2003, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 9 → openitsub.com, server: mysql.accessconnect.cc, port: 6013, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN 9 → openitsub.com 2, server: mysql.accessconnect.cc, port: 6013, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 199179:j0PqGv, obfs-param: c83ba199179.www.gov.hk, udp: true}
+  - {name: 🇨🇳 CN【付费推荐：goo.gs/vip】, server: zfd-moblev2.gatknqh.cn, port: 16113, type: vmess, uuid: f1d39fe1-bfa3-34ff-86a2-29250af03183, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN【付费推荐：goo.gs/vip】 2, server: h217022.waihuizhibiaowang.com, port: 15743, type: ss, cipher: chacha20-ietf-poly1305, password: 3dbdf038-ef96-4b51-834e-ac7e5ce94fe2, udp: true}
   - {name: 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_183, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 TW 1 → openitsub.com, server: tw-tb-c.zc20200426.club, port: 39999, type: vmess, uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
   - {name: 🇨🇳 Taiwan | 01, server: oss-cn-guangzhou.westdatacloud.xyz, port: 20011, type: trojan, password: 1BC2AF70-7052-CAE1-D253-D643788FFCF5, sni: v12.kwaicdn.com, skip-cert-verify: true, udp: true}
   - {name: 🇨🇳 Taiwan | 02, server: oss-cn-guangzhou.westdatacloud.xyz, port: 20012, type: trojan, password: 7D886417-7ACE-010A-6B08-81BF7931552B, sni: v12.kwaicdn.com, skip-cert-verify: true, udp: true}
   - {name: 🇨🇳 Taiwan | 03, server: cos-ap-guangzhou.westdatacloud.top, port: 20013, type: trojan, password: DD8562FE-16E5-F31F-E43F-645CDAA5A53C, sni: v12.kwaicdn.com, skip-cert-verify: true, udp: true}
@@ -557,8 +568,7 @@ proxies:
   - {name: 🇯🇵 @SSRSUB-日本V07-付费推荐:dlj.tf/ssrsub, server: www.digitalocean.com, port: 80, type: vmess, uuid: 0db0a479-8993-4e5b-a002-629e9e0b40e5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: o08.tgfaka.com}}, udp: true}
   - {name: 🇯🇵 @SSRSUB-日本V08-付费推荐:dlj.tf/ssrsub, server: http.download.yunzhongzhuan.com, port: 80, type: vmess, uuid: 0db0a479-8993-4e5b-a002-629e9e0b40e5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: o08.tgfaka.com}}, udp: true}
   - {name: 🇯🇵 @SSRSUB-日本V09-付费推荐:dlj.tf/ssrsub, server: gg1.tanglu.xyz, port: 80, type: vmess, uuid: 0db0a479-8993-4e5b-a002-629e9e0b40e5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: o08.tgfaka.com}}, udp: true}
-  - {name: 🇯🇵 JP【付费推荐：goo.gs/vip】, server: 168.138.43.89, port: 443, type: trojan, password: d06a3f01-1ff0-4792-9b8e-a5a604bc74a2, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 JP【付费推荐：goo.gs/vip】 2, server: 168.138.44.176, port: 443, type: trojan, password: 8d2d5953-d649-4034-94f2-72f2df2623da, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP【付费推荐：goo.gs/vip】, server: 168.138.44.176, port: 443, type: trojan, password: 8d2d5953-d649-4034-94f2-72f2df2623da, skip-cert-verify: true, udp: true}
   - {name: 🇯🇵 Japan | 06, server: oss-cn-shanghai.westdatacloud.xyz, port: 20036, type: trojan, password: 1BC2AF70-7052-CAE1-D253-D643788FFCF5, sni: v12.kwaicdn.com, skip-cert-verify: true, udp: true}
   - {name: 🇯🇵 V115-1.2x-Tokyo, server: ssrsub.o05.trojan.tel, port: 80, type: trojan, password: e2eecdb9-f0d8-40b5-9f20-c2375f4373dd, sni: hk.jd.com, skip-cert-verify: true, udp: true}
   - {name: 🇯🇵 V116-1.2x-Tokyo, server: ssrsub.o06.trojan.tel, port: 80, type: trojan, password: e2eecdb9-f0d8-40b5-9f20-c2375f4373dd, sni: hk.jd.com, skip-cert-verify: true, udp: true}
@@ -737,6 +747,8 @@ proxies:
   - {name: 🇺🇸 Relay_🇺🇸US-🇺🇸US_1946, server: iesei1ei.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: iesei1ei.com, network: ws, ws-opts: {path: /ws, headers: {Host: iesei1ei.com}}, udp: true}
   - {name: 🇺🇸 Relay_🇺🇸US-🇻🇳VN_1252, server: 10.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 10.72img.xyz}}, udp: true}
   - {name: 🇺🇸 US 1, server: 31.184.207.8, port: 443, type: vmess, uuid: 06d3d7a6-bc43-46f2-be8e-ad46c4416a27, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /run, headers: {Host: us.wwcloud.tk}}, udp: true}
+  - {name: 🇺🇸 US 1 → openitsub.com, server: 138.2.81.70, port: 443, type: trojan, password: 81d93f62-15a2-4994-adb9-0b5d906aac7e, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 1 → openitsub.com 2, server: 138.2.81.70, port: 443, type: trojan, password: 81d93f62-15a2-4994-adb9-0b5d906aac7e, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 US 2, server: 92.223.61.21, port: 443, type: vmess, uuid: 06d3d7a6-bc43-46f2-be8e-ad46c4416a27, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /run, headers: {Host: us.wwcloud.tk}}, udp: true}
   - {name: 🇺🇸 US 4, server: 31.184.207.4, port: 443, type: vmess, uuid: 06d3d7a6-bc43-46f2-be8e-ad46c4416a27, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /run, headers: {Host: us.wwcloud.tk}}, udp: true}
   - {name: 🇺🇸 US【付费推荐：goo.gs/vip】, server: 15.235.147.186, port: 80, type: vmess, uuid: 6fea1649-425b-4092-bf53-29792152c925, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /sshkit/Ertusg86/635014638c264/}, udp: true}
@@ -994,6 +1006,8 @@ proxy-groups:
       - JP8
       - Linode
       - Linode 2
+      - MO 1 → openitsub.com
+      - MO 1 → openitsub.com 2
       - MO【付费推荐：goo.gs/vip】
       - NKPVPN - Unlimited - Việt Nam (HN 4)
       - Pool_🇸🇬SG_1126
@@ -1262,19 +1276,28 @@ proxy-groups:
       - 🇨🇳 CN 80 → openitsub.com
       - 🇨🇳 CN 80 → openitsub.com 2
       - 🇨🇳 CN 81 → openitsub.com
+      - 🇨🇳 CN 81 → openitsub.com 2
       - 🇨🇳 CN 82 → openitsub.com
+      - 🇨🇳 CN 82 → openitsub.com 2
       - 🇨🇳 CN 83 → openitsub.com
+      - 🇨🇳 CN 83 → openitsub.com 2
       - 🇨🇳 CN 84 → openitsub.com
+      - 🇨🇳 CN 84 → openitsub.com 2
       - 🇨🇳 CN 85 → openitsub.com
+      - 🇨🇳 CN 85 → openitsub.com 2
       - 🇨🇳 CN 86 → openitsub.com
+      - 🇨🇳 CN 86 → openitsub.com 2
       - 🇨🇳 CN 87 → openitsub.com
+      - 🇨🇳 CN 87 → openitsub.com 2
+      - 🇨🇳 CN 88 → openitsub.com
+      - 🇨🇳 CN 88 → openitsub.com 2
+      - 🇨🇳 CN 89 → openitsub.com
+      - 🇨🇳 CN 89 → openitsub.com 2
       - 🇨🇳 CN 9 → openitsub.com
       - 🇨🇳 CN 9 → openitsub.com 2
       - 🇨🇳 CN【付费推荐：goo.gs/vip】
       - 🇨🇳 CN【付费推荐：goo.gs/vip】 2
-      - 🇨🇳 CN【付费推荐：goo.gs/vip】 3
       - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_183
-      - 🇨🇳 TW 1 → openitsub.com
       - 🇨🇳 Taiwan | 01
       - 🇨🇳 Taiwan | 02
       - 🇨🇳 Taiwan | 03
@@ -1477,7 +1500,6 @@ proxy-groups:
       - 🇯🇵 @SSRSUB-日本V08-付费推荐:dlj.tf/ssrsub
       - 🇯🇵 @SSRSUB-日本V09-付费推荐:dlj.tf/ssrsub
       - 🇯🇵 JP【付费推荐：goo.gs/vip】
-      - 🇯🇵 JP【付费推荐：goo.gs/vip】 2
       - 🇯🇵 Japan | 06
       - 🇯🇵 V115-1.2x-Tokyo
       - 🇯🇵 V116-1.2x-Tokyo
@@ -1656,6 +1678,8 @@ proxy-groups:
       - 🇺🇸 Relay_🇺🇸US-🇺🇸US_1946
       - 🇺🇸 Relay_🇺🇸US-🇻🇳VN_1252
       - 🇺🇸 US 1
+      - 🇺🇸 US 1 → openitsub.com
+      - 🇺🇸 US 1 → openitsub.com 2
       - 🇺🇸 US 2
       - 🇺🇸 US 4
       - 🇺🇸 US【付费推荐：goo.gs/vip】
@@ -1906,6 +1930,8 @@ proxy-groups:
       - JP8
       - Linode
       - Linode 2
+      - MO 1 → openitsub.com
+      - MO 1 → openitsub.com 2
       - MO【付费推荐：goo.gs/vip】
       - NKPVPN - Unlimited - Việt Nam (HN 4)
       - Pool_🇸🇬SG_1126
@@ -2174,19 +2200,28 @@ proxy-groups:
       - 🇨🇳 CN 80 → openitsub.com
       - 🇨🇳 CN 80 → openitsub.com 2
       - 🇨🇳 CN 81 → openitsub.com
+      - 🇨🇳 CN 81 → openitsub.com 2
       - 🇨🇳 CN 82 → openitsub.com
+      - 🇨🇳 CN 82 → openitsub.com 2
       - 🇨🇳 CN 83 → openitsub.com
+      - 🇨🇳 CN 83 → openitsub.com 2
       - 🇨🇳 CN 84 → openitsub.com
+      - 🇨🇳 CN 84 → openitsub.com 2
       - 🇨🇳 CN 85 → openitsub.com
+      - 🇨🇳 CN 85 → openitsub.com 2
       - 🇨🇳 CN 86 → openitsub.com
+      - 🇨🇳 CN 86 → openitsub.com 2
       - 🇨🇳 CN 87 → openitsub.com
+      - 🇨🇳 CN 87 → openitsub.com 2
+      - 🇨🇳 CN 88 → openitsub.com
+      - 🇨🇳 CN 88 → openitsub.com 2
+      - 🇨🇳 CN 89 → openitsub.com
+      - 🇨🇳 CN 89 → openitsub.com 2
       - 🇨🇳 CN 9 → openitsub.com
       - 🇨🇳 CN 9 → openitsub.com 2
       - 🇨🇳 CN【付费推荐：goo.gs/vip】
       - 🇨🇳 CN【付费推荐：goo.gs/vip】 2
-      - 🇨🇳 CN【付费推荐：goo.gs/vip】 3
       - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_183
-      - 🇨🇳 TW 1 → openitsub.com
       - 🇨🇳 Taiwan | 01
       - 🇨🇳 Taiwan | 02
       - 🇨🇳 Taiwan | 03
@@ -2389,7 +2424,6 @@ proxy-groups:
       - 🇯🇵 @SSRSUB-日本V08-付费推荐:dlj.tf/ssrsub
       - 🇯🇵 @SSRSUB-日本V09-付费推荐:dlj.tf/ssrsub
       - 🇯🇵 JP【付费推荐：goo.gs/vip】
-      - 🇯🇵 JP【付费推荐：goo.gs/vip】 2
       - 🇯🇵 Japan | 06
       - 🇯🇵 V115-1.2x-Tokyo
       - 🇯🇵 V116-1.2x-Tokyo
@@ -2568,6 +2602,8 @@ proxy-groups:
       - 🇺🇸 Relay_🇺🇸US-🇺🇸US_1946
       - 🇺🇸 Relay_🇺🇸US-🇻🇳VN_1252
       - 🇺🇸 US 1
+      - 🇺🇸 US 1 → openitsub.com
+      - 🇺🇸 US 1 → openitsub.com 2
       - 🇺🇸 US 2
       - 🇺🇸 US 4
       - 🇺🇸 US【付费推荐：goo.gs/vip】
@@ -2819,6 +2855,8 @@ proxy-groups:
       - JP8
       - Linode
       - Linode 2
+      - MO 1 → openitsub.com
+      - MO 1 → openitsub.com 2
       - MO【付费推荐：goo.gs/vip】
       - NKPVPN - Unlimited - Việt Nam (HN 4)
       - Pool_🇸🇬SG_1126
@@ -3087,19 +3125,28 @@ proxy-groups:
       - 🇨🇳 CN 80 → openitsub.com
       - 🇨🇳 CN 80 → openitsub.com 2
       - 🇨🇳 CN 81 → openitsub.com
+      - 🇨🇳 CN 81 → openitsub.com 2
       - 🇨🇳 CN 82 → openitsub.com
+      - 🇨🇳 CN 82 → openitsub.com 2
       - 🇨🇳 CN 83 → openitsub.com
+      - 🇨🇳 CN 83 → openitsub.com 2
       - 🇨🇳 CN 84 → openitsub.com
+      - 🇨🇳 CN 84 → openitsub.com 2
       - 🇨🇳 CN 85 → openitsub.com
+      - 🇨🇳 CN 85 → openitsub.com 2
       - 🇨🇳 CN 86 → openitsub.com
+      - 🇨🇳 CN 86 → openitsub.com 2
       - 🇨🇳 CN 87 → openitsub.com
+      - 🇨🇳 CN 87 → openitsub.com 2
+      - 🇨🇳 CN 88 → openitsub.com
+      - 🇨🇳 CN 88 → openitsub.com 2
+      - 🇨🇳 CN 89 → openitsub.com
+      - 🇨🇳 CN 89 → openitsub.com 2
       - 🇨🇳 CN 9 → openitsub.com
       - 🇨🇳 CN 9 → openitsub.com 2
       - 🇨🇳 CN【付费推荐：goo.gs/vip】
       - 🇨🇳 CN【付费推荐：goo.gs/vip】 2
-      - 🇨🇳 CN【付费推荐：goo.gs/vip】 3
       - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_183
-      - 🇨🇳 TW 1 → openitsub.com
       - 🇨🇳 Taiwan | 01
       - 🇨🇳 Taiwan | 02
       - 🇨🇳 Taiwan | 03
@@ -3302,7 +3349,6 @@ proxy-groups:
       - 🇯🇵 @SSRSUB-日本V08-付费推荐:dlj.tf/ssrsub
       - 🇯🇵 @SSRSUB-日本V09-付费推荐:dlj.tf/ssrsub
       - 🇯🇵 JP【付费推荐：goo.gs/vip】
-      - 🇯🇵 JP【付费推荐：goo.gs/vip】 2
       - 🇯🇵 Japan | 06
       - 🇯🇵 V115-1.2x-Tokyo
       - 🇯🇵 V116-1.2x-Tokyo
@@ -3481,6 +3527,8 @@ proxy-groups:
       - 🇺🇸 Relay_🇺🇸US-🇺🇸US_1946
       - 🇺🇸 Relay_🇺🇸US-🇻🇳VN_1252
       - 🇺🇸 US 1
+      - 🇺🇸 US 1 → openitsub.com
+      - 🇺🇸 US 1 → openitsub.com 2
       - 🇺🇸 US 2
       - 🇺🇸 US 4
       - 🇺🇸 US【付费推荐：goo.gs/vip】
