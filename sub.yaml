@@ -5,47 +5,29 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇯🇵 _JP_日本, server: os2-4.crabyakiniku.com, port: 443, type: trojan, password: drpzqcrmquWSuZKNd7, skip-cert-verify: false}
-  - {name: 🇭🇰 _HK_香港, server: hk1-2.dimsumyumcha.com, port: 443, type: trojan, password: drpzqcrmquWSuZKNd7, skip-cert-verify: false}
-  - {name: 🇺🇸 _US_美国, server: au2-4.vegemitepie.com, port: 443, type: trojan, password: drpzqcrmquWSuZKNd7, skip-cert-verify: false}
-  - {name: 🇺🇸 _US_美国 2, server: au2-1.vegemitepie.com, port: 443, type: trojan, password: drpzqcrmquWSuZKNd7, skip-cert-verify: false}
+  - {name: 🇸🇬 _SG_新加坡, server: sg-am3.eqsunshine.com, port: 32001, type: ssr, cipher: aes-256-cfb, password: 3g0dHlKME, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
+  - {name: 🇯🇵 _JP_日本, server: trs17.bolab.net, port: 22, type: trojan, password: 40c89b10235c40321e7a3cef82b53a03, skip-cert-verify: false}
+  - {name: 🇺🇸 _US_美国, server: 47.87.199.91, port: 10001, type: ss, cipher: chacha20-ietf-poly1305, password: 15fb9e4ea7}
+  - {name: _CN_中国, server: hnt.cndns.shop, port: 27761, type: ss, cipher: chacha20-ietf-poly1305, password: 31347057-7af5-4562-b912-f1c217c4c160}
+  - {name: 🇺🇸 _AM_亚美尼亚->🇺🇸_US_美国, server: 185.162.228.229, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /5QNROSRV, headers: {Host: oplg1.zhujicn2.com}}}
+  - {name: 🇷🇺 _CN_中国->🇷🇺_RU_俄罗斯联邦, server: hnt.cndns.shop, port: 27766, type: ss, cipher: chacha20-ietf-poly1305, password: 31347057-7af5-4562-b912-f1c217c4c160}
   - {name: 🇯🇵 _JP_日本 2, server: 85.208.108.60, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: 🇺🇸 _US_美国->🇦🇺_AU_澳大利亚, server: au1-3.vegemitepie.com, port: 443, type: trojan, password: drpzqcrmquWSuZKNd7, skip-cert-verify: false}
-  - {name: 🇺🇸 _US_美国->🇦🇺_AU_澳大利亚 2, server: au1-4.vegemitepie.com, port: 443, type: trojan, password: drpzqcrmquWSuZKNd7, skip-cert-verify: false}
-  - {name: 🇺🇸 _US_美国->🇦🇺_AU_澳大利亚 3, server: au1-1.vegemitepie.com, port: 443, type: trojan, password: drpzqcrmquWSuZKNd7, skip-cert-verify: false}
-  - {name: 🇺🇸 _US_美国->🇦🇺_AU_澳大利亚 4, server: au1-2.vegemitepie.com, port: 443, type: trojan, password: drpzqcrmquWSuZKNd7, skip-cert-verify: false}
-  - {name: 🇺🇸 _US_美国 3, server: au2-3.vegemitepie.com, port: 443, type: trojan, password: drpzqcrmquWSuZKNd7, skip-cert-verify: false}
-  - {name: 🇷🇺 _CN_中国->🇷🇺_RU_俄罗斯联邦, server: hnt.cndns.shop, port: 27761, type: ss, cipher: chacha20-ietf-poly1305, password: 31347057-7af5-4562-b912-f1c217c4c160}
-  - {name: 🇺🇸 _US_美国->🇦🇺_AU_澳大利亚 5, server: au3-2.vegemitepie.com, port: 443, type: trojan, password: drpzqcrmquWSuZKNd7, skip-cert-verify: false}
-  - {name: 🇺🇸 _US_美国->🇦🇺_AU_澳大利亚 6, server: au3-1.vegemitepie.com, port: 443, type: trojan, password: drpzqcrmquWSuZKNd7, skip-cert-verify: false}
-  - {name: 🇯🇵 _JP_日本 3, server: jpgithub.edgehelper.com, port: 53900, type: vmess, uuid: d8860258-4ce1-4412-9ede-ecfd8d827ca4, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false}
-  - {name: 🇺🇸 _US_美国->🇦🇺_AU_澳大利亚 7, server: au3-3.vegemitepie.com, port: 443, type: trojan, password: drpzqcrmquWSuZKNd7, skip-cert-verify: false}
-  - {name: 🇺🇸 _US_美国->🇦🇺_AU_澳大利亚 8, server: au3-4.vegemitepie.com, port: 443, type: trojan, password: drpzqcrmquWSuZKNd7, skip-cert-verify: false}
-  - {name: 🇰🇷 _KR_韩国, server: 152.70.89.67, port: 44631, type: vmess, uuid: 198d8957-377e-4a06-d9ea-414cc0067de4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}}
-  - {name: 🇺🇸 _US_美国->🇫🇷_FR_法国, server: powerservice.com, port: 443, type: vmess, uuid: 0764a598-82c4-4b41-ba10-551a625beed5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /sshocean, headers: {Host: uk2.v2rayserv.com}}}
+  - {name: 🇨🇭 _IR_伊朗->🇨🇭_CH_瑞士, server: samanehha.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: jinajina123}
+  - {name: 🇯🇵 _JP_日本 3, server: jp-am48-6.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: eAokbaDN6, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - DIRECT
+      - 🇸🇬 _SG_新加坡
       - 🇯🇵 _JP_日本
-      - 🇭🇰 _HK_香港
       - 🇺🇸 _US_美国
-      - 🇺🇸 _US_美国 2
-      - 🇯🇵 _JP_日本 2
-      - 🇺🇸 _US_美国->🇦🇺_AU_澳大利亚
-      - 🇺🇸 _US_美国->🇦🇺_AU_澳大利亚 2
-      - 🇺🇸 _US_美国->🇦🇺_AU_澳大利亚 3
-      - 🇺🇸 _US_美国->🇦🇺_AU_澳大利亚 4
-      - 🇺🇸 _US_美国 3
+      - _CN_中国
+      - 🇺🇸 _AM_亚美尼亚->🇺🇸_US_美国
       - 🇷🇺 _CN_中国->🇷🇺_RU_俄罗斯联邦
-      - 🇺🇸 _US_美国->🇦🇺_AU_澳大利亚 5
-      - 🇺🇸 _US_美国->🇦🇺_AU_澳大利亚 6
+      - 🇯🇵 _JP_日本 2
+      - 🇨🇭 _IR_伊朗->🇨🇭_CH_瑞士
       - 🇯🇵 _JP_日本 3
-      - 🇺🇸 _US_美国->🇦🇺_AU_澳大利亚 7
-      - 🇺🇸 _US_美国->🇦🇺_AU_澳大利亚 8
-      - 🇰🇷 _KR_韩国
-      - 🇺🇸 _US_美国->🇫🇷_FR_法国
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -61,24 +43,15 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - 🇸🇬 _SG_新加坡
       - 🇯🇵 _JP_日本
-      - 🇭🇰 _HK_香港
       - 🇺🇸 _US_美国
-      - 🇺🇸 _US_美国 2
-      - 🇯🇵 _JP_日本 2
-      - 🇺🇸 _US_美国->🇦🇺_AU_澳大利亚
-      - 🇺🇸 _US_美国->🇦🇺_AU_澳大利亚 2
-      - 🇺🇸 _US_美国->🇦🇺_AU_澳大利亚 3
-      - 🇺🇸 _US_美国->🇦🇺_AU_澳大利亚 4
-      - 🇺🇸 _US_美国 3
+      - _CN_中国
+      - 🇺🇸 _AM_亚美尼亚->🇺🇸_US_美国
       - 🇷🇺 _CN_中国->🇷🇺_RU_俄罗斯联邦
-      - 🇺🇸 _US_美国->🇦🇺_AU_澳大利亚 5
-      - 🇺🇸 _US_美国->🇦🇺_AU_澳大利亚 6
+      - 🇯🇵 _JP_日本 2
+      - 🇨🇭 _IR_伊朗->🇨🇭_CH_瑞士
       - 🇯🇵 _JP_日本 3
-      - 🇺🇸 _US_美国->🇦🇺_AU_澳大利亚 7
-      - 🇺🇸 _US_美国->🇦🇺_AU_澳大利亚 8
-      - 🇰🇷 _KR_韩国
-      - 🇺🇸 _US_美国->🇫🇷_FR_法国
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
