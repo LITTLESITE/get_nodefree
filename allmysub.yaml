@@ -101,8 +101,8 @@ proxies:
   - {name: Linode@15, server: 104.29.64.3, port: 443, type: trojan, password: 4X1ebJpQWg, sni: sg.yydsdy.top, skip-cert-verify: true, udp: true}
   - {name: Linode@16, server: 104.29.64.5, port: 443, type: trojan, password: 4X1ebJpQWg, sni: sg.yydsdy.top, skip-cert-verify: true, udp: true}
   - {name: Linode套CDN, server: 47.52.78.112, port: 443, type: trojan, password: 4X1ebJpQWg, sni: sg.yydsdy.top, skip-cert-verify: true, udp: true}
-  - {name: MO 1 → openitsub.com, server: 45.64.22.55, port: 443, type: trojan, password: ZDAAFTxBNu5j9pl3Re834a3xSXwOZYeIlE30Dp86qc7yYgKaDCaROCSSnz2FCy, sni: csharp.protocolbuffer.com, skip-cert-verify: true, udp: true}
-  - {name: MO 1 → openitsub.com 2, server: 45.64.22.55, port: 443, type: trojan, password: ZDAAFTxBNu5j9pl3Re834a3xSXwOZYeIlE30Dp86qc7yYgKaDCaROCSSnz2FCy, sni: csharp.protocolbuffer.com, skip-cert-verify: true, udp: true}
+  - {name: MO, server: 45.64.22.55, port: 443, type: trojan, password: KLF0qOU0ZZGw5Tnu, sni: swift.protocolbuffer.com, skip-cert-verify: true, udp: true}
+  - {name: MO 2, server: 45.64.22.55, port: 443, type: trojan, password: KLF0qOU0ZZGw5Tnu, sni: swift.protocolbuffer.com, skip-cert-verify: true, udp: true}
   - {name: NKPVPN - Unlimited - Việt Nam (HN 4), server: 103.176.111.247, port: 80, type: vmess, uuid: e982184f-c6e0-4ba4-91cc-71eb6c702588, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: nkpvpn.akamaized.net}}, udp: true}
   - {name: NL1, server: 74.211.105.99, port: 13178, type: vmess, uuid: 35b5c770-eab0-4fa7-858c-60aee9e47953, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: NL2, server: 104.193.10.124, port: 8306, type: vmess, uuid: 0cd68213-f603-4389-8d7d-b6ae2d69403b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
@@ -255,8 +255,6 @@ proxies:
   - {name: 🇨🇦 v2rayfree.eu.org - 加拿大  45, server: 330tw.fans8.xyz, port: 443, type: vmess, uuid: 7f4ff2e1c08f35bdafe74a6a386907aa, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 330tw.fans8.xyz}}, udp: true}
   - {name: 🇨🇦 加拿大 001, server: 165.22.229.248, port: 80, type: vmess, uuid: 6b7261aa-1dea-4ab4-8e96-fa726b5a9feb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
   - {name: 🇨🇦 加拿大 006, server: 527hk1.fans8.xyz, port: 80, type: vmess, uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 527hk1.fans8.xyz}}, udp: true}
-  - {name: 🇨🇳 CN 1 → openitsub.com, server: jp03a.roc-taiwan.net.ua, port: 65013, type: trojan, password: 96983eb4-c8f1-316e-ab00-500014ed3d8b, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 1 → openitsub.com 2, server: jp03a.roc-taiwan.net.ua, port: 65013, type: trojan, password: 96983eb4-c8f1-316e-ab00-500014ed3d8b, skip-cert-verify: true, udp: true}
   - {name: 🇨🇳 CN【付费推荐：goo.gs/vip】, server: data-hk-v1.heisey.cn, port: 50205, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: tv.cctv.com}}, udp: true}
   - {name: 🇨🇳 CN【付费推荐：goo.gs/vip】 2, server: eduall.buzzline.org, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 55956:111111, obfs-param: "", udp: true}
   - {name: 🇨🇳 CN【付费推荐：goo.gs/vip】 3, server: dog-moble.gatknqh.cn, port: 21029, type: vmess, uuid: da7d811a-5647-3b2e-bec3-6ee490e34c96, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
@@ -864,8 +862,8 @@ proxy-groups:
       - Linode@15
       - Linode@16
       - Linode套CDN
-      - MO 1 → openitsub.com
-      - MO 1 → openitsub.com 2
+      - MO
+      - MO 2
       - NKPVPN - Unlimited - Việt Nam (HN 4)
       - NL1
       - NL2
@@ -1018,8 +1016,6 @@ proxy-groups:
       - 🇨🇦 v2rayfree.eu.org - 加拿大  45
       - 🇨🇦 加拿大 001
       - 🇨🇦 加拿大 006
-      - 🇨🇳 CN 1 → openitsub.com
-      - 🇨🇳 CN 1 → openitsub.com 2
       - 🇨🇳 CN【付费推荐：goo.gs/vip】
       - 🇨🇳 CN【付费推荐：goo.gs/vip】 2
       - 🇨🇳 CN【付费推荐：goo.gs/vip】 3
@@ -1620,8 +1616,8 @@ proxy-groups:
       - Linode@15
       - Linode@16
       - Linode套CDN
-      - MO 1 → openitsub.com
-      - MO 1 → openitsub.com 2
+      - MO
+      - MO 2
       - NKPVPN - Unlimited - Việt Nam (HN 4)
       - NL1
       - NL2
@@ -1774,8 +1770,6 @@ proxy-groups:
       - 🇨🇦 v2rayfree.eu.org - 加拿大  45
       - 🇨🇦 加拿大 001
       - 🇨🇦 加拿大 006
-      - 🇨🇳 CN 1 → openitsub.com
-      - 🇨🇳 CN 1 → openitsub.com 2
       - 🇨🇳 CN【付费推荐：goo.gs/vip】
       - 🇨🇳 CN【付费推荐：goo.gs/vip】 2
       - 🇨🇳 CN【付费推荐：goo.gs/vip】 3
@@ -2377,8 +2371,8 @@ proxy-groups:
       - Linode@15
       - Linode@16
       - Linode套CDN
-      - MO 1 → openitsub.com
-      - MO 1 → openitsub.com 2
+      - MO
+      - MO 2
       - NKPVPN - Unlimited - Việt Nam (HN 4)
       - NL1
       - NL2
@@ -2531,8 +2525,6 @@ proxy-groups:
       - 🇨🇦 v2rayfree.eu.org - 加拿大  45
       - 🇨🇦 加拿大 001
       - 🇨🇦 加拿大 006
-      - 🇨🇳 CN 1 → openitsub.com
-      - 🇨🇳 CN 1 → openitsub.com 2
       - 🇨🇳 CN【付费推荐：goo.gs/vip】
       - 🇨🇳 CN【付费推荐：goo.gs/vip】 2
       - 🇨🇳 CN【付费推荐：goo.gs/vip】 3
